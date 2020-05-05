@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sierra Moore" />
+    <meta name="description" content="Describe your website">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>Project #1 - Running Man, Weather Man</title>
+    <meta name="generator" content="Hugo 0.69.2" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><i class="fa fa-home"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/resume/">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="/project1/">Project #1 - Running Man, Weather Man</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          January 1, 0001
+            &nbsp;&nbsp;
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+
+<div id="running-man-weather-man" class="section level2">
+<h2>Running Man, Weather Man</h2>
+<p>Austin, Texas is city that boasts great people and great weather. This project explores the running habits of a local Austinite, Steve, who runs all around town and even partakes in ultra-marathons across the country. Since 2013, Steve has recorded data for many, if not most, of his runs in the fitness app, Strava. With Strava, users can record and upload data about a range of activities including running, biking, hiking, or even watersports. Steve’s Strava data was exported from his account to create the <code>activities</code> dataset, which originally featured 11 variables and 1173 observations. Each activity was recorded as an observation with a unique Activity ID and other defining variables such as Activity Type, Date, Elapsed Time, Distance.</p>
+<p>Steve prefers trail running, which is strictly an outdoor sport. Thus, the dataset <code>austin_weather</code> was also acquired for this data analysis project. The data was compiled by the National Centers for Climate Information and exported for use via their public website. The dataset is, essentially, a log of daily weather parameters from January 1, 2013 to February 18, 2020. It has 19 variables including date, maximum and minimum daily temperatures (TMAX, TMIN), and inches of precipitation (PRCP). Each observation (2605 total) corresponds to a single day within the time period. All weather data was recorded from the Camp Mabry weather station in Austin.</p>
+<p>Common sense, and experience living through Austin’s hotter seasons, would suggest that an obvious relationship between maximum temperature and run distance should be observed. These two datasets can be used to address that hypothesis as well as the nature of connections between other key variables. Of particular interest is the ability to see patterns of Steve’s running schedule over the course of several days, or within an average week.</p>
+<pre class="r"><code>#import datasets here
+library(readr)
+austin_weather &lt;- read_csv(&quot;austin weather.csv&quot;)
+activities &lt;- read_csv(&quot;activities.csv&quot;)</code></pre>
+</div>
+<div id="joining-data" class="section level2">
+<h2>1) Joining Data</h2>
+<p>The datasets <code>activities</code> and <code>austin_weather</code> were nearly tidy to begin with, however they require slight modifications. In <code>activities</code>, I started by converting the <code>Activity.Date</code> variable to four distinct variables, <code>Month</code>, <code>Day</code>, <code>Year</code>, and <code>Time</code> using the <code>separate</code> function. To prepare the dataset for future joining, I then used <code>unite</code> to bring the three date variables into one, with the standard format of MM-DD-YYYY. Finally, I selected only columns 1 through 8, leaving out the last 4 variables that contained filename information or activity data that was not recorded for any of the entries (ex: <code>Activity.Gear</code>). The prepared dataset was saved as <code>activities_tojoin</code>.</p>
+<p><code>austin_weather</code> required similar manipulation with a few extra steps. First, I separated the <code>DATE</code> variable, and converted the resulting three columns to numeric variables. I used <code>mutate</code> to change the year values from “13” to “2013”, “14” to “2014”, etc., for each year. <code>mutate</code> was used again, along with <code>recode</code> to change the month values from numbers to their corresponding three letter abreviations to match the <code>activities</code> values for <code>Month</code>. The weather data was also sliced to omit the first row, which represented unnecessary column titles from the original Excel spreadsheet. This action did not remove any recorded weather observations. To keep the scope of this analysis manageable, I selected only the three date variables along with <code>PRCP</code>, <code>TMAX</code>, and <code>TMIN</code>. The consequence of this selective action was a loss of snow and other complex weather pattern measurements.</p>
+<p>After uniting the weather dates to match the standard date format, I used <code>left_join</code> to add <code>weather_tojoin</code> to <code>activities_tojoin</code> by the <code>Date</code> variable. This specific join function was used in order to retain all observations of <code>activities_tojoin</code>, adding the specific daily weather data to each logged activity. As Steve, loggically, did not have a recorded activity for every day in the selected 7 year period, <code>left_join</code> ensured that days without logged activity would not be added to the resulting dataset. The joined data was saved as <code>fulldata</code>. To facilitate later exploration and analysis, the <code>Date</code> variable was separated into <code>Month</code>, <code>Day</code>, and <code>Year</code>, each month was recoded to its numeric equivalent, and a new <code>Date</code> variable was added.</p>
+<pre class="r"><code>library(tidyverse)
+activities_tojoin &lt;- activities %&gt;% separate(Activity.Date,into=c(&quot;Month_Day&quot;,&quot;Year&quot;, &quot;Time&quot;),sep=&quot;,&quot;, convert=T)%&gt;% separate(Month_Day,into=c(&quot;Month&quot;,&quot;Day&quot;),sep=&quot; &quot;)
+activities_tojoin &lt;- activities_tojoin%&gt;%unite(Month, Day, Year, col=&quot;Date&quot;,sep=&quot;-&quot;) 
+activities_tojoin &lt;- activities_tojoin %&gt;% select(1:8)
+weather_tojoin &lt;- austin_weather %&gt;% separate(DATE,into=c(&quot;Month&quot;,&quot;Day&quot;, &quot;Year&quot;),sep=&quot;/&quot;, convert=T)%&gt;% mutate(Year=(Year+2000)) %&gt;% mutate(Month=recode(Month,&quot;1&quot;=&quot;Jan&quot;,&quot;2&quot;=&quot;Feb&quot;,&quot;3&quot;=&quot;Mar&quot;, &quot;4&quot;=&quot;Apr&quot;,&quot;5&quot;=&quot;May&quot;,&quot;6&quot;=&quot;Jun&quot;, &quot;7&quot;=&quot;Jul&quot;,&quot;8&quot;=&quot;Aug&quot;,&quot;9&quot;=&quot;Sep&quot;, &quot;10&quot;=&quot;Oct&quot;, &quot;11&quot;=&quot;Nov&quot;, &quot;12&quot;=&quot;Dec&quot;))%&gt;%select(&quot;Month&quot;,&quot;Day&quot;,&quot;Year&quot;,&quot;PRCP&quot;,&quot;TMAX&quot;,&quot;TMIN&quot;)%&gt;%slice(2:2606)
+weather_tojoin &lt;- weather_tojoin%&gt;%unite(Month, Day, Year, col=&quot;Date&quot;,sep=&quot;-&quot;)
+fulldata&lt;-activities_tojoin %&gt;% left_join(weather_tojoin)
+fulldata &lt;- fulldata %&gt;% separate(Date, into=c(&quot;Month&quot;, &quot;Day&quot;, &quot;Year&quot;)) %&gt;% mutate(Month=recode(Month,&quot;Jan&quot;=&quot;1&quot;,&quot;Feb&quot;=&quot;2&quot;,&quot;Mar&quot;=&quot;3&quot;, &quot;Apr&quot;=&quot;4&quot;,&quot;May&quot;=&quot;5&quot;,&quot;Jun&quot;=&quot;6&quot;, &quot;Jul&quot;=&quot;7&quot;,&quot;Aug&quot;=&quot;8&quot;,&quot;Sep&quot;=&quot;9&quot;, &quot;Oct&quot;=&quot;10&quot;, &quot;Nov&quot;=&quot;11&quot;,&quot;Dec&quot;=&quot;12&quot;))%&gt;%unite(Year, Month, Day, col=&quot;Date&quot;,sep=&quot;-&quot;) </code></pre>
+<p>The additional <code>Date</code> column created in the final step above was performed in anticipation of creating a new variable, <code>DoW</code>, to assign each activity to the day of the week it occured on. Formatting the original date variables in the standard form recognized by R allowed me to utilize the <code>as.Date</code> and <code>weekdays</code> functions to achieve this step.</p>
+<p>Before exploration and summarization, the final dataset, <code>fulldata</code>, contained 1173 observations and 14 variables.</p>
+<pre class="r"><code>fulldata$DoW &lt;- as.Date(fulldata$Date)
+fulldata$DoW &lt;-weekdays(fulldata$DoW)
+fulldata &lt;- fulldata %&gt;% separate(Date, into=c(&quot;Year&quot;,&quot;Month&quot;,&quot;Day&quot;), sep=&quot;-&quot;, convert = T)
+glimpse(fulldata)</code></pre>
+<pre><code>## Observations: 1,173
+## Variables: 14
+## $ Activity.ID          &lt;dbl&gt; 45805954, 45805957, 46044409, 46833776, 46951561…
+## $ Year                 &lt;int&gt; 2013, 2013, 2013, 2013, 2013, 2013, 2013, 2013, …
+## $ Month                &lt;int&gt; 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, …
+## $ Day                  &lt;int&gt; 20, 23, 27, 29, 29, 2, 2, 1, 3, 3, 5, 7, 8, 16, …
+## $ Time                 &lt;chr&gt; &quot; 12:04:12 PM&quot;, &quot; 1:35:12 PM&quot;, &quot; 12:04:52 PM&quot;, &quot;…
+## $ Activity.Name        &lt;chr&gt; &quot;LBL Wed mornings&quot;, &quot;Marathon route north sorta&quot;…
+## $ Activity.Type        &lt;chr&gt; &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Ride&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;…
+## $ Activity.Description &lt;chr&gt; NA, &quot;Boston training 2013&quot;, &quot;dialing in for Bost…
+## $ Elapsed.Time         &lt;dbl&gt; 3986, 9074, 3801, 1246, 4328, 92, 331, 1185, 193…
+## $ Distance             &lt;dbl&gt; 16.27, 33.89, 16.29, 7.93, 17.22, 0.39, 1.67, 7.…
+## $ PRCP                 &lt;dbl&gt; 0.14, 0.00, 0.00, 0.00, 0.00, 2.10, 2.10, 0.00, …
+## $ TMAX                 &lt;dbl&gt; 73, 80, 71, 80, 80, 76, 76, 87, 57, 57, 73, 84, …
+## $ TMIN                 &lt;dbl&gt; 53, 52, 40, 60, 60, 53, 53, 60, 49, 49, 40, 63, …
+## $ DoW                  &lt;chr&gt; &quot;Wednesday&quot;, &quot;Saturday&quot;, &quot;Wednesday&quot;, &quot;Friday&quot;, …</code></pre>
+</div>
+<div id="wrangling" class="section level2">
+<h2>2) Wrangling</h2>
+<p>The following code was used to explore, wrangle, and summarize the <code>fulldata</code> dataset. Noteably, the first code chunk created two new variables, <code>Distance_mi</code> (activity distance in miles) and <code>Elps_Time_hrs</code> (elapsed activity time in hours), from the original variables that measured distance in kilometeres and elapsed time in seconds.</p>
+<pre class="r"><code>#summary data here
+#summaries
+#Convert distance in km to distance in miles
+fulldata %&gt;% mutate(Distance_mi=(Distance/1.609)) %&gt;% select(Distance, Distance_mi) %&gt;% glimpse()</code></pre>
+<pre><code>## Observations: 1,173
+## Variables: 2
+## $ Distance    &lt;dbl&gt; 16.27, 33.89, 16.29, 7.93, 17.22, 0.39, 1.67, 7.78, 6.92,…
+## $ Distance_mi &lt;dbl&gt; 10.1118707, 21.0627719, 10.1243008, 4.9285270, 10.7022996…</code></pre>
+<pre class="r"><code>#Convert time in seconds to time in hours
+fulldata %&gt;% mutate(Time_hrs=(Elapsed.Time/3600)) %&gt;% select(Time_hrs, Elapsed.Time) %&gt;% glimpse()</code></pre>
+<pre><code>## Observations: 1,173
+## Variables: 2
+## $ Time_hrs     &lt;dbl&gt; 1.10722222, 2.52055556, 1.05583333, 0.34611111, 1.202222…
+## $ Elapsed.Time &lt;dbl&gt; 3986, 9074, 3801, 1246, 4328, 92, 331, 1185, 1935, 1150,…</code></pre>
+<pre class="r"><code>#add new time and distance variables to fulldata
+fulldata &lt;- fulldata %&gt;%mutate(Distance_mi=(Distance/1.609))%&gt;%mutate(Elps_Time_hrs=(Elapsed.Time/3600))
+
+#sd of run distance (mi)
+fulldata%&gt;% filter(Activity.Type==&quot;Run&quot;) %&gt;% summarize(sd(Distance_mi))</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   `sd(Distance_mi)`
+##               &lt;dbl&gt;
+## 1              10.0</code></pre>
+<pre class="r"><code>#Average run distance (mi) per year
+fulldata %&gt;% group_by(Year) %&gt;% filter(Activity.Type==&quot;Run&quot;) %&gt;% summarize(mean(Distance_mi))</code></pre>
+<pre><code>## # A tibble: 8 x 2
+##    Year `mean(Distance_mi)`
+##   &lt;int&gt;               &lt;dbl&gt;
+## 1  2013               11.7 
+## 2  2014               13.0 
+## 3  2015               11.3 
+## 4  2016               10.4 
+## 5  2017               10.0 
+## 6  2018                9.79
+## 7  2019               10.5 
+## 8  2020               12.8</code></pre>
+<pre class="r"><code>#Longest logged bike ride
+fulldata  %&gt;% filter(Activity.Type==&quot;Ride&quot;) %&gt;% select(Activity.ID, Elps_Time_hrs) %&gt;%summarize(max(Elps_Time_hrs))</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   `max(Elps_Time_hrs)`
+##                  &lt;dbl&gt;
+## 1                 14.6</code></pre>
+<pre class="r"><code>#Total logged bike rides per day of week
+fulldata  %&gt;% filter(Activity.Type==&quot;Ride&quot;)%&gt;% group_by(DoW) %&gt;% select(DoW, Activity.ID) %&gt;%summarize_all(n_distinct) %&gt;% arrange(desc(Activity.ID))</code></pre>
+<pre><code>## # A tibble: 7 x 2
+##   DoW       Activity.ID
+##   &lt;chr&gt;           &lt;int&gt;
+## 1 Friday              7
+## 2 Saturday            6
+## 3 Monday              4
+## 4 Thursday            4
+## 5 Tuesday             3
+## 6 Wednesday           3
+## 7 Sunday              1</code></pre>
+<pre class="r"><code>#Sd of max temp data (all years)
+fulldata %&gt;% na.omit()%&gt;%summarize(sd(TMAX))</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   `sd(TMAX)`
+##        &lt;dbl&gt;
+## 1       13.8</code></pre>
+<pre class="r"><code>#Avg max temp in Austin by year
+fulldata %&gt;% filter(Year!= &quot;2020&quot;)%&gt;%group_by(Year) %&gt;% na.omit()%&gt;%summarize(mean(TMAX))</code></pre>
+<pre><code>## # A tibble: 7 x 2
+##    Year `mean(TMAX)`
+##   &lt;int&gt;        &lt;dbl&gt;
+## 1  2013         87.3
+## 2  2014         83.3
+## 3  2015         85.2
+## 4  2016         81.4
+## 5  2017         84.8
+## 6  2018         81.4
+## 7  2019         82.5</code></pre>
+<pre class="r"><code>#Total number of days with precip
+fulldata2 &lt;- fulldata%&gt;% unite(Month, Day, Year, col=&quot;Date&quot;,sep=&quot;-&quot;)
+fulldata2%&gt;% filter(PRCP!=0) %&gt;%summarize(total_rain_days=n_distinct(Date))</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   total_rain_days
+##             &lt;int&gt;
+## 1             233</code></pre>
+<pre class="r"><code>#Day of the week with the most runs logged in Strava
+fulldata  %&gt;% filter(Activity.Type==&quot;Run&quot;)%&gt;% group_by(DoW) %&gt;% select(DoW, Activity.ID) %&gt;%summarize_all(n_distinct) %&gt;% arrange(desc(Activity.ID))</code></pre>
+<pre><code>## # A tibble: 7 x 2
+##   DoW       Activity.ID
+##   &lt;chr&gt;           &lt;int&gt;
+## 1 Sunday            197
+## 2 Wednesday         194
+## 3 Tuesday           185
+## 4 Saturday          168
+## 5 Thursday          167
+## 6 Friday            165
+## 7 Monday             38</code></pre>
+<pre class="r"><code>#Longest run logged (hrs)
+fulldata %&gt;% filter(Activity.Type==&quot;Run&quot;) %&gt;%summarize(maxruntime=max(Elps_Time_hrs))</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   maxruntime
+##        &lt;dbl&gt;
+## 1       30.1</code></pre>
+<pre class="r"><code>#Average distance (mi) per day of week, in October
+fulldata %&gt;% filter(Activity.Type==&quot;Run&quot;, Month==&quot;10&quot;)%&gt;%group_by(Year,DoW) %&gt;% summarize(avg_dist=mean(Distance_mi))%&gt;%pivot_wider(names_from=&quot;DoW&quot;,values_from=&quot;avg_dist&quot;)</code></pre>
+<pre><code>## # A tibble: 7 x 8
+## # Groups:   Year [7]
+##    Year Monday Saturday Sunday Thursday Tuesday Wednesday Friday
+##   &lt;int&gt;  &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;  &lt;dbl&gt;
+## 1  2013   6.12    22.2    7.39     8.83    6.48      7.52  NA   
+## 2  2014  NA       45.3    5.74     7.62    8.04     10.1    5.93
+## 3  2015  NA       53.4   12.0      9.24    9.33     10.1   10.0 
+## 4  2016  NA        5.84  18.3      6.23    5.30      7.62   6.95
+## 5  2017  NA       31.3    7.66     5.03    3.43      5.35  NA   
+## 6  2018  NA      100.     8.76     7.53    7.27      6.66  10.9 
+## 7  2019  NA       20.6    5.37     9.75   10.3       7.49  12.1</code></pre>
+<pre class="r"><code>#Total miles per year
+fulldata %&gt;% na.omit() %&gt;% group_by(Year)%&gt;% mutate(cumulat_dist_mi=cumsum(Distance_mi)) %&gt;% glimpse() %&gt;% summarize(max(cumulat_dist_mi))</code></pre>
+<pre><code>## Observations: 841
+## Variables: 17
+## Groups: Year [8]
+## $ Activity.ID          &lt;dbl&gt; 45805957, 46044409, 46969554, 46969981, 47075277…
+## $ Year                 &lt;int&gt; 2013, 2013, 2013, 2013, 2013, 2013, 2013, 2013, …
+## $ Month                &lt;int&gt; 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, …
+## $ Day                  &lt;int&gt; 23, 27, 2, 2, 3, 3, 5, 7, 8, 16, 20, 19, 24, 27,…
+## $ Time                 &lt;chr&gt; &quot; 1:35:12 PM&quot;, &quot; 12:04:52 PM&quot;, &quot; 5:36:14 PM&quot;, &quot; …
+## $ Activity.Name        &lt;chr&gt; &quot;Marathon route north sorta&quot;, &quot;LBL Wed March 27,…
+## $ Activity.Type        &lt;chr&gt; &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;,…
+## $ Activity.Description &lt;chr&gt; &quot;Boston training 2013&quot;, &quot;dialing in for Boston&quot;,…
+## $ Elapsed.Time         &lt;dbl&gt; 9074, 3801, 92, 331, 1935, 1150, 3454, 2502, 270…
+## $ Distance             &lt;dbl&gt; 33.89, 16.29, 0.39, 1.67, 6.92, 4.87, 13.98, 10.…
+## $ PRCP                 &lt;dbl&gt; 0.00, 0.00, 2.10, 2.10, 0.36, 0.36, 0.00, 0.00, …
+## $ TMAX                 &lt;dbl&gt; 80, 71, 76, 76, 57, 57, 73, 84, 77, 85, 73, 69, …
+## $ TMIN                 &lt;dbl&gt; 52, 40, 53, 53, 49, 49, 40, 63, 67, 70, 41, 45, …
+## $ DoW                  &lt;chr&gt; &quot;Saturday&quot;, &quot;Wednesday&quot;, &quot;Tuesday&quot;, &quot;Tuesday&quot;, &quot;…
+## $ Distance_mi          &lt;dbl&gt; 21.0627719, 10.1243008, 0.2423866, 1.0379117, 4.…
+## $ Elps_Time_hrs        &lt;dbl&gt; 2.52055556, 1.05583333, 0.02555556, 0.09194444, …
+## $ cumulat_dist_mi      &lt;dbl&gt; 21.06277, 31.18707, 31.42946, 32.46737, 36.76818…</code></pre>
+<pre><code>## # A tibble: 8 x 2
+##    Year `max(cumulat_dist_mi)`
+##   &lt;int&gt;                  &lt;dbl&gt;
+## 1  2013                  1094.
+## 2  2014                  1435.
+## 3  2015                  1668.
+## 4  2016                  1914.
+## 5  2017                  1108.
+## 6  2018                   820.
+## 7  2019                  1453.
+## 8  2020                   149.</code></pre>
+<pre class="r"><code>#Longest run (mi) on hotest day
+fulldata %&gt;% select(Activity.Type,Activity.Name, Distance_mi, TMAX) %&gt;% arrange(desc(TMAX)) %&gt;% glimpse()</code></pre>
+<pre><code>## Observations: 1,173
+## Variables: 4
+## $ Activity.Type &lt;chr&gt; &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;, &quot;Run&quot;,…
+## $ Activity.Name &lt;chr&gt; &quot;TownLake Tour with Thomas&quot;, &quot;Sunriver Forest Service R…
+## $ Distance_mi   &lt;dbl&gt; 10.267247, 9.241765, 8.502175, 10.142946, 15.009323, 11…
+## $ TMAX          &lt;dbl&gt; 108, 107, 106, 106, 106, 106, 105, 105, 105, 104, 104, …</code></pre>
+<p><strong>Key findings</strong>:
+The standard deviation of the distance for all of Steve’s runs logged is Strava was 10.0 miles. When average run distance was calculated for each year, 2014 had the highest average distance of 13.0 miles and the average distance for 2018 was the lowest at 9.79 miles. Steve’s Strava data also featured other activities including a 14.6 hour long bike ride. He did not have as many logged bike rides as runs, and Fridays had the highest total number of rides. With respect to weather patterns in Austin, the standard deviation of all maximum temperatures was 13.8 degrees Farenheight and the average max temp per year fell in a range of 81 to 87 degrees. The average max temp for 2020 was omitted for this calculation, as a complete year of data is not available. In this dataset, there were 233 days with recorded precipitation.</p>
+<p>Additionally, several other relationships within <code>fulldata</code> were explored. One of the most interesting patterns was the number of total runs logged per day of the week. The data shows that the highest total number of runs were logged on a Sunday (197 runs). Steve, who has been described by friends and family as a creature of habit, has developed a pattern of replacing his lunchtime run for a soak in the jacuzzi at his gym on Mondays. The data, which shows a total of 38 runs in 7 years logged on Monday, reflects Steve’s remarkable level of dedication to his running schedule and “Hot Tub Monday.” A few final findings extracted from this data include a summary of average distances run, per day of the week in October, the longest elapsed run time (30.1 hours), total miles per year, and the longest run recorded on the hottest day recorded (10.267 miles on a 108 degree day)!</p>
+</div>
+<div id="correlation-heat-map" class="section level2">
+<h2>3) Correlation Heat Map</h2>
+<p><em>Correlations between numeric variables: calculated and visualized!</em></p>
+<pre class="r"><code>#cor data here
+library(ggplot2)
+library(ggExtra)
+#correlation heat map
+full_plot1&lt;-fulldata%&gt;%na.omit%&gt;%select_if(is.numeric) %&gt;% select(-c(Elapsed.Time,Distance))
+cor(full_plot1)</code></pre>
+<pre><code>##                Activity.ID         Year        Month          Day        PRCP
+## Activity.ID    1.000000000  0.932439672  0.098061751  0.005691662 -0.02124321
+## Year           0.932439672  1.000000000 -0.076164040  0.002497429 -0.01831775
+## Month          0.098061751 -0.076164040  1.000000000 -0.038206080 -0.01887082
+## Day            0.005691662  0.002497429 -0.038206080  1.000000000  0.02757241
+## PRCP          -0.021243206 -0.018317752 -0.018870821  0.027572409  1.00000000
+## TMAX          -0.072290180 -0.106611729  0.147460750 -0.030050593 -0.06645354
+## TMIN          -0.091616558 -0.109437272  0.142605656 -0.003876303  0.01803289
+## Distance_mi    0.005937984 -0.001391253  0.019617724 -0.002659083 -0.01330520
+## Elps_Time_hrs  0.023421647  0.028898577 -0.007283121  0.020280501 -0.01442930
+##                      TMAX         TMIN  Distance_mi Elps_Time_hrs
+## Activity.ID   -0.07229018 -0.091616558  0.005937984   0.023421647
+## Year          -0.10661173 -0.109437272 -0.001391253   0.028898577
+## Month          0.14746075  0.142605656  0.019617724  -0.007283121
+## Day           -0.03005059 -0.003876303 -0.002659083   0.020280501
+## PRCP          -0.06645354  0.018032887 -0.013305201  -0.014429299
+## TMAX           1.00000000  0.885469625  0.017598561   0.044011549
+## TMIN           0.88546963  1.000000000  0.012280571   0.033402677
+## Distance_mi    0.01759856  0.012280571  1.000000000   0.872648604
+## Elps_Time_hrs  0.04401155  0.033402677  0.872648604   1.000000000</code></pre>
+<pre class="r"><code>tidy_plot_1&lt;-cor(full_plot1)%&gt;%as.data.frame%&gt;%  rownames_to_column%&gt;%  pivot_longer(-1,names_to=&quot;colname&quot;,values_to=&quot;correlation&quot;)
+tidy_plot_1</code></pre>
+<pre><code>## # A tibble: 81 x 3
+##    rowname     colname       correlation
+##    &lt;chr&gt;       &lt;chr&gt;               &lt;dbl&gt;
+##  1 Activity.ID Activity.ID       1      
+##  2 Activity.ID Year              0.932  
+##  3 Activity.ID Month             0.0981 
+##  4 Activity.ID Day               0.00569
+##  5 Activity.ID PRCP             -0.0212 
+##  6 Activity.ID TMAX             -0.0723 
+##  7 Activity.ID TMIN             -0.0916 
+##  8 Activity.ID Distance_mi       0.00594
+##  9 Activity.ID Elps_Time_hrs     0.0234 
+## 10 Year        Activity.ID       0.932  
+## # … with 71 more rows</code></pre>
+<pre class="r"><code>tidy_plot_1%&gt;%ggplot(aes(rowname,colname,fill=correlation))+  geom_tile()+  scale_fill_gradient2(low=&quot;tomato4&quot;,mid=&quot;white&quot;,high=&quot;darkolivegreen3&quot;)+geom_text(aes(label=round(correlation,2)),color = &quot;black&quot;, size = 4)+ theme(axis.text.x = element_text(angle = 90, hjust=1))+coord_fixed()+ggtitle(&quot;Correlation Heat Map&quot;) + ylab(&quot;Columns&quot;) + xlab(&quot;Rows&quot;)</code></pre>
+<p><img src="/project1_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>As seen in the correlation heat map above, only a few of the numeric variables strongly correlate to one another. Logically, the elapsed activity time and the distance are positively correlated (0.87), maximum and minimum temperatures are positively correlated (0.89). The only notable negative correlation is the weak, but intriguing, relationships between <code>Year</code> and <code>TMAX</code> or <code>TMIN</code> (each -0.11).</p>
+</div>
+<div id="visualization-average-run-distance-per-day-of-the-week" class="section level2">
+<h2>4.1) Visualization: Average Run Distance per Day of the Week</h2>
+<p><em>Data visualizatoin via bar chart with error bars.</em></p>
+<pre class="r"><code>#viz2 data here
+#Avg distance per day of the week, with error bars
+plot1_dist&lt;-fulldata %&gt;% filter(Activity.Type== &quot;Run&quot;) %&gt;% ggplot( aes(x = DoW,y=Distance_mi, fill=DoW))+  geom_bar(stat=&quot;summary&quot;, fun.y=&quot;mean&quot;) +geom_errorbar(stat=&quot;summary&quot;, width=.5, color=&quot;black&quot;)+
+        scale_x_discrete(limits=c(&quot;Sunday&quot;, &quot;Saturday&quot;,&quot;Friday&quot;,&quot;Thursday&quot;,&quot;Wednesday&quot;,&quot;Tuesday&quot;,&quot;Monday&quot;))+ coord_flip()+ theme(legend.position=&quot;none&quot;) +theme(panel.background = element_rect(fill=&quot;grey95&quot;)) +
+  ggtitle(&quot;Average Run Distance per Day of the Week&quot;) + ylab(&quot;Distance (miles)&quot;) + xlab(&quot;Day&quot;)+scale_fill_manual(values=c(&quot;tomato&quot;,&quot;darkolivegreen3&quot;,&quot;goldenrod1&quot;,&quot;cadetblue4&quot;,&quot;rosybrown1&quot;,&quot;thistle&quot;,&quot;lightblue2&quot; ))
+plot1_dist</code></pre>
+<p><img src="/project1_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The most notable finding depicted in this chart is the drastically increased average distance for runs logged on Saturdays, relative to all other days of the week. This is likely a result of the fact that most of the ultra-races Steve runs begin early on Saturday mornings. The average distance for Sunday runs, about 12.5 miles, is also significantly different from all other days of the week. Throughout the work week, Tuesday-Thursay in particular, Steve’s average run distances are much more similar, between 7 to 11 miles.</p>
+</div>
+<div id="visualization-maximum-temperature-during-long-runs" class="section level2">
+<h2>4.2) Visualization: Maximum Temperature During Long Runs</h2>
+<p><em>Stat plot of long runs (greater than 25 miles), categorized by temperature.</em></p>
+<pre class="r"><code>#viz3 data here
+#Max temp of runs longer than 25 miles, size by elapsed time
+fulldata2 &lt;- fulldata %&gt;% mutate(Max_Temp_Cat=case_when(TMAX&gt;90 ~ &quot;&gt;90&quot;, 70&lt;=TMAX &amp; TMAX&lt;=90 ~ &quot;70-90&quot;, 50&lt;=TMAX &amp; TMAX&lt;=70 ~ &quot;50-70&quot;,TMAX&lt;50 ~ &quot;&lt;50&quot;))
+fulldata2$Max_Temp_Cat &lt;- factor(fulldata2$Max_Temp_Cat, levels = c(&quot;&gt;90&quot;, &quot;70-90&quot;, &quot;50-70&quot;,&quot;&lt;50&quot;))
+fulldata2 %&gt;% filter(Activity.Type==&quot;Run&quot;, Distance_mi&gt;25)%&gt;%ggplot(aes(TMAX, Distance_mi, color=Max_Temp_Cat))+
+                geom_point(aes(size=Elps_Time_hrs), alpha=.45) + geom_jitter()+
+  ggtitle(&quot;Elapsed Time and Max Temperature for Long Runs&quot;) + ylab(&quot;Distance (miles)&quot;) + xlab(&quot;Maximum Temperature&quot;) + labs(color= &quot;Maximum Temperature Range&quot;, size= &quot;Elapsed Time (hours)&quot;)+
+  scale_y_continuous(breaks=c(25,35,45,55,65,75,85,95,105))+scale_color_manual(values=c(&quot;tomato&quot;,&quot;goldenrod&quot;,&quot;thistle&quot;,&quot;cadetblue4&quot; ))</code></pre>
+<p><img src="/project1_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>This plot shows a breakdown of the details for Steve’s logged runs that were over 25 miles long. The data shows that all runs over 65 miles were logged on days with maximum temperatures greater than 70 degrees. We can observe that father runs tend to take longer(larger circle size), but we also see that many activities had very similar distance but noticeably different elapsed times. An additional trend depicted is the increase in number of these long runs as maximum temperature increases.</p>
+</div>
+<div id="visualization-seasonal-run-distance" class="section level2">
+<h2>4.3) Visualization: Seasonal Run Distance</h2>
+<p><em>A cool density plot of run distances, facet wrapped by year.</em></p>
+<pre class="r"><code>#viz4 data here
+#density plot of distances each season, facet wrap by year
+fulldata3&lt;- fulldata%&gt;%mutate(Season=case_when(Month==&quot;12&quot; | Month == &quot;2&quot; | Month ==&quot;1&quot; ~ &quot;Winter&quot;, Month==&quot;9&quot; | Month == &quot;10&quot; | Month ==&quot;11&quot; ~ &quot;Fall&quot;, &quot;6&quot;&lt;=Month &amp; Month&lt;=&quot;8&quot; ~ &quot;Summer&quot;, &quot;3&quot;&lt;=Month &amp; Month&lt;=&quot;5&quot; ~ &quot;Spring&quot;)) 
+hist_plot &lt;- fulldata3 %&gt;% filter(Activity.Type==&quot;Run&quot;) %&gt;%ggplot(aes(x=Distance_mi, fill=Season, color=Season)) + theme(legend.position=c(.9,.7)) + geom_density(alpha=.4) +ggtitle(&quot;Run Distances per Season&quot;) + ylab(&quot;density&quot;) + xlab(&quot;Distance (miles)&quot;) + scale_fill_manual(values=c(&quot;tomato&quot;, &quot;darkolivegreen3&quot;, &quot;goldenrod1&quot;,&quot;lightblue2&quot;)) + scale_color_manual(values=c(&quot;tomato&quot;, &quot;darkolivegreen3&quot;, &quot;goldenrod1&quot;,&quot;lightblue2&quot;))
+
+hist_plot +facet_wrap(~Year)</code></pre>
+<p><img src="/project1_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Visualizing Steve’s running distances with a density plot helps to compare his trends between years, and throughout the seasons of each year. Categories for each of the four seasons were created using the <code>Month</code> variable. An interesting observation is the that the shapes of the curves for each season are distinctly different in 2013, but shift to be almost entirely overlapping by 2019. Of course, the only runs logged in 2020 were during the winter months of January and February, which is shown in the graph. With the exception of 2020, we can also see that the extreme distance runs (&gt;90 miles) were logged in the summer or fall. This makes sense with the trends seen in the previous graph comparing distance and max temperature.</p>
+</div>
+<div id="dimentionality-reduction" class="section level2">
+<h2>5) Dimentionality Reduction</h2>
+<p><em>Clustering <code>fulldata</code> via PAM</em></p>
+<pre class="r"><code>#clustering
+library(cluster)
+pam1&lt;-fulldata%&gt;%filter(Activity.Type==&quot;Run&quot;)
+pam2&lt;- pam1%&gt;%select(Elps_Time_hrs, Distance_mi, PRCP, TMAX,TMIN)%&gt;%scale()%&gt;%pam(k=3) 
+pam2</code></pre>
+<pre><code>## Medoids:
+##        ID Elps_Time_hrs Distance_mi       PRCP      TMAX       TMIN
+## [1,] 1113    -0.2453967  -0.2495506         NA        NA         NA
+## [2,]  218     0.9880305   1.5173879 -0.2599508 0.2766341 0.03832849
+## [3,]  998     8.0256087   8.8841720  0.7770990 0.9055652 0.46242080
+## Clustering vector:
+##   [1] 1 2 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 1 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 1
+##  [38] 1 2 1 1 1 1 2 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 1 2 1 1 2 1 1 1 1 1 2 1 1 1 1
+##  [75] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 1
+##  [ reached getOption(&quot;max.print&quot;) -- omitted 1014 entries ]
+## Objective function:
+##     build      swap 
+## 0.6654197 0.6654197 
+## 
+## Available components:
+##  [1] &quot;medoids&quot;    &quot;id.med&quot;     &quot;clustering&quot; &quot;objective&quot;  &quot;isolation&quot; 
+##  [6] &quot;clusinfo&quot;   &quot;silinfo&quot;    &quot;diss&quot;       &quot;call&quot;       &quot;data&quot;</code></pre>
+<pre class="r"><code>final&lt;-pam1%&gt;%mutate(cluster=as.factor(pam2$clustering))
+confmat&lt;-final%&gt;%group_by(DoW)%&gt;%count(cluster)%&gt;%arrange(desc(n))%&gt;%
+  pivot_wider(names_from=&quot;cluster&quot;,values_from=&quot;n&quot;,values_fill = list(&#39;n&#39;=0))
+confmat</code></pre>
+<pre><code>## # A tibble: 7 x 4
+## # Groups:   DoW [7]
+##   DoW         `1`   `2`   `3`
+##   &lt;chr&gt;     &lt;int&gt; &lt;int&gt; &lt;int&gt;
+## 1 Wednesday   194     0     0
+## 2 Tuesday     184     1     0
+## 3 Thursday    164     2     1
+## 4 Friday      161     2     2
+## 5 Sunday      159    38     0
+## 6 Saturday    100    63     5
+## 7 Monday       36     2     0</code></pre>
+<pre class="r"><code>#accuracy
+round(sum(diag(as.matrix(confmat[,2:4])))/sum(confmat[,2:4]),3)</code></pre>
+<pre><code>## [1] 0.176</code></pre>
+<pre class="r"><code>ggplot(final, aes(x= TMAX,y=Distance_mi, color=cluster))+geom_point() +ggtitle(&quot;PAM Clusters: Max Temp vs. Distance&quot;) + ylab(&quot;Distance (miles)&quot;) + xlab(&quot;Maximum Temperature (degrees Farenheight)&quot;)+scale_color_manual(values=c(&quot;goldenrod1&quot;,&quot;darkolivegreen3&quot;,&quot;cadetblue4&quot;))</code></pre>
+<p><img src="/project1_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>pam2$silinfo$avg.width</code></pre>
+<pre><code>## [1] 0.3409923</code></pre>
+<p>After selecting for five numeric variables in <code>fulldata</code> and filtering for <code>Activity.Type==&quot;Run&quot;</code>, PAM cluster analysis was performed using 3 clusters (k=3). The data from the PAM object (<code>pam2</code>) was then saved as a column that was added to the filtered dataset, and saved as <code>final</code>. The <code>final</code> dataset was used to create a simple plot of <code>TMAX</code> vs. <code>Distance_mi</code>, colored by cluster number. From this graph, we see that the clusters separate the distance variable well, but do not represent temperature variation well. To more concretely asses the strength of the clusters, average silhouette width was calculated and found to be 0.341 indicating that only a weak structure was found.</p>
+<pre class="r"><code>library(GGally)
+ggpairs(final, columns=c(12,13,15,16), aes(color=cluster))</code></pre>
+<p><img src="/project1_files/figure-html/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Using the original PAM cluster data (k=3), a <code>ggpairs</code> plot was created to visualize the interactions between 4 out of the 5 numeric variables originally selected. The fifth variable, <code>PRCP</code>, was lef tout for simplicity as it did not contribute any useful information to the commparisons. The resulting visualization shows that <code>Distance_mi</code> is highly correltaed to <code>Elps_Time_hrs</code>, and <code>TMAX</code> is highly correlated to <code>TMIN</code>. These relationships are clearly logical and were to be expected from this data. <code>Distance_mi</code> and <code>Elps_Time_hrs</code> are both very weakly correlated to <code>TMAX</code> and <code>TMIN</code>. The scatterplot of <code>Distance_mi</code> and <code>Elps_Time_hrs</code> most clearly shows the three distinct clusters from PAM analysis.</p>
+</div>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/docs.min.js"></script>
+<script src="/js/main.js"></script>
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>

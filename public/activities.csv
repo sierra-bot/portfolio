@@ -1,0 +1,1174 @@
+Activity.ID,Activity.Date,Activity.Name,Activity.Type,Activity.Description,Elapsed.Time,Distance,Relative.Effort,Commute,Activity.Gear,Filename
+45805954,"Mar 20, 2013, 12:04:12 PM",LBL Wed mornings,Run,,3986,16.27,,FALSE,,activities/50748078.tcx.gz
+45805957,"Mar 23, 2013, 1:35:12 PM",Marathon route north sorta,Run,Boston training 2013,9074,33.89,,FALSE,,activities/50748079.tcx.gz
+46044409,"Mar 27, 2013, 12:04:52 PM","LBL Wed March 27, 2013",Run,dialing in for Boston,3801,16.29,,FALSE,,activities/51001077.tcx.gz
+46833776,"Mar 29, 2013, 10:49:11 PM",Bike ride home,Ride,,1246,7.93,,TRUE,,activities/51852819.tcx.gz
+46951561,"Mar 29, 2013, 11:39:56 PM",Ladera Norte loop,Run,,4328,17.22,,FALSE,,activities/51982152.tcx.gz
+46969554,"Apr 2, 2013, 5:36:14 PM",Hill Repeat,Run,One UP leg of my noon hill repeats,92,0.39,,FALSE,,activities/52000826.tcx.gz
+46969981,"Apr 2, 2013, 5:42:12 PM",Clark Field Track ,Run,One mile on Clark track during mile repeats,331,1.67,,FALSE,,activities/52001261.tcx.gz
+46972343,"Apr 1, 2013, 10:04:42 PM",Ride home,Ride,,1185,7.78,,TRUE,,activities/52003687.tcx.gz
+47075277,"Apr 3, 2013, 12:11:32 PM",04/03/2013 CongressLoopEasy,Run,Post storm morning darkness with work group,1935,6.92,,FALSE,,activities/52115657.tcx.gz
+47075320,"Apr 3, 2013, 12:55:16 PM",04/03/2013 PflugerLoop,Run,"Faster 3 after an easy 5, w/flood detour.",1150,4.87,,FALSE,,activities/52115704.tcx.gz
+47374413,"Apr 5, 2013, 5:33:36 PM",NoonLakeLoop,Run,beginning to taper for Boston,3454,13.98,,FALSE,,activities/52435665.tcx.gz
+47854028,"Apr 7, 2013, 2:15:06 PM",WarmUpGoCooldown,Run,how will Boston turn out?,2502,10.77,,FALSE,,activities/52958749.tcx.gz
+48294190,"Apr 8, 2013, 3:18:04 PM",WedMorningWithBrent,Run,days of week are messed up,2703,9.79,,FALSE,,activities/53428530.tcx.gz
+49609911,"Apr 16, 2013, 3:02:29 AM",Boston Marthon 2013,Run,"Yep, that Boston marathon...",10390,43.11,,FALSE,,activities/54830209.tcx.gz
+50129687,"Apr 20, 2013, 12:23:40 PM",Austin Funners Sat BCG,Run,missed about half a mile on powerline,7762,15.39,,FALSE,,activities/55388734.tcx.gz
+50151401,"Apr 19, 2013, 5:35:32 PM",Campus Pease Park loop,Run,noon route,3088,11.76,,FALSE,,activities/55411833.tcx.gz
+50256770,"Apr 22, 2013, 5:00:00 AM",LaderaNorte to Greystone loop,Run,,4020,15.28,,FALSE,,
+50439709,"Apr 24, 2013, 12:06:08 PM",BusinessMeeting,Run,3 talking and 3 running,2548,9.45,,FALSE,,activities/55718089.tcx.gz
+52902602,"Apr 27, 2013, 11:42:24 AM",TourForBrent,Run,just a quick tour of Brent's backyard trails,5214,12.4,,FALSE,,activities/58360739.tcx.gz
+53441709,"May 5, 2013, 1:38:38 PM",Sunday Drive at the Nut,Run,,11079,34.2,,FALSE,,activities/58938018.tcx.gz
+54014957,"May 11, 2013, 2:56:50 PM",Real Ale Tune Up,Ride,Getting ready for Real Ale Ride,3006,20.14,,FALSE,,activities/59547088.tcx.gz
+54399754,"May 15, 2013, 12:04:18 PM",Wed run with work peeps,Run,Still have stitches...,3074,11.18,,FALSE,,activities/59960790.tcx.gz
+54733266,"May 17, 2013, 5:33:54 PM",NoonCrashAndBurn,Run,heat training starts,3705,13.48,,FALSE,,activities/60316074.tcx.gz
+54733428,"May 17, 2013, 5:31:02 PM",Glitch?TestingWatch,Run,watch acting funny,143,1.92,,FALSE,,activities/60316246.tcx.gz
+55316149,"May 18, 2013, 1:16:52 PM",Real Ale Ride 2013 Blanco,Ride,First group ride and 50mi distance,11054,78.72,,FALSE,,activities/60937858.tcx.gz
+55550228,"May 21, 2013, 5:33:54 PM",Salt Bath Tuesday,Run,Typical Tuesday repeats,2316,8.2,,FALSE,,activities/61188773.tcx.gz
+55667330,"May 22, 2013, 12:05:28 PM",Wednesday Ass Whuppin,Run,Last nice morning of spring,3879,16.47,,FALSE,,activities/61314046.tcx.gz
+56045493,"May 24, 2013, 5:10:18 PM",Lunch Heat Redoux,Run,Less sun but more humid,3864,13.99,,FALSE,,activities/61719148.tcx.gz
+56763793,"May 25, 2013, 2:51:44 PM",Soggy Toes Thomas Saturday,Run,In the rain and mud!,9147,33.25,,FALSE,,activities/62483231.tcx.gz
+56763892,"May 26, 2013, 3:22:08 PM","The Hangover, Part 1",Run,Late start after night on Rainey Street,4750,17.47,,FALSE,,activities/62483336.tcx.gz
+56826801,"May 28, 2013, 5:36:08 PM",Hard 6 Nooner!,Run,"Yep, I said it.",2956,9.67,,FALSE,,activities/62549844.tcx.gz
+56939387,"May 29, 2013, 12:07:28 PM","Tour, Blow Job, Tail",Run,"Toured for Ricky, massive wind gusts, tail wind home",4189,16.51,,FALSE,,activities/62668982.tcx.gz
+57351981,"May 31, 2013, 5:24:22 PM",PeaseParkPathway,Run,checking on the vball courts at lunch,2875,11.02,,FALSE,,activities/63106185.tcx.gz
+57928094,"Jun 1, 2013, 3:00:34 PM","The Hangover, Part 2",Run,Too many cold ones the night before?,8234,25.04,,FALSE,,activities/63722143.tcx.gz
+57928225,"Jun 2, 2013, 2:00:48 PM",Virgin HRM up LD,Run,First time wearing the HRM ev-va,4647,17.44,89,FALSE,,activities/63722280.tcx.gz
+58201562,"Jun 4, 2013, 5:10:56 PM",Typical Tuesday,Run,What happened to the splits?,2976,9.66,,FALSE,,activities/64009678.tcx.gz
+58367695,"Jun 5, 2013, 12:07:58 PM",Wed morning lake tour,Run,Ran with Josh,4117,16.41,,FALSE,,activities/64185948.tcx.gz
+58879070,"Jun 7, 2013, 4:34:58 PM",Friday LBL Loop from work,Run,Hot but not that hot,3587,13.93,,FALSE,,activities/64729737.tcx.gz
+60949476,"Jun 9, 2013, 1:56:04 PM",Disc Golf Course Scouting,Run,Arlington VA trip to DC,4370,15.33,,FALSE,,activities/66925321.tcx.gz
+60949678,"Jun 12, 2013, 1:20:56 PM",Rock Creek Park DC Tour,Run,Run to the Zoo!,6657,18.12,,FALSE,,activities/66925516.tcx.gz
+61264040,"Jun 18, 2013, 5:51:28 PM",Tuesday Cooker,Run,Humid!,3120,9.66,,FALSE,,activities/67260234.tcx.gz
+61426461,"Jun 19, 2013, 12:07:34 PM",Tickle Me Thomas Trail Challenge,Run,last mile at sub 6?,4145,16.35,,FALSE,,activities/67432465.tcx.gz
+62531780,"Jun 22, 2013, 11:59:50 PM",Capt'n Karl's PFalls 60k,Run,Night run,18129,58.41,,FALSE,,activities/68667089.tcx.gz
+62989241,"Jun 26, 2013, 12:04:58 PM",Wed PF60k Shakeout,Run,Steady Eddie with Josh,4295,16.41,,FALSE,,activities/69166439.tcx.gz
+63421293,"Jun 28, 2013, 5:15:00 PM","No Crash, Just Burn",Run,,3525,13.68,,FALSE,,
+63831798,"Jun 29, 2013, 1:07:02 PM",TownLake Tour with Thomas,Run,hot morning,4401,16.52,,FALSE,,activities/70052946.tcx.gz
+63832895,"Jun 30, 2013, 2:35:06 PM",LD on tired legs and keg beer,Run,,4700,17.38,138,FALSE,,activities/70054107.tcx.gz
+65670781,"Jul 5, 2013, 2:02:22 PM",Hardrock course-partial,Run,Silverton to Chapman aid station,16212,25.78,,FALSE,,activities/71996632.tcx.gz
+65671784,"Jul 4, 2013, 2:00:00 PM",Rundola Ski Mtn Race Telluride,Run,Up the ski mountain!,1644,2.12,,FALSE,,activities/71997817.tcx.gz
+65672325,"Jul 3, 2013, 2:55:54 PM",Gold Mine Loop,Run,A little extra out & back on Wilson trail,5920,13.46,,FALSE,,activities/71998386.tcx.gz
+65673156,"Jul 2, 2013, 4:37:12 PM",Cabin to Telluride,Run,Galloping Goose Trail,5763,19.1,,FALSE,,activities/71999273.tcx.gz
+65912266,"Jul 9, 2013, 5:53:54 PM",Tuesday Taper,Run,Getting loose for Saturday's race,1185,4.88,,FALSE,,activities/72250217.tcx.gz
+66090037,"Jul 10, 2013, 12:05:22 PM",Whoa Nellie!,Run,Reverse Progression to taper,4344,16.41,,FALSE,,activities/72435924.tcx.gz
+67261403,"Jul 14, 2013, 12:00:00 AM",Capt'n Karl's Muleshoe 60k,Run,,20030,58.03,,FALSE,,activities/73665036.tcx.gz
+67767706,"Jul 17, 2013, 12:05:12 PM",Wed MS60k Shakeout,Run,Nice and easy with Josh,4381,16.45,,FALSE,,activities/74193577.tcx.gz
+68087203,"Jul 18, 2013, 5:45:32 PM",Thurs Pease Park Sweatfest,Run,Trying to get the legs back...,2955,11.04,,FALSE,,activities/74527271.tcx.gz
+68317906,"Jul 19, 2013, 5:53:48 PM",Friday LBL Loop from work,Run,HUMID!,3848,13.9,,FALSE,,activities/74769679.tcx.gz
+68790046,"Jul 21, 2013, 2:55:50 PM",HouseTrackHouseLoop,Run,2WU3Repeats2CD,3293,11.28,,FALSE,,activities/75276205.tcx.gz
+68790820,"Jul 21, 2013, 12:18:14 PM",Canoe Paddle,Windsurf,With Nate in the bow,4810,4.9,,,,activities/75277024.tcx.gz
+69287236,"Jul 23, 2013, 5:22:04 PM",Tuesday Hill Repeats,Run,One gratuitous mile at the end ,3200,9.72,,FALSE,,activities/75800632.tcx.gz
+69451029,"Jul 24, 2013, 12:04:46 PM",Wednesday Morning Quicky ,Run,Good pace with Josh,4124,16.44,,FALSE,,activities/75971794.tcx.gz
+70002097,"Jul 26, 2013, 5:06:02 PM",Noon Burner with Jeff M,Run,Toasty!,4278,14.66,,FALSE,,activities/76558968.tcx.gz
+70405126,"Jul 27, 2013, 12:57:00 PM",Greenbelt Tour for Jeff,Run,"Thomas, Jeff and I to HOL and back",15043,31.94,,FALSE,,activities/76986307.tcx.gz
+71159701,"Jul 31, 2013, 12:05:30 PM",Pre race stretch run,Run,3/4 reins,4153,16.43,,FALSE,,activities/77783326.tcx.gz
+72376356,"Aug 4, 2013, 12:00:00 AM",Capt'n Karl's ColoradoBend Pt 1,Run,messed up watch during race,1391,4.29,,FALSE,,activities/79071211.tcx.gz
+72376544,"Aug 4, 2013, 12:23:18 AM",Capt'n Karl's ColoradoBend Pt 2,Run,second place,19148,55.4,,FALSE,,activities/79071378.tcx.gz
+72963701,"Aug 7, 2013, 12:05:46 PM",Post 60k Shakeout,Run,sore hip from fall but otherwise decent,4400,16.32,,FALSE,,activities/79685874.tcx.gz
+73909238,"Aug 11, 2013, 4:17:27 PM",DRT partial,Run,,3209,9.78,,FALSE,,activities/73909238.gpx
+75648147,"Aug 12, 2013, 3:08:40 PM",Sunriver to Bend River Trail,Run,,11789,33.78,,FALSE,,activities/82519020.tcx.gz
+75648719,"Aug 11, 2013, 2:50:22 PM",Sunriver DRT Scouting Run,Run,Out and back from Sunriver,8387,20.48,,FALSE,,activities/82519629.tcx.gz
+75649272,"Aug 14, 2013, 3:51:08 PM",Sunriver Forest Service Road Exploring,Run,,4593,14.87,,FALSE,,activities/82520191.tcx.gz
+75649888,"Aug 18, 2013, 1:28:46 PM",Ladera Norte Loop,Run,Day after vacation travel,4608,17.44,,FALSE,,activities/82520849.tcx.gz
+76410688,"Aug 21, 2013, 12:06:18 PM",No frills Wednesday pre-race,Run,,4170,16.37,,FALSE,,activities/83325864.tcx.gz
+76677671,"Aug 22, 2013, 12:09:38 PM",Semi-tapering,Run,With Chris McW Thurs b/f 60k on Sat,4883,17.01,,FALSE,,activities/83604883.tcx.gz
+77684088,"Aug 25, 2013, 12:00:00 AM",Capt'n Karl's RPR 60k Night Series,Run,"Final race, short?",20335,56.47,,FALSE,,activities/84668203.tcx.gz
+78536472,"Aug 29, 2013, 12:00:00 PM",Wednesday Shake Out,Run,,3300,12.87,,FALSE,,
+78536676,"Aug 29, 2013, 5:47:00 PM",Thursday Crowded Campus,Run,,1860,8.04,,FALSE,,
+79721068,"Sep 1, 2013, 12:43:54 PM",Pre TM 5k to Camp Mabry,Run,,2930,10.29,,FALSE,,activities/86827130.tcx.gz
+79785061,"Sep 1, 2013, 2:14:24 PM",Travis Manion 5k Race,Run,Camp Mabry,1131,5.05,,FALSE,,activities/86893899.tcx.gz
+79790743,"Sep 1, 2013, 3:05:10 PM",Post TM 5k from Camp Mabry ,Run,Toasty and tired,2891,9.57,,FALSE,,activities/86899756.tcx.gz
+79816727,"Sep 2, 2013, 3:13:56 PM",Walnut Creek Heater,Run,late start,7938,24.14,,FALSE,,activities/86927639.tcx.gz
+79816990,"Sep 2, 2013, 7:55:24 PM",One lap at Walnut Creek,Ride,Sandi's demo ride,4310,13.31,,FALSE,,activities/86927908.tcx.gz
+79980682,"Sep 4, 2013, 12:03:20 PM",Wednesday Work Run,Run,Feeling loaded,4123,16.41,,FALSE,,activities/87102042.tcx.gz
+80558862,"Sep 6, 2013, 5:34:02 PM",Friday Cooker,Run,"typical route, nice and hot",3877,13.95,,FALSE,,activities/87714495.tcx.gz
+81469136,"Sep 8, 2013, 2:59:36 PM",Sunday Service,Run,2 different laps,6050,17.98,,FALSE,,activities/88692140.tcx.gz
+81579381,"Sep 10, 2013, 5:43:58 PM",Pease Park Lunch Ramble,Run,,3277,12.88,,FALSE,,activities/88809084.tcx.gz
+81761381,"Sep 11, 2013, 12:31:12 PM",9/11 TRWB Honor the Fallen,Run,"got crowded, walking/hiking",6486,5.73,,FALSE,,activities/89000974.tcx.gz
+82002127,"Sep 12, 2013, 5:31:32 PM",Thurs Hill Repeats,Run,3 sets of 2,1513,4.84,,FALSE,,activities/89255400.tcx.gz
+82002324,"Sep 12, 2013, 5:59:26 PM",Clark field miles,Run,"2 x mile, inside and outside lanes",1000,3.31,,FALSE,,activities/89255634.tcx.gz
+82195630,"Sep 13, 2013, 5:27:58 PM",Town Lake Nooner,Run,still hot,3627,14.49,,FALSE,,activities/89463175.tcx.gz
+83097479,"Sep 17, 2013, 5:43:08 PM",Tues Hill Repeats,Run,going thru the taper motions,1527,4.87,,FALSE,,activities/90423526.tcx.gz
+83097679,"Sep 17, 2013, 6:11:54 PM",One Whole Mile,Run,blah blah blah,375,1.64,,FALSE,,activities/90423747.tcx.gz
+83245909,"Sep 18, 2013, 12:03:44 PM",Wednesday Work Run,Run,must. start. tapering,4197,16.46,,FALSE,,activities/90580005.tcx.gz
+84438293,"Sep 22, 2013, 1:41:34 PM",Taper Pace Hood Loop,Run,power hike up LD off the record,5015,15.49,,FALSE,,activities/91848459.tcx.gz
+87815310,"Sep 25, 2013, 12:03:46 PM",PreRace Stretcher,Run,MOG100 3 days later,2159,7.53,,FALSE,,activities/95509208.tcx.gz
+87815797,"Oct 7, 2013, 3:22:25 AM",Sunday Recovery in the Hood,Run,After one week post MOG100,2698,9.84,,FALSE,,activities/95509710.tcx.gz
+87816009,"Oct 8, 2013, 6:06:57 AM",Pease Park Lunch Ramble,Run,Actually on Monday 7th,3520,12.78,,FALSE,,activities/95509948.tcx.gz
+87816961,"Sep 28, 2013, 7:00:00 AM",Mogollon Monster 106,Run,,77640,171.39,,FALSE,,
+88032427,"Oct 9, 2013, 12:01:44 PM",Wednesday Work Run,Run,Almost 100% recovered,4135,16.46,,FALSE,,activities/95741271.tcx.gz
+88222807,"Oct 10, 2013, 4:52:16 PM",Town Lake Nooner,Run,still hot but feeling recovered!,3602,13.9,,FALSE,,activities/95945751.tcx.gz
+89007319,"Oct 12, 2013, 2:52:40 PM",Rogue Store ACL LBL Loop,Run,Muggy!,4950,19.58,,FALSE,,activities/96809453.tcx.gz
+89257241,"Oct 15, 2013, 5:25:38 PM",Tues Hill Repeats,Run,,2614,8.08,,FALSE,,activities/97087187.tcx.gz
+89637265,"Oct 17, 2013, 4:01:56 PM",Town Lake Nooner,Run,Nice day!,3598,14.51,,FALSE,,activities/97520894.tcx.gz
+90492409,"Oct 19, 2013, 3:02:02 PM",Muleshoe Campout Pt1,Run,Nice and easy ,4051,11.6,,FALSE,,activities/98490944.tcx.gz
+90496420,"Oct 20, 2013, 3:22:54 PM",Muleshoe Campout Pt2,Run,Sunday morning in reverse,4063,11.89,,FALSE,,activities/98495322.tcx.gz
+90851501,"Oct 23, 2013, 12:03:08 PM",Wednesday Work Run,Run,Easy stroll 3 days from Cactus 50,2132,7.74,,FALSE,,activities/98889465.tcx.gz
+91863422,"Oct 26, 2013, 9:58:54 AM",Cactus Rose 50mi,Run,Battery died and so did I.,27631,76.19,,FALSE,,activities/100024549.tcx.gz
+93608485,"Nov 6, 2013, 2:15:10 PM",Wednesday Morning Usual,Run,Didn't start watch on time,3522,14.28,,FALSE,,activities/102081227.tcx.gz
+95829693,"Nov 16, 2013, 12:59:58 PM",Wild Hare 50mi 2013,Run,Too twisty for gps accuracy?,24637,76.79,,FALSE,,activities/104657869.tcx.gz
+96210066,"Nov 20, 2013, 2:05:08 PM",Gentle Hoka Recovery,Run,Decent post Wild Hare,4383,16.41,,FALSE,,activities/105080825.tcx.gz
+99425191,"Dec 8, 2013, 1:58:32 PM",Decker Challenge Half Marathon 2013,Run,Pacer for 1:30 group and KOM masters,5481,21.27,,FALSE,,activities/108709710.tcx.gz
+99425365,"Nov 27, 2013, 6:08:44 PM",Taco Trot partial catch,Run,Watch didn't start on time,3230,14,,FALSE,,activities/108709909.tcx.gz
+99717776,"Dec 11, 2013, 1:03:30 PM",Wednesday Morning LBL,Run,smooth and easy with Josh after the half on Sunday,3972,16.5,,FALSE,,activities/109052590.tcx.gz
+99908259,"Dec 12, 2013, 6:20:36 PM",To the Lake and Back Lunch,Run,slowed down to chat with Paul S for a while,3710,14.64,,FALSE,,activities/109258231.tcx.gz
+100340449,"Dec 15, 2013, 2:05:06 PM",Lake and back,Run,,10338,38.07,,FALSE,,activities/100340449.gpx
+100486328,"Dec 15, 2013, 2:06:38 PM",Rocky and Boston,Run,"Two birds, one stone. Duplicate of To the Lake and Back (iphone app).",10053,38.18,,FALSE,,activities/109896879.tcx.gz
+100683933,"Dec 17, 2013, 6:27:52 PM",Pease Park Lunch Loop,Run,New Cascadia 8's,3298,12.88,,FALSE,,activities/110111957.tcx.gz
+100802110,"Dec 18, 2013, 1:02:40 PM",Wednesday Morning LBL,Run,,3888,16.58,,FALSE,,activities/110239497.tcx.gz
+102377345,"Dec 22, 2013, 4:05:00 PM",Red Rock 8k at Moody's,Run,soft pasture,1943,7.94,,FALSE,,activities/111936051.tcx.gz
+102377934,"Dec 26, 2013, 2:02:34 PM",Fat Ass Festivus Marathon,Run,Frankenthon course,11237,42.46,,FALSE,,activities/111936656.tcx.gz
+102804129,"Dec 29, 2013, 4:50:38 PM",Walnut Creek Loop,Run,slow flu recovery,8054,23.45,,FALSE,,activities/112405725.tcx.gz
+103258834,"Jan 1, 2014, 2:58:50 PM",Black Eyed Pea Run,Run,Rei to new Rogue location 300 peeps!,5694,21.83,,FALSE,,activities/112900012.tcx.gz
+103742904,"Jan 3, 2014, 3:56:44 PM",Ladera Norte out and back,Run,,4661,17.47,,FALSE,,activities/113419324.tcx.gz
+103986932,"Jan 4, 2014, 2:03:54 PM",Social Stroll for Joe P's Bday,Run,greenbelt chill with HOL push,11390,24.03,,FALSE,,activities/113683262.tcx.gz
+104232157,"Jan 5, 2014, 1:06:50 PM",Rogue 30k Pacer Practice,Run,Oops...a little faster than our assignment,8045,30.36,,FALSE,,activities/113947300.tcx.gz
+104862534,"Jan 8, 2014, 1:05:06 PM",Easy Status Check in the Rain,Run,Sore psoas from the Sunday race,4355,16.49,,FALSE,,activities/114629463.tcx.gz
+105915058,"Jan 12, 2014, 5:19:38 PM",Walnut Creek Loop,Run,Only one loop today,3473,11.88,,FALSE,,activities/115774993.tcx.gz
+107017897,"Jan 17, 2014, 6:32:20 PM",Lunch Loop to the lake and back,Run,Nice day in ATX!,3712,14.58,,FALSE,,activities/116969952.tcx.gz
+107233847,"Jan 18, 2014, 1:35:40 PM",Walnut Creek Loops,Run,Last long one before Rocky 100,12073,35.37,,FALSE,,activities/117205710.tcx.gz
+107795448,"Jan 20, 2014, 5:24:48 PM",Lady Bird Loop MLK Day,Run,"Warm, windy, legs getting heavy...",4129,16.6,,FALSE,,activities/117818616.tcx.gz
+107796721,"Jan 16, 2014, 7:00:00 PM",Campus Hill Repeats,Run,,2040,8.04,,FALSE,,
+108200008,"Jan 22, 2014, 1:04:54 PM",Lady Bird Loop Wednesday,Run,With Josh. Last run with any effort till Rocky!,4097,16.56,,FALSE,,activities/118255810.tcx.gz
+109176998,"Jan 26, 2014, 3:27:00 PM",Taper Madness,Run,"jog around the hood, stircrazy",1705,6.45,,FALSE,,activities/119307236.tcx.gz
+111213990,"Feb 1, 2014, 12:00:00 PM",Rocky Raccoon first 49,Run,watch battery sux and so did the rest of my run,25593,79.15,,FALSE,,activities/121483849.tcx.gz
+111215150,"Feb 1, 2014, 6:00:00 AM",Rocky Raccoon last 51 miles,Run,,35280,82.07,,FALSE,,
+112852325,"Feb 12, 2014, 1:00:32 PM","Post 100, Pre Marathon check",Run,decent pace but not pushing anything,4262,16.49,,FALSE,,activities/123290911.tcx.gz
+113985057,"Feb 16, 2014, 1:00:08 PM",Austin Marathon 2014,Run,Pace group 3:10 with Colin,11391,42.82,,FALSE,,activities/124657309.tcx.gz
+113985703,"Feb 7, 2014, 6:00:00 AM",Shake out in the hood,Run,,2200,8.04,,FALSE,,
+113985798,"Feb 8, 2014, 6:00:00 AM",Shake out in the hood #2,Run,,2200,8.04,,FALSE,,
+113985991,"Feb 9, 2014, 6:00:00 AM",Lake Loop with 1million other people,Run,,4200,16.41,,FALSE,,
+114302790,"Feb 18, 2014, 6:29:36 PM",Hancock Golf Course Eastwoods Park,Run,shakeout post marathon,2138,7.83,,FALSE,,activities/125012021.tcx.gz
+114468722,"Feb 19, 2014, 1:06:22 PM",Lady Bird Loop Wednesday,Run,Post marathon with Josh,4391,16.5,,FALSE,,activities/125194944.tcx.gz
+114976947,"Feb 21, 2014, 6:42:28 PM",Lunch Lake Loop,Run,,3487,13.44,,FALSE,,activities/125759009.tcx.gz
+115604921,"Feb 22, 2014, 1:02:10 PM",Easy Saturday Stretch with the guys,Run,Erik and Mike; race next Sat,3217,11.32,,FALSE,,activities/126470696.tcx.gz
+117762674,"Mar 1, 2014, 12:00:02 PM",Nueces 50mi Tejas Trails Race,Run,hot for last loop but not tragic,26425,73.82,,FALSE,,activities/128851389.tcx.gz
+121600512,"Mar 16, 2014, 2:11:36 PM",Mac Mile Repeats,Run,First ones this year. Post T-ride road trip.,1488,4.95,,FALSE,,activities/133125165.tcx.gz
+121601026,"Mar 13, 2014, 5:36:18 PM",Snow Shoe Hike,Snowshoe,,3027,2.07,,,,activities/133125719.tcx.gz
+121823150,"Mar 18, 2014, 5:09:30 PM",4x800 and Mile Cool Down,Run,Clark Field at lunch,1772,4.9,,FALSE,,activities/133371063.tcx.gz
+122053996,"Mar 19, 2014, 12:03:36 PM",LBL Around the Lake,Run,"2mi warm up, 8mi work out",4313,16.57,,FALSE,,activities/133623816.tcx.gz
+122726270,"Mar 21, 2014, 4:48:18 PM",Lunch jog with the boyz,Run,TO and Lalo,4049,12.04,,FALSE,,activities/134360536.tcx.gz
+123567695,"Mar 22, 2014, 3:31:22 PM",Ladera Norte Out 'n Back,Run,PR? Didn't feel like it.,4564,17.47,,FALSE,,activities/135293335.tcx.gz
+123910123,"Mar 25, 2014, 5:40:18 PM",6 x 800m track,Run,Clark field lunch,2221,4.94,,FALSE,,activities/135667508.tcx.gz
+124114732,"Mar 26, 2014, 12:15:24 PM",LBL Around the Lake,Run,testing the waters...,3949,16.56,,FALSE,,activities/135890657.tcx.gz
+124114840,"Mar 26, 2014, 11:33:42 AM",Warm up with Brent,Run,Nice warm up before the full loop,2251,6.85,,FALSE,,activities/135890791.tcx.gz
+124685383,"Mar 28, 2014, 5:18:34 PM",Lake and Back Lunch,Run,Getting warm; legs heavy,3653,13.68,,FALSE,,activities/136518520.tcx.gz
+124687927,"Mar 27, 2014, 5:00:00 PM",Precor StairStepper Thing,Workout,,1800,4.82,,FALSE,,
+126043951,"Apr 1, 2014, 5:24:00 PM","3 x 1mi Track, Medium Effort",Run,Gotta save some for Saturday's 50k,1782,5.01,,FALSE,,activities/138009155.tcx.gz
+126238367,"Apr 2, 2014, 12:20:16 PM",Damn Watch,Run,Really 10.1 tapering for Sat 50k,2775,10.42,,FALSE,,activities/138219549.tcx.gz
+127536219,"Apr 5, 2014, 11:00:00 AM",Hell's Hills 50k Rocky Hill Ranch,Run,"last Boston prep, first 50k!",14793,49.42,,FALSE,,activities/139624650.tcx.gz
+128813840,"Apr 9, 2014, 12:06:14 PM",Post 50k Wed Lake Run,Run,Status check,4108,16.48,,FALSE,,activities/140997723.tcx.gz
+129854308,"Apr 13, 2014, 2:14:38 PM",Neighborhood MGP test taper,Run,One week pre-Boston,1529,6.43,,FALSE,,activities/142122418.tcx.gz
+133446606,"Apr 21, 2014, 2:00:36 PM","The Good, Bad and Ugly",Run,Boston Marathon 2014,11102,43.04,,FALSE,,activities/146030459.tcx.gz
+133467627,"Apr 20, 2014, 4:42:48 PM",Pre marathon shake out,Run,In Lincoln at the Weigels,2189,7.54,,FALSE,,activities/146053598.tcx.gz
+135159299,"Apr 27, 2014, 2:20:12 PM",Jog in the hood,Run,"Ribs still sore, legs decent but still tired",1791,7.13,47,FALSE,,activities/147902041.tcx.gz
+135559091,"Apr 29, 2014, 5:52:32 PM",Campus to Pease to West Campus loop,Run,Diversion just for Thomas,2849,10.85,,FALSE,,activities/148334328.tcx.gz
+135814240,"Apr 30, 2014, 12:01:58 PM",Wed LBL loop,Run,"medium, with Josh S",4268,16.47,,FALSE,,activities/148614318.tcx.gz
+136264125,"May 1, 2014, 5:09:54 PM",Lunch Lake Loop,Run,"ribs much better, not too hot today",3710,14.68,,FALSE,,activities/149121164.tcx.gz
+137721901,"May 3, 2014, 4:14:14 PM","Muleshoe Bend: I run, she ride",Run,With Sandi some of the time,7287,20.73,,FALSE,,activities/150708871.tcx.gz
+137722222,"May 4, 2014, 3:02:02 PM",Church of Ladera Norte,Run,climb the mountain,4664,17.56,,FALSE,,activities/150709207.tcx.gz
+138214838,"May 6, 2014, 5:00:00 AM",StairStep Precor Machine,Workout,,1860,6.43,,FALSE,,
+138496448,"May 7, 2014, 12:07:30 PM",Wed LBL loop,Run,Strong finish with Josh,4163,16.39,,FALSE,,activities/151549721.tcx.gz
+138979566,"May 8, 2014, 5:36:24 PM",3 Campus Hills with Cheese,Run,For Thomas. Super humid today.,2068,8.83,,FALSE,,activities/152079525.tcx.gz
+139545651,"May 10, 2014, 12:38:48 PM",Walnut Creek Park,Run,with Gerrardo and Jablin for half,8280,23.31,,FALSE,,activities/152697043.tcx.gz
+141092037,"May 13, 2014, 5:00:00 AM",StairStep Precor Machine,Workout,,1860,6.43,,FALSE,,
+141418969,"May 14, 2014, 12:05:16 PM",Wed LBL loop,Run,"nice weather, with Josh S.",4120,16.47,,FALSE,,activities/154738153.tcx.gz
+141513410,"May 15, 2014, 5:11:00 PM",Lunch Loop in the City,Run,cars suck,3635,13.03,,FALSE,,activities/154840061.tcx.gz
+141902525,"May 16, 2014, 5:38:22 PM",Friday Fun Run,Run,windy and warm. big bike ride tomorrow,6074,21.74,,FALSE,,activities/155266004.tcx.gz
+141902965,"May 16, 2014, 1:08:18 PM",Bike to Work Day,Ride,is every day,1077,7.85,,FALSE,,activities/155266486.tcx.gz
+142586360,"May 17, 2014, 1:17:02 PM",Real Ale Ride 2014 Blanco,Ride,,11472,79.39,,FALSE,,activities/156013621.tcx.gz
+143867927,"May 21, 2014, 11:56:18 AM",Wed LBL loop,Run,with Josh. Felt good. Humid.,4136,16.56,,FALSE,,activities/157413937.tcx.gz
+143869443,"May 20, 2014, 5:00:00 AM",StairStep Precor Machine,Workout,,2340,8.04,,FALSE,,
+144374533,"May 22, 2014, 5:38:54 PM",Pease out N back lunch,Run,sweat fest humid!,3283,12.69,,FALSE,,activities/157973547.tcx.gz
+144691918,"May 23, 2014, 5:06:32 PM",Mt Bonnell Nooner!,Run,a little dicey with traffic and sidewalk access,4348,16.1,,FALSE,,activities/158330238.tcx.gz
+146174841,"May 25, 2014, 1:26:20 PM",Church of Ladera Norte,Run,warm and humid but felt decent,5226,19.61,,FALSE,,activities/159960502.tcx.gz
+146271934,"May 27, 2014, 5:00:00 AM",StairStepper Precor Thing,Workout,,1860,6.43,,FALSE,,
+146537813,"May 28, 2014, 12:07:52 PM",Wed LBL Morning Loop,Run,With Josh. No hammering today.,4226,16.47,,FALSE,,activities/160361742.tcx.gz
+147385310,"May 30, 2014, 5:45:34 PM",Lunch Urban Park Tour,Run,"Pease, Seider Springs, (Ramsey), Bailey, Eastwoods",3742,12.65,,FALSE,,activities/161280117.tcx.gz
+147822065,"May 31, 2014, 2:13:06 PM",Walnut Creek Park,Run,3 laps; summer is here!,12518,34.82,,FALSE,,activities/161754315.tcx.gz
+148287816,"Jun 1, 2014, 4:31:08 PM",Walnut Creek Park,Ride,MTB with Sandi,4137,12.37,,FALSE,,activities/162261308.tcx.gz
+148720968,"Jun 2, 2014, 6:04:10 PM",Old Folks and Yard Men,Run,little different crowd out driving around on weekdays,4975,17.42,,FALSE,,activities/162739110.tcx.gz
+149396941,"Jun 4, 2014, 12:03:42 PM","Let's get Vertical, Vertical, I wanna get Vertical!",Run,need more ups for SJS50,5328,19.57,,FALSE,,activities/163472126.tcx.gz
+151413484,"Jun 8, 2014, 2:03:12 PM",Church of Ladera Norte,Run,summer clam bake,4782,17.73,,FALSE,,activities/165649681.tcx.gz
+151414281,"Jun 7, 2014, 1:34:14 PM","2m WU, 3x1m, CD",Run,disparity b/t gps and track laps,3368,10.92,,FALSE,,activities/165650548.tcx.gz
+152232564,"Jun 11, 2014, 12:03:00 PM",Only One 'First Time'!,Run,first boardwalk boogie,4075,16.26,,FALSE,,activities/166529815.tcx.gz
+157573548,"Jun 21, 2014, 11:00:56 AM",San Juan Solstice 50mi 2014,Run,crappy battery life,27863,57.44,,FALSE,,activities/172273844.tcx.gz
+160362205,"Jun 28, 2014, 10:11:46 PM",Western States 2014 Pacing,Run,Forrest Hill to Hwy 49,21357,50.34,,FALSE,,activities/175334170.tcx.gz
+160362931,"Jun 30, 2014, 11:48:08 AM",Sacramento Shake Out with Liza,Run,,2893,9.83,,FALSE,,activities/175334985.tcx.gz
+160363310,"Jun 27, 2014, 7:08:44 PM",Western States Escarpment Start,Run,goofing off with Matt Hart pre WS,4287,10.89,,FALSE,,activities/175335379.tcx.gz
+160383589,"Jun 21, 2014, 5:00:00 AM",San Juan Solstice last part,Run,,10680,23.01,,FALSE,,
+160998218,"Jul 2, 2014, 5:29:04 PM",Pease Park Lunch Sauna,Run,pretty dang hot and humid,3487,12.8,,FALSE,,activities/176019014.tcx.gz
+161364958,"Jul 3, 2014, 5:49:22 PM",Thursday Noon Baker,Run,"heat acclimation, ugh.",3720,14,,FALSE,,activities/176413790.tcx.gz
+161703205,"Jul 4, 2014, 3:31:34 PM",Independence Hills,Run,Freedom from the Flats!,4820,17.71,,FALSE,,activities/176777000.tcx.gz
+162078175,"Jul 5, 2014, 3:06:52 PM",Walnut Creek Workout,Run,starting to get used to the heat,8533,25.15,,FALSE,,activities/177186743.tcx.gz
+162500650,"Jul 6, 2014, 1:38:22 PM",Hill of Life repeats and creek diversion,Run,last one was walking up with a broken cooler full of bottles and cans from the river,11214,19.59,,FALSE,,activities/177647744.tcx.gz
+163683570,"Jul 9, 2014, 12:06:04 PM",Wednesday LBL,Run,with Josh,4104,16.22,,FALSE,,activities/178926109.tcx.gz
+164221566,"Jul 10, 2014, 5:45:24 PM",Pease Park Lunch Sauna,Run,hot but getting used to it,3420,12.94,,FALSE,,activities/179515863.tcx.gz
+165458309,"Jul 13, 2014, 1:29:36 PM",Church of the Hill of Life,Run,Sunday service,8650,19.82,,FALSE,,activities/180854920.tcx.gz
+168638250,"Jul 20, 2014, 12:00:02 AM",Muleshoe Bend Capt'n Karl's 2914,Run,"watch says 35,5",17997,50.2,,FALSE,,activities/184299961.tcx.gz
+169852771,"Jul 23, 2014, 12:07:14 PM",LBL Sluggish Shake Out,Run,post 60k morning saunter ,4434,16.21,,FALSE,,activities/185614734.tcx.gz
+170418271,"Jul 24, 2014, 5:18:06 PM",Back to the Sauna,Run,"still in recovery, sluggish",3504,12.85,,,,activities/186219082.tcx.gz
+172094464,"Jul 27, 2014, 2:30:30 PM",Church of Ladera Norte,Run,Sunday service,4892,17.67,,,,activities/188044428.tcx.gz
+173182673,"Jul 29, 2014, 5:00:00 AM",Stair Stepper,Workout,,1800,6.43,,FALSE,,
+173183178,"Jul 30, 2014, 12:01:50 PM",Wed morning LBL Clockwise,Run,with Josh,4147,16.22,,FALSE,,activities/189285127.tcx.gz
+174054950,"Aug 1, 2014, 5:44:36 PM","1mi WU, 5 x 800s Clark Field Lunch",Run,,2400,5.82,,FALSE,,activities/190227915.tcx.gz
+175278952,"Aug 2, 2014, 2:22:56 PM",Walnut Creek Wanderings,Run,last long run b/f CCC,12938,37.94,,FALSE,,activities/191724557.tcx.gz
+175279241,"Aug 3, 2014, 2:02:10 PM",Church of Ladera Norte,Run,Guest Pastor Josh along for the ride,4881,17.7,,FALSE,,activities/191724894.tcx.gz
+176828415,"Aug 6, 2014, 12:02:34 PM",LBL Wednesday as usual,Run,3/4 effort with Josh,4439,16.26,,FALSE,,activities/193737361.tcx.gz
+177330994,"Aug 8, 2014, 11:42:02 AM",LBL Steamy Friday Reunion,Run,"Tim, Gerrardo, Rich",5001,16.27,,FALSE,,activities/194417836.tcx.gz
+179377766,"Aug 12, 2014, 5:01:06 PM",All day long,Run,shifting gears for Cascade Crest,3741,12.88,,FALSE,,activities/197152562.tcx.gz
+179639898,"Aug 13, 2014, 12:06:46 PM",LBL Easy Stroll Nice Morning!,Run,"10 days out, below threshold",4387,16.23,,FALSE,,activities/197520349.tcx.gz
+185608877,"Aug 23, 2014, 2:59:56 PM",Cascade Crest 2014 first 40,Run,crappy battery & zapped legs,27604,62.89,,FALSE,,activities/205081195.tcx.gz
+191682030,"Sep 5, 2014, 5:07:54 PM",Pease Park Lunch Scramble,Run,still sluggish but better,3719,12.92,,FALSE,,activities/212456027.tcx.gz
+191682033,"Sep 7, 2014, 3:37:18 PM",Church of Ladera Norte,Run,finally feeling decent,4951,17.71,,FALSE,,activities/212456012.tcx.gz
+193209749,"Sep 11, 2014, 5:21:18 PM",Faking it.,Run,,3677,13.57,,FALSE,,activities/214288797.tcx.gz
+194869383,"Sep 13, 2014, 2:47:32 PM",Saturday Church and Soccer Game,Run,stopped by Coach Sierra's game,4372,15.78,,FALSE,,activities/216283691.tcx.gz
+195759292,"Sep 17, 2014, 12:00:18 PM",LBL Smooth and Steady,Run,"solo, race in 3 days.",4358,16.26,,FALSE,,activities/217313990.tcx.gz
+198019137,"Sep 20, 2014, 12:00:10 PM",Rough Creek Endurance Buzz 40,Run,humid and warm but cloudy,22894,64.34,,FALSE,,activities/219984549.tcx.gz
+199357788,"Sep 25, 2014, 5:02:14 PM",Lunch Run Downtown with Orf,Run,day after TO's b-day,3513,12.78,,FALSE,,activities/221558961.tcx.gz
+199738464,"Sep 26, 2014, 4:57:30 PM",Pease Park Lunch Scramble,Run,checked on the vball courts for after work happy hour!,3718,13.42,,FALSE,,activities/222007521.tcx.gz
+201032929,"Sep 28, 2014, 2:44:12 PM",Sunday Servie with Pastor Norte,Run,still warm/humid but NICE!,4997,17.72,,FALSE,,activities/223538654.tcx.gz
+201885360,"Oct 1, 2014, 12:05:30 PM",Wed morn LBL Loop,Run,with Josh S; med pace,4324,16.22,,FALSE,,activities/224545802.tcx.gz
+202451205,"Oct 2, 2014, 5:20:16 PM",Boring Mindless Sweatfest,Run,just needed to run some,2558,9.23,,FALSE,,activities/225205236.tcx.gz
+202825662,"Oct 3, 2014, 5:00:02 PM",My ACL Experience,Run,that was close enough,3406,12.52,,FALSE,,activities/225642880.tcx.gz
+204036842,"Oct 5, 2014, 2:55:30 PM",LSD Marathon,Run,another rare event...,13072,42,,FALSE,,activities/227069954.tcx.gz
+204550466,"Oct 7, 2014, 5:46:26 PM",Summer is Finally Here!,Run,wait a minute...?,3872,12.94,,FALSE,,activities/227666655.tcx.gz
+204825743,"Oct 8, 2014, 11:58:58 AM",Wed Morning LBL Loop,Run,last muggy Wed for the year?,4263,16.23,,FALSE,,activities/227981749.tcx.gz
+205347948,"Oct 9, 2014, 4:45:44 PM",Pease Park OnB,Run,with Jason S,3743,12.87,,FALSE,,activities/228584447.tcx.gz
+206598297,"Oct 12, 2014, 4:04:28 PM",Walking at Mac Track,Run,comparing watch to computer to wheel,223,0.4,,FALSE,,activities/230038472.tcx.gz
+206598306,"Oct 12, 2014, 3:57:50 PM","First mile, running",Run,watch showed .26,350,1.68,,FALSE,,activities/230038485.tcx.gz
+206598319,"Oct 12, 2014, 3:46:54 PM","Second mile, running",Run,watch showed 1.04,371,1.68,,FALSE,,activities/230038492.tcx.gz
+206598329,"Oct 12, 2014, 3:41:10 PM","Last mile, walking",Run,0.26,233,0.38,,FALSE,,activities/230038503.tcx.gz
+209634537,"Oct 18, 2014, 11:59:58 AM",Palo Duro Canyon Trail Run 50m,Run,"1st, CR. Perfect weather.",24862,78.77,,FALSE,,activities/233554664.tcx.gz
+212438733,"Oct 25, 2014, 10:41:58 AM",Cactus Rose 50 2014,Run,Crappy watch didn't start till 1st aid station?? Caught a ride!,26097,67.13,,FALSE,,activities/236845084.tcx.gz
+213635411,"Oct 30, 2014, 5:06:46 PM",Lunch Run to the Lake and Back,Run,with the Orfinator,4354,14.68,,FALSE,,activities/238239052.tcx.gz
+213976159,"Oct 31, 2014, 6:09:56 PM",Anaerobic Track Work,Run,"4 x 800m, 2 x 1mi Clark Field",2199,6.57,,FALSE,,activities/238634849.tcx.gz
+214774706,"Nov 2, 2014, 3:11:46 PM",No Race this Weekend?!?,Run,,12681,38.18,,FALSE,,activities/240571210.tcx.gz
+217732804,"Nov 8, 2014, 4:23:42 PM",Pedernales Falls SP MTB,Ride,didn't stop gps when we did,10246,25.39,,FALSE,,activities/246144790.tcx.gz
+222769794,"Nov 23, 2014, 4:06:18 PM",LBL on a Sunday?! ,Run,,4044,16.23,,FALSE,,activities/251801256.tcx.gz
+223538583,"Nov 26, 2014, 6:00:28 PM","Taco Trot 35, 2014",Run,with Collin and Sean,3771,16.08,,FALSE,,activities/252663471.tcx.gz
+224829851,"Nov 28, 2014, 5:07:46 PM",Wimberley Tday Gathering,Run,with some hiking by the river,4541,14.17,,FALSE,,activities/254121644.tcx.gz
+225848058,"Dec 3, 2014, 1:32:34 PM",LBL on TRE Wednesday with Roch,Run,lots of new faces on trail this a.m.,3382,11.09,,FALSE,,activities/255267779.tcx.gz
+227476588,"Dec 7, 2014, 2:00:20 PM",2014 Decker Half Pacing Duty,Run,1:30 with Josh S.,5384,21.29,,FALSE,,activities/257179960.tcx.gz
+230283460,"Dec 13, 2014, 11:59:58 AM",Brazos Bend 100 2014,Run,first half anyway...,27797,87.12,,FALSE,,activities/260346704.tcx.gz
+230284920,"Dec 13, 2014, 7:30:00 PM",Brazos Bend Second Half,Run,,32340,73.86,,FALSE,,
+231855419,"Dec 21, 2014, 1:49:18 PM",Easy stroll at Ken's with the ladies,Run,Sandi and Carolyn Sun tour; kept watch running at breaks.,4525,8.89,,FALSE,,activities/262115083.tcx.gz
+234272752,"Dec 29, 2014, 5:41:18 PM",Easing back into the routine,Run,2 weeks post 100,3893,13.49,,FALSE,,activities/264849443.tcx.gz
+237110170,"Jan 3, 2015, 5:16:32 PM",First Ladera of the year,Run,damn heel still hurts,4865,17.7,,FALSE,,activities/268552092.tcx.gz
+245060556,"Jan 17, 2015, 3:56:54 PM",LBL Test Run,Run,Felt OK but heal hurt later,4239,16.24,,FALSE,,activities/277447653.tcx.gz
+246449812,"Jan 25, 2015, 1:00:10 PM",Pacing 3M Half Marathon,Run,"With Josh, how did we fail? Long course?",5415,21.41,,FALSE,,activities/279022983.tcx.gz
+247808219,"Jan 29, 2015, 3:00:24 AM",Pacing Practice with Josh,Run,Pretty dang close! #3:10group,86438,16.21,,FALSE,,activities/280518258.tcx.gz
+250839609,"Feb 4, 2015, 1:05:08 PM",Moore pacing Practice,Run,3:10 group with Josh and Skyler,4337,16.2,,FALSE,,activities/283808205.tcx.gz
+253094632,"Feb 8, 2015, 4:03:12 PM",Marathon Practice Pace,Run,Tested Altra's for heal issue,3258,11.01,,FALSE,,activities/286304416.tcx.gz
+253478289,"Feb 11, 2015, 1:05:22 PM",LBL Pacing Practice,Run,"With Josh & Skyler, still too fast",4275,16.23,117,FALSE,,activities/286728360.tcx.gz
+255754819,"Feb 15, 2015, 1:00:04 PM",Austin Marathon 2015 Pacer,Run,"3:10 group with Josh, year 5",11385,42.27,,FALSE,,activities/289251639.tcx.gz
+291843788,"Apr 21, 2015, 4:03:48 PM",Pease Park lunch with TO,Run,easing back into it,4112,13.01,,FALSE,,activities/330001917.tcx.gz
+291844676,"Apr 18, 2015, 12:54:22 PM",LBL Finally back!,Run,first run over 3mi in a while,3205,11.36,,FALSE,,activities/330002892.tcx.gz
+293542590,"Apr 26, 2015, 2:00:00 PM",Hairway to Steven,Run,"Riverplace Stairway to Hell with Sandi. Easy pace, working the heel back in. Cautiously optimistic. Left the watch at work.",5400,9.65,,FALSE,,
+298090262,"May 2, 2015, 3:05:18 PM",Walnut Creek Log Jam,Run,still under construction. easy jog,3285,8.37,,FALSE,,activities/337298551.tcx.gz
+298091677,"Apr 29, 2015, 5:37:38 PM",Campus to LBL and back,Run,leery of the pavement still,3893,12.34,,FALSE,,activities/337300066.tcx.gz
+298817317,"May 5, 2015, 5:36:52 PM",Pease Park Lunch Stroll,Run,heel still feeling decent,4215,12.97,,FALSE,,activities/338135439.tcx.gz
+304623082,"May 14, 2015, 5:52:02 PM",Round and Round and Round,Run,nice and easy (and boring),2238,8.17,,FALSE,,activities/344690078.tcx.gz
+304624046,"May 8, 2015, 5:52:14 PM",Errand jogging in the rain,Run,stopped by Waterloo Records,4354,14.37,,FALSE,,activities/344691166.tcx.gz
+306975428,"May 16, 2015, 2:44:32 PM",Bike Riders and Lawnmowers,Run,easy stroll thru the hood on Sat,4530,15.24,,FALSE,,activities/347370539.tcx.gz
+307837675,"May 19, 2015, 5:20:14 PM",Sweat Circle,Run,swamp training,2229,8.19,,FALSE,,activities/348333366.tcx.gz
+309030426,"May 21, 2015, 5:11:00 PM",Ladybird Lunch Loop,Run,still chillin on the heel healing,4525,14.97,,FALSE,,activities/349660855.tcx.gz
+312209254,"May 25, 2015, 2:51:02 PM",Before the Flood,Run,"Epic Memorial Day Floods, again",4484,16.52,,FALSE,,activities/353270887.tcx.gz
+312209334,"May 23, 2015, 2:40:52 PM",Saturday Stroll in the Swamp,Run,flats,5035,17.19,,FALSE,,activities/353271001.tcx.gz
+313059582,"May 27, 2015, 5:34:40 PM",BEER cool down?,Run,ha!,2386,9.02,,FALSE,,activities/354217711.tcx.gz
+315043289,"May 30, 2015, 1:19:58 PM",ME training on the flats,Run,nice and slow there buddy...,6342,21.28,,FALSE,,activities/356442152.tcx.gz
+315583967,"May 31, 2015, 1:49:20 PM",ME training with some hills,Run,slow and easy does it,5645,17.94,106,FALSE,,activities/357062246.tcx.gz
+316914847,"Jun 2, 2015, 5:25:26 PM",ME/Heat training LBL lunch loop,Run,"toasty, looked at flood damage",4238,14.31,,FALSE,,activities/358558695.tcx.gz
+318378250,"Jun 4, 2015, 5:22:16 PM",Tour de Orf,Run,ME/Heat Training city tour with TO,4836,15.57,,FALSE,,activities/360209436.fit.gz
+319687829,"Jun 6, 2015, 2:29:14 PM",ME/Heat Training in the hood,Run,"Dropped the truck off, run home",6423,17.48,,FALSE,,activities/361741123.tcx.gz
+319687830,"Jun 5, 2015, 6:06:20 PM",ME/Heat Training on the track,Run,ran out of time to finish!,1774,6.55,,FALSE,,activities/361741158.tcx.gz
+321060130,"Jun 7, 2015, 3:14:04 PM",Tougher than it Should Have Been!,Run,pretty rough for the first 6mi,4758,16.33,,FALSE,,activities/363299204.tcx.gz
+322009601,"Jun 9, 2015, 5:19:00 PM","Yasso's with Orf, 1mi WU, 5Yassos, .5CD",Run,,2589,6.44,,FALSE,,activities/364366220.tcx.gz
+323554849,"Jun 11, 2015, 5:24:48 PM","Move Along, nothing exciting here folks",Run,ME/Heat training standard blah,4209,13.78,,FALSE,,activities/366131966.tcx.gz
+324093188,"Jun 12, 2015, 5:21:42 PM",Tour de Austin part Deaux,Run,with TO and McW,8633,19.98,,FALSE,,activities/366739931.tcx.gz
+325944042,"Jun 14, 2015, 3:04:08 PM",Church of Ladera Norte & Tour,Run,slow and easy,6002,19.5,,FALSE,,activities/368842910.tcx.gz
+325944046,"Jun 13, 2015, 12:17:38 PM",Trail Roots Fun Run BCGB,Run,social happy hours in the creek!,7641,14.64,,FALSE,,activities/368842927.tcx.gz
+327216469,"Jun 16, 2015, 8:16:02 PM",Crazy Day Mind Clearing Run,Run,"DPS and Tropical Storm Bill, not.",5726,18.61,,FALSE,,activities/370274637.tcx.gz
+329355629,"Jun 20, 2015, 2:22:46 PM",Saturday flats and hills,Run,"watch didn't start on time, +1mi",6341,20.86,,FALSE,,activities/372903037.tcx.gz
+330075187,"Jun 21, 2015, 2:14:58 PM",Church and Holy Water!,Run,pouring rain half way,5217,17.66,170,FALSE,,activities/373763752.tcx.gz
+331520175,"Jun 23, 2015, 5:45:00 PM","On, Off, On, Off, On",Run,nice and steamy intervals x 1mi,2033,8.05,,FALSE,,activities/375442376.tcx.gz
+332936995,"Jun 25, 2015, 5:13:32 PM",Gym to IM Field with TO,Run,easy stroll in the campus hood,2749,9.71,,FALSE,,activities/377035335.tcx.gz
+335503761,"Jun 28, 2015, 12:00:02 AM",Capt'n Karl's Pedernales Falls 60k,Run,"night, trail, cautious comeback. Forgot to turn off watch at end.",22528,58.59,,FALSE,,activities/379957069.tcx.gz
+336357291,"Jun 30, 2015, 5:22:24 PM",Post 60k Shakeout ,Run,easy 5 around the track,2546,8.21,,FALSE,,activities/380917592.tcx.gz
+336870209,"Jul 1, 2015, 12:01:20 PM",Quasi Progression Wednesday,Run,LBL with Josh,4263,16.25,,FALSE,,activities/381494380.tcx.gz
+337774628,"Jul 2, 2015, 5:30:54 PM",Traffic and Sirens,Run,"not too hot, ME training",4751,14.51,,FALSE,,activities/382508608.tcx.gz
+338958141,"Jul 4, 2015, 12:41:00 PM",Horsefly Firecracker Stroll with Ford,Run,,6823,16.39,,FALSE,,activities/383850502.tcx.gz
+340275574,"Jul 5, 2015, 1:14:32 PM",TeamRWB-Austin Firecracker,Run,LBL with the Austin Eagles,4568,16.15,,FALSE,,activities/385358847.tcx.gz
+341146241,"Jul 7, 2015, 5:21:40 PM",Hill Repeats on MLK & Red River,Run,"2 sets is a mile, rest & repeat",2679,8.09,,FALSE,,activities/386341419.tcx.gz
+341151830,"Jul 7, 2015, 6:09:22 PM",One mile cool down,Run,,433,1.63,,FALSE,,activities/386347730.tcx.gz
+341671514,"Jul 8, 2015, 12:00:00 PM",Dead Watch Wednesday,Run,Josh has the actual data. Progression from 7:30 to 6:30 finish,4236,16.09,,FALSE,,
+342571083,"Jul 9, 2015, 4:51:08 PM",High Noon Showdown,Run,good heat/ME training,6639,21.63,,FALSE,,activities/387982256.tcx.gz
+345146269,"Jul 12, 2015, 2:16:20 PM",Lake where the River used to be!,Run,Muleshoe while Sandi rides,8785,24.6,,FALSE,,activities/390928509.tcx.gz
+345382623,"Jul 13, 2015, 5:17:50 PM",No Hotub Monday :( ,Run,"4 easy, 1 harder. Hot tub closed for a month",2178,8.14,,FALSE,,activities/391197207.tcx.gz
+346093766,"Jul 14, 2015, 5:39:00 PM",Tiny Baby Jesus Hill Repeats,Run,"quarter up, quarter down x 10, CD",2826,8.82,,FALSE,,activities/392002294.tcx.gz
+346577091,"Jul 15, 2015, 12:02:58 PM",Wednesday Progression with Josh,Run,,4161,16.2,,FALSE,,activities/392551473.tcx.gz
+347558363,"Jul 16, 2015, 5:38:30 PM",Josh's Campus Lunch Loop,Run,Heat didn't feel too bad. ME/FfF,4867,16.25,,FALSE,,activities/393677922.tcx.gz
+348194449,"Jul 17, 2015, 5:45:20 PM",Haymaker,Run,this route needs work,3718,12.56,,FALSE,,activities/394417525.tcx.gz
+349571180,"Jul 19, 2015, 2:27:00 PM",Donut Sweats,Run,Ate at Gordoughs Saturday,6533,21.63,,FALSE,,activities/396005996.tcx.gz
+349571231,"Jul 18, 2015, 3:52:08 PM",Early Church Service,Run,Ladera a day early,5410,17.51,124,FALSE,,activities/396006082.tcx.gz
+351149405,"Jul 21, 2015, 5:18:54 PM",Stolen ID Hill Repeats,Run,lifted my water bottle and ID b/t mile repeats.,2949,8.16,,FALSE,,activities/397817782.tcx.gz
+352560350,"Jul 23, 2015, 4:58:12 PM",Haymaker Part 2,Run,"smoother loop, easy to add more",4005,13.14,,FALSE,,activities/399293143.tcx.gz
+354612900,"Jul 26, 2015, 2:17:40 PM",Church of Ladera Norte Bonus Feature,Run,felt strangely good today...,7239,23.18,,FALSE,,activities/401429923.tcx.gz
+354613040,"Jul 25, 2015, 1:08:16 PM",Brushy Creek Deception w/ McW,Run,slow and easy explore and chat,10024,26.91,,FALSE,,activities/401430022.tcx.gz
+356067944,"Jul 28, 2015, 5:27:38 PM",Tuesday Torture Treatment,Run,might be getting used to the heat?,2761,8.1,,FALSE,,activities/402943268.tcx.gz
+357483412,"Jul 30, 2015, 4:38:22 PM",TBT Meuller Loop with Orf,Run,slight variation,4689,15.24,,FALSE,,activities/404418732.tcx.gz
+358218065,"Jul 31, 2015, 5:28:50 PM",Friday Fun Lunch,Run,escaping work for a bit,4252,14.25,,FALSE,,activities/405186941.tcx.gz
+358928011,"Aug 1, 2015, 1:17:00 PM",PEOPLE AND DOGS!!,Run,"It's official, too many people in Austin now. Gonna need reservations to run around the lake.",10556,34.21,,FALSE,,activities/405938190.tcx.gz
+361274567,"Aug 4, 2015, 5:11:58 PM",Easy Pease-y,Run,smooth 9 in the noon sun,4240,14.61,,FALSE,,activities/408469668.tcx.gz
+362771440,"Aug 6, 2015, 5:57:46 PM",Whacky Tracky,Run,damn job getting in my way,1852,6.82,,FALSE,,activities/410062039.tcx.gz
+365824926,"Aug 9, 2015, 12:00:02 AM",Colorado Bend CK60k,Run,took it cautious for the foot's sake,24191,59.77,,FALSE,,activities/413420719.tcx.gz
+367351330,"Aug 12, 2015, 12:00:00 PM","LBL with Josh, Easy Recovery",Run,Feeling decent after the 60k but kept it easy,4500,16.11,,FALSE,,
+368320751,"Aug 13, 2015, 4:51:00 PM",Meuller Lunch Lollipop ,Run,with Orf,4334,14.26,,FALSE,,activities/416096473.tcx.gz
+369006183,"Aug 14, 2015, 5:49:40 PM",Bake for 1 hour at 350 Degrees,Run,"late lunch, cooked to order",4576,15.3,,FALSE,,activities/416806658.tcx.gz
+371058142,"Aug 16, 2015, 2:45:44 PM",Ladera Norte Church Service,Run,close out recovery week,6573,22.57,,FALSE,,activities/418961483.tcx.gz
+372074808,"Aug 18, 2015, 5:18:58 PM",Pease Park ONB with TO,Run,nice and thick,4361,14.58,,FALSE,,activities/420019441.tcx.gz
+373392044,"Aug 20, 2015, 12:05:24 PM",Waiting for Thomas,Run,watch stopped early. manual entry for last 1.5,3753,14.16,,FALSE,,activities/421392682.tcx.gz
+373394510,"Aug 20, 2015, 1:00:00 PM",Dumb watch quit,Run,,495,1.93,,FALSE,,
+374324562,"Aug 21, 2015, 5:14:54 PM",Early Present to Myself,Run,Checkin on my city,11090,36.72,,FALSE,,activities/422367598.tcx.gz
+375040495,"Aug 22, 2015, 1:39:44 PM",Lake Loop Bonus Feature,Run,Fri + Sat = 48 bday miles,13946,40.58,,FALSE,,activities/423126087.tcx.gz
+377333452,"Aug 25, 2015, 5:57:14 PM","5 x 800m, 2.5mi Cool Down",Run,Toasty Track Tinglies,2690,8.2,,FALSE,,activities/425527628.tcx.gz
+377831528,"Aug 26, 2015, 12:04:28 PM",Wed LBL Weekly Constitutional,Run,"with Josh, slow start fast finish",4173,16.21,,FALSE,,activities/426043863.tcx.gz
+378831061,"Aug 27, 2015, 5:28:38 PM",Mueller Lollipop Lunch,Run,solo,3972,14.2,,FALSE,,activities/427106593.tcx.gz
+379565983,"Aug 28, 2015, 5:52:02 PM",Freaky Friday Traffic Tamer,Run,glad I wasn't driving...,5139,17.93,,FALSE,,activities/427878545.tcx.gz
+381794507,"Aug 29, 2015, 10:00:36 PM",Revielle Peak Ranch Pre-Race,Run,course check with Jeff Miller,4226,10.78,,FALSE,,activities/430235929.tcx.gz
+381798857,"Aug 30, 2015, 12:00:00 AM",RPR Pre-race,Run,,2160,7.32,,FALSE,,
+382753068,"Sep 1, 2015, 4:57:44 PM",Meuller loop with bonus mile,Run,"with Jason, got rained on!",4755,16.35,,FALSE,,activities/431238011.tcx.gz
+383499965,"Sep 2, 2015, 5:42:58 PM",Squiggly Rectangle,Run,solo,4689,16.11,,FALSE,,activities/432014769.tcx.gz
+383995713,"Sep 3, 2015, 12:03:04 PM",Wednesday on a Thursday,Run,with Josh,4216,16.23,,FALSE,,activities/432525488.tcx.gz
+384900240,"Sep 4, 2015, 5:03:58 PM",Warm Moist Blanket,Run,still toasty ,7793,24.74,,FALSE,,activities/433463489.tcx.gz
+386396266,"Sep 6, 2015, 2:20:52 PM",Post War Walnut Creek,Run,virgin Lone Peak 2.5,8881,24.38,,FALSE,,activities/435030337.tcx.gz
+386989959,"Sep 7, 2015, 1:29:32 PM",Monday Church Service Holiday,Run,still steamy,7096,24.24,,FALSE,,activities/435651745.tcx.gz
+387927553,"Sep 8, 2015, 4:54:46 PM",Longhorn Dam OnB,Run,"with Jason S, still toasty",6055,19.61,,FALSE,,activities/436621670.tcx.gz
+389151915,"Sep 10, 2015, 12:03:22 PM",Morning after pill,Run,"got some rain, 101% humid",4217,16.24,,FALSE,,activities/437890330.tcx.gz
+390036460,"Sep 11, 2015, 5:36:08 PM",Reverse Meuller Blob,Run,"solo, humid",4691,16.49,,FALSE,,activities/438806679.tcx.gz
+390718026,"Sep 12, 2015, 2:19:52 PM",1.3 Million People,Run,"Jesus, this town is busy this morning",9683,33.16,,FALSE,,activities/439518206.tcx.gz
+391501892,"Sep 13, 2015, 2:07:22 PM",Sunday Service for 80+mile week,Run,beautiful morning,6317,22.12,,FALSE,,activities/440336387.tcx.gz
+393021285,"Sep 15, 2015, 5:26:02 PM",Rant Run,Run,bitch session with Jason,5487,17.89,,FALSE,,activities/441909648.tcx.gz
+393458536,"Sep 16, 2015, 12:04:32 PM",Knatastic LBL,Run,with Josh,4222,16.21,,FALSE,,activities/442359189.tcx.gz
+394340429,"Sep 17, 2015, 5:09:32 PM",Drones and Dead Bodies,Run,downtown Austin baby!,5760,19.81,,FALSE,,activities/443267412.tcx.gz
+395617744,"Sep 19, 2015, 2:34:04 PM",Final Shoe Check at the Nut,Run,Lone Peak 2.5,5952,16.69,,FALSE,,activities/444593068.tcx.gz
+395617778,"Sep 18, 2015, 3:38:28 PM",Gratuitous Miles,Run,flats in the hood,5159,17.28,,FALSE,,activities/444593126.tcx.gz
+396422772,"Sep 20, 2015, 2:24:42 PM",Church of Ladera Norte OnB,Run,let the taper begin!,5094,17.88,,FALSE,,activities/445445487.tcx.gz
+398505819,"Sep 23, 2015, 12:05:52 PM",LBL Wednesday Usual,Run,Med pace with Josh,4333,16.19,,FALSE,,activities/447637394.tcx.gz
+402099415,"Sep 26, 2015, 3:28:42 PM",Twenty More Times nxt Saturday!,Run,stretch jog 7 days out,2290,8.05,,FALSE,,activities/451362696.tcx.gz
+408431993,"Oct 3, 2015, 11:00:00 AM",Arkansas Traveller 100,Run,"2nd place OA, no way my watch makes it even half this long!",60240,160.93,,FALSE,,
+413768196,"Oct 15, 2015, 5:22:46 PM",Easy recovery jog,Run,with Jason,4556,14.91,,FALSE,,activities/463437538.tcx.gz
+416964440,"Oct 20, 2015, 5:23:22 PM",Old Time's Sake,Run,Riverside!,4212,15.01,,FALSE,,activities/466754110.tcx.gz
+417497537,"Oct 21, 2015, 12:01:18 PM",LBL Wednesday Loop,Run,routine w/Josh,4403,16.23,,FALSE,,activities/467307202.tcx.gz
+418227833,"Oct 22, 2015, 5:03:56 PM",Mueller Lollipop Lunch,Run,with TO,4423,14.81,,FALSE,,activities/468060552.tcx.gz
+418789662,"Oct 23, 2015, 5:48:52 PM",Josh's Campus Loop w/o Josh,Run,rain,4437,16.11,,FALSE,,activities/468644746.tcx.gz
+420083976,"Oct 25, 2015, 1:05:08 PM",Easy Jog in the Cool Rain,Run,with Ram the neighbor ,5805,19.32,,FALSE,,activities/469999178.tcx.gz
+421902595,"Oct 28, 2015, 12:00:46 PM",LBL after Emo's Last Night,Run,"5 beers, 5hrs sleep, 10mi",4274,16.22,,FALSE,,activities/471885590.tcx.gz
+423800541,"Oct 31, 2015, 3:32:48 PM","2 x WU, 3 x Miles, Cool Down",Run,Inside of lane 2,3446,10.95,,FALSE,,activities/473854496.tcx.gz
+424640358,"Nov 1, 2015, 4:11:22 PM",Heart Byrne at Threadgills DST,Run,gain an hour of sleep or lose one?,8745,30.57,,FALSE,,activities/474739153.tcx.gz
+425989943,"Nov 3, 2015, 6:40:24 PM",Mueller Lunch Loop ,Run,"Jason and TO, warm & sunny!",4741,16.47,,FALSE,,activities/476137078.tcx.gz
+426346226,"Nov 4, 2015, 1:04:00 PM",Wed morn LBL,Run,"with Josh and Jake, from State Farm",4147,16.22,,FALSE,,activities/476502718.tcx.gz
+427157471,"Nov 5, 2015, 6:23:20 PM",Josh's Lunch Loop w/ a twist,Run,still needs work,4474,15.88,,FALSE,,activities/477336569.tcx.gz
+429532678,"Nov 8, 2015, 4:16:38 PM",Cul de Sac Chit Chat,Run,too much talking...,7947,23.21,,FALSE,,activities/479804285.tcx.gz
+429722873,"Nov 9, 2015, 6:34:42 PM",Lunch Stroll with Jason,Run,easy wanderings,3788,12.64,,FALSE,,activities/480000001.tcx.gz
+430866000,"Nov 11, 2015, 1:00:00 PM",Howling at the Moon,Run,Crazy Russian skin head at mile 5ish. Josh is my witness!,4240,16.09,,FALSE,,
+431559096,"Nov 12, 2015, 6:24:10 PM",Lake Lunch with Joe and Billy,Run,nice weather!,5330,19.04,,FALSE,,activities/481886971.tcx.gz
+432080678,"Nov 13, 2015, 6:10:48 PM",Mueller is pronounced Miller,Run,with TO,4267,14.99,,FALSE,,activities/482423532.tcx.gz
+432645509,"Nov 14, 2015, 4:59:48 PM",Mac Track Attack,Run,"2 WU, 3x1, CD",3479,10.88,,FALSE,,activities/483009714.tcx.gz
+433391312,"Nov 15, 2015, 3:26:44 PM",Sunday Service,Run,felt pretty good,9427,32.31,,FALSE,,activities/483792410.tcx.gz
+434589727,"Nov 17, 2015, 6:24:56 PM",Josh's Campus Lunch Loop,Run,with Jason and TO,4796,16.58,,FALSE,,activities/485022288.tcx.gz
+434964023,"Nov 18, 2015, 1:00:48 PM",Wed LBL Chill,Run,Perfect temp w/ Josh and Jake,4182,16.24,,FALSE,,activities/485403674.tcx.gz
+435704295,"Nov 19, 2015, 6:35:18 PM",It's a Beautiful Day!,Run,"Man, I wish I was still out there.",4750,16.37,,FALSE,,activities/486153135.tcx.gz
+437528021,"Nov 22, 2015, 3:12:02 PM",Carrot on a Stick,Run,what a nice morning!,8898,32.21,,FALSE,,activities/488048721.tcx.gz
+438761661,"Nov 24, 2015, 6:22:20 PM","Yea, Whatever...",Run,with Jason,5520,18.94,,FALSE,,activities/489316333.tcx.gz
+439370691,"Nov 25, 2015, 6:00:58 PM",Taco Trot 2015,Run,"with Colin, muggy.",3948,16.03,,FALSE,,activities/489941936.tcx.gz
+441600090,"Nov 29, 2015, 3:31:20 PM",Post Camping T-Day Ladera,Run,cool and drizzle,6859,24.45,,FALSE,,activities/492243092.tcx.gz
+441600094,"Nov 27, 2015, 4:51:54 PM",Late Taco Trot Wimberly,Run,with Megan,3586,11.56,,FALSE,,activities/492243108.tcx.gz
+442714887,"Dec 1, 2015, 5:58:00 PM",Josh's Lunch Loop w/o Josh,Run,with TO; easy stroll,5535,16.32,,FALSE,,activities/493379422.tcx.gz
+443159834,"Dec 2, 2015, 1:02:02 PM",TRE LBL ABC 123,Run,"Josh, Jake and Nathan L",4308,16.24,,FALSE,,activities/493831971.tcx.gz
+445529238,"Dec 6, 2015, 2:01:22 PM",Decker Challenge Half 2015 Pacer,Run,early better than late!,5334,21.3,,FALSE,,activities/496265842.tcx.gz
+445529240,"Dec 5, 2015, 12:15:18 PM",Rogue training run support,Run,pacer needed?,4929,14.02,,FALSE,,activities/496265855.tcx.gz
+446805388,"Dec 8, 2015, 6:27:20 PM","WU, 3x1, Beer cool down",Run,,2334,7.49,,FALSE,,activities/497573585.tcx.gz
+447288780,"Dec 9, 2015, 12:55:22 PM",ME Training and Pacer Practice,Run,in between my two pace groups,3660,13.62,,FALSE,,activities/498065887.tcx.gz
+448442378,"Dec 11, 2015, 6:26:14 PM",ME Stroll to Mueller,Run,found TO half way,4239,14.83,,FALSE,,activities/499241101.tcx.gz
+448959147,"Dec 12, 2015, 2:36:10 PM",ME and Pacer Practice,Run,"no breakfast, water only, Epic bar at mile 10. PE a little high",9229,32.92,,FALSE,,activities/499775093.tcx.gz
+449615222,"Dec 13, 2015, 4:03:18 PM",Ladera Norte Bonus Church,Run,after Bull Creek Social,2686,8.99,,FALSE,,activities/500458293.tcx.gz
+449615244,"Dec 13, 2015, 2:06:10 PM",Bull Creek Social for Eman,Run,"ME, banana only",5768,7.69,,FALSE,,activities/500458312.tcx.gz
+450845925,"Dec 15, 2015, 6:09:06 PM",Mueller Lollipop with da Boyz,Run,Sandi sighting!,4588,14.7,,FALSE,,activities/501713989.tcx.gz
+451372560,"Dec 16, 2015, 6:43:20 PM",Josh's Lunch Loop w/ Jason,Run,easy stroll,4798,16.79,,FALSE,,activities/502250680.tcx.gz
+451816167,"Dec 17, 2015, 6:05:24 PM","The Weather Outside is Frightful, Not",Run,ME pace,3620,12.78,,FALSE,,activities/502699592.tcx.gz
+452320972,"Dec 18, 2015, 6:07:14 PM",U2 with TO,Run,"""It's a Beautiful Day!""",4356,14.87,,FALSE,,activities/503210497.tcx.gz
+452822314,"Dec 19, 2015, 12:04:52 PM",Christmas Ridge Run 2015,Run,tis the season,10391,34.28,,FALSE,,activities/503726650.tcx.gz
+453524205,"Dec 20, 2015, 2:55:48 PM","I Run, She Ride",Run,with Sandi. ME morning,4378,12.58,,FALSE,,activities/504455545.tcx.gz
+454151525,"Dec 21, 2015, 5:58:04 PM",Mueller with TO,Run,no hot tub monday,4136,14.73,,FALSE,,activities/505098288.tcx.gz
+454627859,"Dec 22, 2015, 6:12:40 PM",The continuing saga,Run,to nuke Syria or not?,4937,17.09,,FALSE,,activities/505581128.tcx.gz
+455074577,"Dec 23, 2015, 1:30:28 PM",Not so Progressive,Run,Special guest Pete Mehok.,4090,16.19,,FALSE,,activities/506037909.tcx.gz
+456163542,"Dec 25, 2015, 6:13:34 PM",Christmas Church Service Ladera,Run,fueled on coffee cake,5641,20.68,,FALSE,,activities/507159187.tcx.gz
+456802179,"Dec 26, 2015, 2:00:18 PM",Festivus Fat Ass 2015,Run,hot and soupy pacer practice,11429,42.61,,FALSE,,activities/507821886.tcx.gz
+462412133,"Jan 3, 2016, 4:30:30 PM",So Glad to Have Sunday,Run,"driving and skiing all week, first run of 2016",6297,22.09,,FALSE,,activities/513612154.tcx.gz
+463905618,"Jan 5, 2016, 6:06:16 PM",Town Lake Lunch with TO,Run,sunny and cool,4685,16.44,,FALSE,,activities/515117923.tcx.gz
+464345349,"Jan 6, 2016, 1:03:10 PM",Wed LBL Standard,Run,with Josh and Jake from State Farm,4339,16.21,,FALSE,,activities/515564804.tcx.gz
+465217291,"Jan 7, 2016, 6:47:40 PM",100k on Saturday!,Run,loosen up and some stretching,876,3.3,,FALSE,,activities/516434490.tcx.gz
+468397746,"Jan 9, 2016, 4:22:06 PM",Bandera 100k Watch Fail,Run,watch started late and quit early!,20586,60.1,,FALSE,,activities/519673022.tcx.gz
+468400488,"Jan 9, 2016, 1:30:00 PM",Bandera 100k,Run,,3600,39.75,,FALSE,,
+470388133,"Jan 14, 2016, 2:36:26 PM",Partial Commute Shake Out,Run,,1162,3.67,,FALSE,,activities/521664508.tcx.gz
+470388148,"Jan 14, 2016, 6:07:08 PM",Mueller Lunch Loop,Run,with Jason and TO,4307,15.47,,FALSE,,activities/521664500.tcx.gz
+471601493,"Jan 14, 2016, 10:54:46 PM",Partial Commute to Happy Hour,Run,,1449,4.61,,FALSE,,activities/522894160.tcx.gz
+471601506,"Jan 16, 2016, 2:04:24 PM","Pacer Practice, ME morning",Run,a little slow down to chat mi 3-4ish,4769,18.14,,FALSE,,activities/522894146.tcx.gz
+472613095,"Jan 17, 2016, 5:09:26 PM","2 x WU, 3 x Miles, Cool Down",Run,MAC track,3149,10.94,,FALSE,,activities/523933463.tcx.gz
+473153556,"Jan 18, 2016, 3:15:54 PM",Sunday Service on Monday MLK,Run,,6081,21.74,,FALSE,,activities/524482062.tcx.gz
+473948671,"Jan 19, 2016, 6:04:38 PM",Steven and the Blustery Day,Run,for Thomas,3772,14.82,,FALSE,,activities/525273523.tcx.gz
+474568449,"Jan 20, 2016, 1:02:42 PM",LBL Smooth Stroll,Run,"Josh post Houston, and Jake",4321,16.23,,FALSE,,activities/525895658.tcx.gz
+476037008,"Jan 22, 2016, 6:48:18 PM",Slow Jog to Packet Pickup,Run,pacing 3m half on sunday,7554,20.84,,FALSE,,activities/527362585.tcx.gz
+476791182,"Jan 23, 2016, 3:08:30 PM",Charlie's Angels,Run,"recovery with Sandi, Megan and Caroline",7240,15.56,,FALSE,,activities/528135560.tcx.gz
+477498557,"Jan 24, 2016, 1:00:16 PM",3M Half Marathon Pacing,Run,"with Josh, great weather!",5376,21.36,,FALSE,,activities/528868660.tcx.gz
+479634691,"Jan 27, 2016, 1:01:48 PM",LBL Wednesday,Run,"ME morning, killer weather!",4291,16.27,,FALSE,,activities/531056039.tcx.gz
+482089390,"Jan 30, 2016, 3:51:46 PM","CP, 10pound pack, Indian Winter",Run,warm! boatesting,10102,27.75,,FALSE,,activities/533555059.tcx.gz
+482102147,"Jan 29, 2016, 6:00:00 PM",Had to Get Out of the Office!,Run,,1800,6.43,,FALSE,,
+482874983,"Jan 31, 2016, 2:29:32 PM",Church of Ladera Norte OnB,Run,feeling yesterday's miles and yesterday's beers,6076,21.56,,FALSE,,activities/534367433.tcx.gz
+484590930,"Feb 2, 2016, 5:46:50 PM",Josh's Lunch Loop w/ Jason,Run,some marathon route,4844,17.18,,FALSE,,activities/536105453.tcx.gz
+485000695,"Feb 3, 2016, 2:34:56 PM","Partial Commute, recovery",Run,,1192,4.74,,FALSE,,activities/536522241.tcx.gz
+485000740,"Feb 3, 2016, 1:01:20 PM",LBL Wednesday,Run,"Josh and Jake, from State Farm",4235,16.25,,FALSE,,activities/536522251.tcx.gz
+485750108,"Feb 3, 2016, 11:02:06 PM",Happy Hour Commute,Run,back to Rogue,1314,3.75,,FALSE,,activities/537277727.tcx.gz
+485898951,"Feb 4, 2016, 5:53:48 PM",North Campus to DPS,Run,solo,4043,14.72,,FALSE,,activities/537427621.tcx.gz
+486664486,"Feb 5, 2016, 6:49:48 PM",Awesome weather Friday!,Run,,4732,16.89,,FALSE,,activities/538194737.tcx.gz
+487423853,"Feb 6, 2016, 4:08:04 PM",Breezy Walnut Saturday,Run,"felt good, easy loops, fun, solo",9621,28.06,,FALSE,,activities/538967970.tcx.gz
+488196440,"Feb 7, 2016, 3:23:32 PM",Pacer Practice Course Scouting,Run,nice cool sunny morning,4549,17.74,,FALSE,,activities/539757241.tcx.gz
+489574767,"Feb 8, 2016, 10:55:56 PM",Commute Home-Soleus Testing ,Ride,,1379,7.11,,FALSE,,activities/541150195.tcx.gz
+489576787,"Feb 9, 2016, 2:15:40 PM",Commute to Work-Soleus Testing,Ride,Fly,1181,8.11,,FALSE,,activities/541152211.tcx.gz
+489730277,"Feb 9, 2016, 6:09:22 PM",Mueller Lunch Loop ,Run,with Jason,4270,14.76,,FALSE,,activities/541304529.tcx.gz
+490269141,"Feb 10, 2016, 1:01:54 PM",LBL Wednesday Morning,Run,"Josh and Jake, from State Farm",4175,16.25,,FALSE,,activities/541845142.tcx.gz
+491253693,"Feb 11, 2016, 6:09:58 PM",Heat Training in January!,Run,easy stroll in the sun,3708,12.78,,FALSE,,activities/542827208.tcx.gz
+494190668,"Feb 14, 2016, 12:58:56 PM",Austin Marathon Pacing 2016,Run,"3:10 group, 3:09:50 official",11394,42.77,,FALSE,,activities/545796685.tcx.gz
+494348235,"Feb 12, 2016, 6:00:00 PM",Pace Practice Treadmill,Run,"Just for fun, then steam room for heat training!",1305,4.82,,FALSE,,
+495595751,"Feb 17, 2016, 1:02:42 PM",LBL Wednesday Morning,Run,"with Josh, no Jake from State Farm",4166,16.22,,FALSE,,activities/547201434.tcx.gz
+496571853,"Feb 18, 2016, 5:52:22 PM",Mindless Miles & Soleus Testing,Run,Didn't want to deal with traffic and only had an hour to spare,2886,11.29,,FALSE,,activities/548177917.tcx.gz
+497260495,"Feb 19, 2016, 6:36:22 PM","Good Day, Sunshine!",Run,I took a walk...,4280,16.06,,FALSE,,activities/548870579.tcx.gz
+497985728,"Feb 20, 2016, 3:00:46 PM",Ford! Where are you?,Run,I needed a guide.,6727,16.93,,FALSE,,activities/549611097.tcx.gz
+499029971,"Feb 21, 2016, 2:50:50 PM",Walnut Creek Sunday Stroll,Run,"with Sandi riding, warm/humid",9117,27.36,,FALSE,,activities/550704439.tcx.gz
+500669758,"Feb 23, 2016, 6:05:04 PM",Wind Advisory!,Run,Good thing today was a planned easy day. Yikes.,4316,14.4,,FALSE,,activities/552432212.tcx.gz
+501208871,"Feb 24, 2016, 1:01:50 PM",LBL Still Windy!,Run,"with Jake, from state farm. No Josh",4347,16.17,,FALSE,,activities/552970861.tcx.gz
+503970405,"Feb 27, 2016, 1:29:04 PM",Sadleblazer Trail Marathon Race,Run,last mile sprint for the win,11845,43.43,,FALSE,,activities/555758928.tcx.gz
+506385796,"Mar 1, 2016, 6:10:48 PM",Lunch Recovery Jog,Run,summer already?,4395,15.29,,FALSE,,activities/558214037.tcx.gz
+507661707,"Mar 3, 2016, 1:01:10 PM",Slept on the floor Last Night,Run,regular Wed with Josh and Jake,4190,16.18,,FALSE,,activities/559495410.tcx.gz
+510321974,"Mar 6, 2016, 2:42:24 PM",Sunday at The 'Nut,Run,end of a recovery week b/t races,9372,28.8,,FALSE,,activities/562203439.tcx.gz
+511929252,"Mar 8, 2016, 6:13:18 PM",North Campus Lunch Loop,Run,with Jason,4125,14.33,,FALSE,,activities/564059652.tcx.gz
+513500918,"Mar 10, 2016, 6:26:50 PM",Alone in the Drizzle,Run,"3 x 1 medium, stretching",1429,4.86,,FALSE,,activities/565635489.tcx.gz
+515965314,"Mar 12, 2016, 1:29:12 PM",San Felipe Shootout 5k,Run,"mud, mud, mud and water, long.",1535,5.81,,FALSE,,activities/568153292.tcx.gz
+515969056,"Mar 12, 2016, 4:34:10 PM",San Felipe Shootout Half Marathon,Run,late getting watch to acquire,6299,20.01,,FALSE,,activities/568157127.tcx.gz
+515980560,"Mar 12, 2016, 2:29:16 PM",San Felipe Shootout 10k,Run,5k loop was slightly long. MUD!,3373,11.49,,FALSE,,activities/568168945.tcx.gz
+517918102,"Mar 15, 2016, 5:03:34 PM",Calm Before the Storm,Run,spooky quiet out there b/f SXSW,5768,18.57,,FALSE,,activities/570348356.tcx.gz
+518505397,"Mar 16, 2016, 12:50:00 PM",Run Commute,Run,damn construction everywhere,2703,9.78,,FALSE,,activities/570938600.tcx.gz
+520404884,"Mar 18, 2016, 4:28:50 PM",Muggy Sweat Box Long Lunch,Run,easy stroll thru town to SXSW ,5671,18.96,,FALSE,,activities/572860702.tcx.gz
+520407036,"Mar 16, 2016, 9:51:48 PM",Afternoon Commute Home,Run,,2260,7.83,,FALSE,,activities/572862904.tcx.gz
+520408281,"Mar 17, 2016, 5:36:38 PM",Easy Campus Loop,Run,limited time today,2472,8.52,,FALSE,,activities/572864180.tcx.gz
+521226397,"Mar 19, 2016, 3:01:10 PM",Jedi Oil Change and Inspection,Run,"while you wait, I run. 6#pack",7873,23.22,,FALSE,,activities/573699523.tcx.gz
+522374912,"Mar 20, 2016, 2:18:10 PM","Oak Pollen, Leinenkugels and Mudbugs",Run,"6#pack, easy pace",9839,27.22,,FALSE,,activities/574883343.tcx.gz
+524609437,"Mar 23, 2016, 12:05:40 PM",Wednesday Lake Progression,Run,with Josh and Jake,4213,16.18,,FALSE,,activities/577155453.tcx.gz
+526301617,"Mar 24, 2016, 5:00:00 PM",To the House and Back Lunch,Run,"Watch freaked out, used Jason's for data",4950,17.7,,FALSE,,
+526573909,"Mar 25, 2016, 5:37:06 PM",Calm After the Storm,Run,beautiful day in ATX,4388,15.56,,FALSE,,activities/579153532.tcx.gz
+527457754,"Mar 26, 2016, 1:29:18 PM",Two Way Torture Test - 2nd place,Run,with Josh S,4216,17.33,,FALSE,,activities/580063087.tcx.gz
+528330937,"Mar 27, 2016, 2:32:30 PM",Easter Egg Hunt Fail,Run,"no eggs, no jellybeans...nothing",7160,18.98,,FALSE,,activities/580966896.tcx.gz
+530228950,"Mar 29, 2016, 5:00:00 PM","Stair Mill, skip a step",Stair-Stepper,"Matrix Stair Mill speeds 12-17, then 15min in steam room.",1800,0,,FALSE,,
+530746879,"Mar 30, 2016, 12:02:18 PM",Wednesday Lake Progression,Run,"Josh and Jake, super muggy",4217,16.18,,FALSE,,activities/583431103.tcx.gz
+532052716,"Mar 31, 2016, 4:59:02 PM",Mueller Lunch Loop Meanderings,Run,solo,4305,15.64,,FALSE,,activities/584773847.tcx.gz
+532800265,"Apr 1, 2016, 6:10:00 PM",Stair Mill 3200 steps = about 200 Floors,Stair-Stepper,,1800,0,,FALSE,,
+534812954,"Apr 3, 2016, 2:17:24 PM",Brushy Creek Exploration,Run,with Sandi riding,6103,16.1,,FALSE,,activities/587617578.tcx.gz
+534812986,"Apr 2, 2016, 2:28:00 PM",Saturday Stroll in the Hood,Run,stopped by Lowes & ballgame,5664,20.33,,FALSE,,activities/587617611.tcx.gz
+536786470,"Apr 5, 2016, 5:07:52 PM",LBL Lunch Stroll,Run,warming up but still super nice; with Jason S.,5608,19.41,,FALSE,,activities/589634066.tcx.gz
+537429425,"Apr 6, 2016, 12:00:34 PM",Wednesday Lakers,Run,"with Josh, no Jake from State Farm",4107,16.2,,FALSE,,activities/590287100.tcx.gz
+538658854,"Apr 7, 2016, 5:50:00 PM",Mueller Lunch Solo Stroll,Run,"nice day, warming up",4510,16.31,,FALSE,,activities/591530269.tcx.gz
+539454101,"Apr 8, 2016, 5:28:24 PM",Shoal Creek Up Duval Down,Run,good downhill training finish,4681,16.86,,FALSE,,activities/592337434.tcx.gz
+541395705,"Apr 10, 2016, 1:10:12 PM",Repentance,Run,Back to Church of Ladera Norte,5149,17.92,,FALSE,,activities/594332507.tcx.gz
+541395767,"Apr 9, 2016, 1:32:54 PM",Spaced Out Saturday,Run,mind was wandering,8463,25.34,,FALSE,,activities/594332529.tcx.gz
+543437751,"Apr 12, 2016, 5:30:00 PM","Stair Mill 3455 Steps, 215 floors",Stair-Stepper,"Clean up on isle Steve please, clean up on isle Steve",1800,0,,FALSE,,
+544133434,"Apr 13, 2016, 11:53:48 AM",Stop Littering! Trash in the Lake :(,Run,after the rain...,4100,16.24,,FALSE,,activities/597142298.tcx.gz
+545456877,"Apr 14, 2016, 5:14:10 PM",Wish I was Still out There,Run,damn fine noon hours,5306,19.64,,FALSE,,activities/598496112.tcx.gz
+546250496,"Apr 15, 2016, 4:28:36 PM",Hancock Golf Course CCW,Run,fun little jog warm up for vball,3667,13.21,,FALSE,,activities/599307464.tcx.gz
+547190613,"Apr 16, 2016, 12:09:08 PM",HOL Out n Back with Brandon,Run,like happy hour social club on the trail,8406,24.37,,FALSE,,activities/600281475.tcx.gz
+548407390,"Apr 17, 2016, 2:09:04 PM",Church of the Warm Blanket,Run,"Ladera, 7#pack, humid",7416,25.73,,FALSE,,activities/601546007.tcx.gz
+550566954,"Apr 19, 2016, 5:06:40 PM",North Campus Lunch Loop,Run,with Jason,4954,17.7,,FALSE,,activities/603809424.tcx.gz
+551276139,"Apr 20, 2016, 11:56:56 AM","Raining & Pouring, no Snoring",Run,"with Josh, no Jake from State Farm",4147,16.15,,FALSE,,activities/604539033.tcx.gz
+552772122,"Apr 21, 2016, 5:56:56 PM","Track Speed Work 3x1mi, 1mi CD",Run,15min steam room after,1814,6.54,,FALSE,,activities/606194681.tcx.gz
+555585700,"Apr 24, 2016, 2:21:46 PM",Post Beer Relay Shakeout Church,Run,no pack,5894,21.07,,FALSE,,activities/609098863.tcx.gz
+555593764,"Apr 23, 2016, 3:00:00 PM",Burning Can 5k Beer Relay ATX,Run,with Josh Slocum for the overall win.,7200,30,,FALSE,,
+557704955,"Apr 26, 2016, 5:10:14 PM",Post Massage Stretch Shakeout,Run,Thomas at the track,2984,8.24,,FALSE,,activities/611292814.tcx.gz
+558240988,"Apr 27, 2016, 12:02:47 PM",Easy Progression Wednesday LBL,Run,"Josh and Jake, from State Farm",4105,16.19,,FALSE,,activities/611838482.tcx.gz
+560255264,"Apr 29, 2016, 5:06:32 PM",Taking Thomas on a Tour,Run,the Orf is back! easy taper jog,4316,14.55,,FALSE,,activities/613887757.tcx.gz
+562128298,"May 1, 2016, 2:06:02 PM",Easy Taper Jog in the Hood,Run,stretch and roller time,2391,8.49,,FALSE,,activities/615825745.tcx.gz
+563207062,"May 2, 2016, 1:38:52 PM",Spectrum Vagabond Riverplace,Run,"uphill, didn't get struck by lightning!",1530,4.43,,FALSE,,activities/616940786.tcx.gz
+563210500,"May 2, 2016, 2:04:38 PM",Riverplace Downhill,Run,stopped to look for golf balls,1749,4.42,,FALSE,,activities/616944362.tcx.gz
+570640225,"May 7, 2016, 9:58:38 AM",The Canyons 100k Watch Fail,Run,"Died, turned on on the plane?",30540,108.51,,FALSE,,activities/624606587.tcx.gz
+570649081,"May 7, 2016, 6:12:06 PM",The Canyons 100k Second Half ,Run,more watch fail fun and games,17240,42.34,,FALSE,,activities/624615710.tcx.gz
+574094765,"May 12, 2016, 5:05:54 PM",Shake Out with TO,Run,"ugh, feeling it for sure...",4967,16.41,,FALSE,,activities/628149868.tcx.gz
+580214573,"May 18, 2016, 12:01:34 PM",Wednesday Lake Progression,Run,still trying to loosen up post race,4335,16.2,,FALSE,,activities/634477912.tcx.gz
+581467509,"May 19, 2016, 5:56:40 PM",Crazy Day Lunch Jog,Run,"Rain, DPS, Rain, Kegs, Lunch",2121,8.06,,FALSE,,activities/635765858.tcx.gz
+582416580,"May 20, 2016, 5:09:50 PM",Sunshine is Back!,Run,easy jog to the lake and back with TO,5879,19.57,,FALSE,,activities/636741044.tcx.gz
+586515999,"May 21, 2016, 2:08:14 PM",Pole Dancing!,Run,Jog hike with new poles.,6911,13.35,,FALSE,,activities/640984287.tcx.gz
+586798863,"May 24, 2016, 5:07:10 PM",Easy Mueller Sweat Bath Jaunt,Run,with TO and Will,4262,14.37,,FALSE,,activities/641274693.tcx.gz
+587557137,"May 25, 2016, 11:59:52 AM",Wednesday Lake Progression,Run,"with Josh, and Jake from SF",4246,16.22,,FALSE,,activities/642051011.tcx.gz
+589017888,"May 26, 2016, 4:43:38 PM",Humid Lunch Jog Around,Run,with TO for most of it,4532,16.03,,FALSE,,activities/643551526.tcx.gz
+589998022,"May 27, 2016, 5:17:06 PM",Central Austin Lunch Loop,Run,with Jason and TO,4901,17.17,,FALSE,,activities/644560556.tcx.gz
+591143200,"May 28, 2016, 2:39:30 PM",Lakeway Trail Exploring,Run,10lb pack #UTMB #poles,10716,22.39,,FALSE,,activities/645740659.tcx.gz
+592262063,"May 29, 2016, 3:31:08 PM",Ladera Church before Sierra Church,Run,graduation stuff in an actual church later today,4998,17.82,,FALSE,,activities/646901655.tcx.gz
+593135720,"May 30, 2016, 3:32:34 PM",No Hot Tub Monday :( ,Run,sauna recovery jog instead,4768,16.95,,FALSE,,activities/647810471.tcx.gz
+594441754,"May 31, 2016, 4:47:36 PM",Meandering West of Campus,Run,with TO,4745,16.39,,FALSE,,activities/649158796.tcx.gz
+600436858,"Jun 5, 2016, 12:21:52 PM",Ladera Church after 5 Days Off,Run,graduation interruption ,6578,22.3,,FALSE,,activities/655329375.tcx.gz
+601581180,"Jun 7, 2016, 1:03:00 PM",Spectrum Vagabond Mt Bonnell,Run,fly and die,2587,9.22,,FALSE,,activities/656501436.tcx.gz
+601581854,"Jun 7, 2016, 1:50:00 PM",Mt Bonnell/SpeedShop/UT,Run,long commute,3616,11.61,,FALSE,,activities/656502136.tcx.gz
+602679595,"Jun 7, 2016, 9:36:42 PM",Jog to Speedshop with Beer Break,Run,6pk at Chevron and walk to Rogue,1910,3.99,,FALSE,,activities/657648954.tcx.gz
+602679604,"Jun 8, 2016, 11:45:48 AM",Ladera Church on Wednesday?,Run,Does this mean I'm Catholic? ,5117,17.72,,FALSE,,activities/657648947.tcx.gz
+604041239,"Jun 9, 2016, 4:29:42 PM",Mueller Meanderings with TO,Run,getting a little toastier finally,4895,16.11,,FALSE,,activities/659073727.tcx.gz
+605145093,"Jun 10, 2016, 5:20:38 PM","1 x WU, 3 x 1mi, 1 x CD",Run,nice and warm,2459,8.12,,FALSE,,activities/660230347.tcx.gz
+607291447,"Jun 12, 2016, 3:52:56 PM",Spectrum Vagabond Barton Creek,Run,Violet Crown to Hill of Life TT,2221,6.44,,FALSE,,activities/662489253.tcx.gz
+607291467,"Jun 12, 2016, 2:54:02 PM",HOL to Violet Crown Stroll,Run,happy hour Sunday social,2957,6.56,,FALSE,,activities/662489286.tcx.gz
+609317379,"Jun 14, 2016, 5:12:58 PM",Jog and Slog Luncheon ,Run,with TO and Jason part way,5294,16.97,,FALSE,,activities/664580075.tcx.gz
+610033249,"Jun 15, 2016, 11:48:38 AM",Taperogression,Run,with Josh and Jake from State Farm,4276,16.2,,FALSE,,activities/665324175.tcx.gz
+612236987,"Jun 17, 2016, 4:58:54 PM",Taper Hotness!,Run,junk miles in the sun,2203,8.07,,FALSE,,activities/667619563.tcx.gz
+623506056,"Jun 22, 2016, 12:45:22 PM",Sunshine Mesa Bilk Creek Loop,Run,,5587,12.39,,FALSE,,activities/679451403.tcx.gz
+623506090,"Jun 25, 2016, 4:48:14 PM",San Juan Solstice 2016 Part 2,Run,from Divide AS to Finish,12000,28.16,,FALSE,,activities/679451392.tcx.gz
+623510716,"Jun 20, 2016, 2:42:42 PM",Sunshine Mesa Bilk Creek Loop,Run,easy stroll after the road trip,7286,12.39,,FALSE,,activities/679456348.tcx.gz
+623510784,"Jun 25, 2016, 9:58:06 AM",San Juan Solstice 2016 Part 1,Run,From Start to Divide AS,24666,50.5,,FALSE,,activities/679456327.tcx.gz
+625479848,"Jun 29, 2016, 5:25:41 PM",Afternoon Commute,Ride,new watch and sync via Suunto,1591,8.21,,FALSE,,activities/681896887.tcx.gz
+625566870,"Jun 30, 2016, 8:14:29 AM",Morning commute,Ride,not sure what's up with time of day,1154,8.02,,FALSE,,activities/682042759.tcx.gz
+625831095,"Jun 30, 2016, 12:19:34 PM",Post Race and Road Trip Shake Out,Run,nice and toasty track miles,2772,9.09,,FALSE,,activities/682458818.tcx.gz
+626118078,"Jun 30, 2016, 5:31:35 PM",Bike Comute ,Ride,,1573,8.13,,FALSE,,activities/682922686.tcx.gz
+626885552,"Jul 1, 2016, 1:48:44 PM",Escape from Botanical Gardens,Run,Post faculty retreat ,5098,17.63,,FALSE,,activities/684366806.tcx.gz
+628836690,"Jul 3, 2016, 7:39:15 AM",Church of Ladera Norte,Run,,5080,17.84,,FALSE,,activities/687782088.tcx.gz
+629849902,"Jul 4, 2016, 8:22:37 AM",Vagabond #3 VC to HOL,Run,with Thomas and Jason,1804,6.41,,FALSE,,activities/689602693.tcx.gz
+629849954,"Jul 4, 2016, 9:04:37 AM",Return Trip Trash Pick Up,Run,,2625,6.43,,FALSE,,activities/689602728.tcx.gz
+631192433,"Jul 5, 2016, 12:27:02 PM",Mueller Lunch Lollipop,Run,It's not just the heat...oh shut up.,4062,14.22,,FALSE,,activities/691876283.tcx.gz
+632575009,"Jul 6, 2016, 5:38:38 PM",Work Commute,Ride,,1433,8.19,,FALSE,,activities/694243152.tcx.gz
+632575691,"Jul 6, 2016, 8:21:50 AM",Night Ride,Ride,,1734,8.23,,FALSE,,activities/694244406.tcx.gz
+633358070,"Jul 7, 2016, 11:43:05 AM",Junk Lunch Miles,Run,but is there a plan?,3144,11.28,,FALSE,,activities/695668079.tcx.gz
+633359500,"Jul 7, 2016, 8:52:54 AM",Commute Home,Ride,,1301,7.98,,FALSE,,activities/695670191.tcx.gz
+634165345,"Jul 8, 2016, 8:35:31 AM",Bike to Work,Ride,,1280,7.97,,FALSE,,activities/697199995.tcx.gz
+634165355,"Jul 7, 2016, 5:35:15 PM",Commute home,Ride,,3709,8.33,,FALSE,,activities/697200012.tcx.gz
+634461859,"Jul 8, 2016, 12:50:08 PM",Hot Lunch to Go!,Run,jog with TO,6689,12.85,,FALSE,,activities/697697437.tcx.gz
+635428341,"Jul 9, 2016, 9:24:06 AM",Walnut Creek Toasty TwoFer,Run,"35oz first lap, 40oz second. Wished for more! ",9921,28.52,,FALSE,,activities/699429804.tcx.gz
+636632567,"Jul 10, 2016, 8:31:12 AM",HOL Hike Up Jog Down,Run,"With poles, then trash pick up",7594,14.56,,FALSE,,activities/701472981.tcx.gz
+638815560,"Jul 12, 2016, 12:03:19 PM",North Campus Lunch Loop,Run,with Jason S,4894,17.3,,FALSE,,activities/704818080.tcx.gz
+639556071,"Jul 13, 2016, 6:48:43 AM",Wednesday Church @ Ladera,Run,,5161,17.84,,FALSE,,activities/705602782.tcx.gz
+640950986,"Jul 14, 2016, 12:09:40 PM",Five Pounds Later...,Run,,5232,17.01,,FALSE,,activities/707085320.tcx.gz
+642050576,"Jul 15, 2016, 5:00:00 PM","Stair Mill 3300 Steps, 210 Floors",Stair-Stepper,,1800,0,,FALSE,,
+642051722,"Jul 15, 2016, 6:00:00 PM","Baby Swim Session b/f Hot Tub, 250m",Swim,,900,0,,FALSE,,
+644030394,"Jul 16, 2016, 7:00:05 PM",Capt'n Karl's Tejas Trails 60k Muleshoe,Run,Night race,20793,56.93,,FALSE,,activities/710372488.tcx.gz
+644033009,"Jul 15, 2016, 4:59:55 PM",Lunch Ride,Ride,,1344,7.82,,FALSE,,activities/710375610.tcx.gz
+647299397,"Jul 20, 2016, 6:56:59 AM",Easy Recovery Week,Run,hood shakeout,2089,7.23,,FALSE,,activities/713864867.tcx.gz
+648753194,"Jul 21, 2016, 4:48:30 PM",Only 4 Pounds this time!,Run,the lake is still there,4281,14.92,,FALSE,,activities/715414877.tcx.gz
+649867996,"Jul 22, 2016, 5:24:42 PM",Yasso with TO,Run,"Mile WU, 6xYasso, CD",3296,8.35,,FALSE,,activities/716611122.tcx.gz
+652184989,"Jul 24, 2016, 1:45:31 PM",Just Dropped In To See...,Run,What condition my condition was in. Sunday LSD Funday ,10746,32.66,,FALSE,,activities/719100940.tcx.gz
+654370450,"Jul 26, 2016, 5:20:00 PM","Stair Mill 3455 Steps, 215 floors",Stair-Stepper,Get a mop!,1800,0,,FALSE,,
+656691186,"Jul 28, 2016, 5:08:53 PM",Noon Meanderings,Run,with TO and Will...for a while,5097,15.74,,FALSE,,activities/723925475.tcx.gz
+657710495,"Jul 29, 2016, 5:16:58 PM",Mueller Lunch Lollipop,Run,"with Jason S, humid warm",4441,14.5,,FALSE,,activities/725020143.tcx.gz
+658678556,"Jul 30, 2016, 2:44:16 PM",Saturday Shakeout,Run,Junk miles in the heat,4881,16.57,,FALSE,,activities/726055082.tcx.gz
+660886251,"Aug 1, 2016, 12:02:08 PM",Spectrum Vagabond Ladera Norte,Run,,2127,8.39,,FALSE,,activities/728906569.tcx.gz
+662476527,"Aug 2, 2016, 5:30:00 PM","Stair Mill 3455 Steps, 215 floors",Stair-Stepper,,1800,0,,FALSE,,
+663414550,"Aug 3, 2016, 1:00:00 PM",Run Commute,Run,Watch at office :( ,2400,8.85,,FALSE,,
+664209742,"Aug 3, 2016, 10:27:28 PM",Take it to the House!,Run,human trafficking,2527,8.01,,FALSE,,activities/732482108.tcx.gz
+665650118,"Aug 5, 2016, 4:44:12 PM",Love those Clouds!,Run,humid but not too bad for noon!,3622,12.24,,FALSE,,activities/734042047.tcx.gz
+666793150,"Aug 6, 2016, 3:00:26 PM",UTMB Gear Check,Run,The taper has begun! ,7444,17.93,,FALSE,,activities/735283824.tcx.gz
+667993828,"Aug 7, 2016, 2:57:08 PM",Only One Lap?,Run,Must be taper time...,4080,12.5,,FALSE,,activities/736589894.tcx.gz
+672602032,"Aug 11, 2016, 5:07:15 PM",Killing Time,Run,taper taper taper taper madness,2284,8.14,,FALSE,,activities/741593541.tcx.gz
+674454722,"Aug 13, 2016, 12:06:22 PM",Cruisin the Nut with Tres,Run,No dust! ,4122,12.29,,FALSE,,activities/743616279.tcx.gz
+678413807,"Aug 16, 2016, 4:46:14 PM",Easy 8 with a Rainshower Wash Off,Run,,3899,13.66,,FALSE,,activities/747916262.tcx.gz
+681889327,"Aug 19, 2016, 5:37:19 PM",Feeling the Johnson!,Run,just goofing around and around,2464,8.11,,FALSE,,activities/751672639.tcx.gz
+682673365,"Aug 20, 2016, 1:46:51 PM",Shoe Tinkering,Run,,2366,5.58,,FALSE,,activities/752521806.tcx.gz
+688328176,"Aug 25, 2016, 8:40:23 AM",Morning Run,Run,,715,2.23,,FALSE,,activities/758583323.tcx.gz
+697040531,"Aug 26, 2016, 4:00:59 PM",Part of UTMB 2016,Run,plain crazy shit,72137,120.27,,FALSE,,activities/768068279.tcx.gz
+701698536,"Sep 5, 2016, 5:03:17 PM",Vagabond #5 Good Times,Run,,1538,4.42,,FALSE,,activities/773052910.tcx.gz
+703679665,"Sep 7, 2016, 1:03:33 PM",Morning Run,Run,,1315,3.82,,FALSE,,activities/775180660.tcx.gz
+705380660,"Sep 7, 2016, 9:59:21 PM",Afternoon Run,Run,,1648,3.34,,FALSE,,activities/777012781.fit.gz
+705380690,"Sep 8, 2016, 5:28:21 PM",Mueller Loop with Jason,Run,still recovering but OK,4419,14.07,,FALSE,,activities/777012761.fit.gz
+706337269,"Sep 9, 2016, 5:41:52 PM",Clark Field Easy and Toasty,Run,"just trying to get back in the groove",1865,6.46,,FALSE,,activities/778072016.fit.gz
+710802946,"Sep 11, 2016, 1:00:40 PM",Blind Runner Guiding at Reveille Peak,Run,,12252,24.29,,FALSE,,activities/783014503.fit.gz
+713691966,"Sep 15, 2016, 5:09:50 PM",Broken Bridge Out n Back,Run,with Jason and TO,4960,16.34,,FALSE,,activities/786211366.fit.gz
+717289379,"Sep 17, 2016, 12:31:53 PM",Spectrum Sky Island Davis Mtns,Run,,18356,49.33,,FALSE,,activities/790225678.fit.gz
+721417114,"Sep 22, 2016, 4:44:35 PM",First Day of Fall?,Run,,4854,16.04,,FALSE,,activities/794904661.fit.gz
+724951695,"Sep 25, 2016, 4:15:11 PM",Junk Miles in the Hood,Run,"Recovery is over now, time to start up again",2601,9.07,,FALSE,,activities/798951528.fit.gz
+727037258,"Sep 27, 2016, 5:00:09 PM",Trying to Hang On to Thomas!,Run,what the hell did that boy eat this morning!?,3811,14.53,,FALSE,,activities/801372958.fit.gz
+727751693,"Sep 28, 2016, 11:39:44 AM","Hey Ladera, it's been a while!",Run,,5359,17.75,,FALSE,,activities/802204495.fit.gz
+729155364,"Sep 29, 2016, 5:35:16 PM",Pease Park OutnBack,Run,"crappy old watch, beautiful day!",3762,13.3,,FALSE,,activities/803820002.tcx.gz
+730107539,"Sep 30, 2016, 5:00:00 PM",ACL Drive by with Thomas,Run,User error on watch start...,4595,16.09,,FALSE,,
+732292247,"Oct 2, 2016, 2:25:41 PM",Lamar Lake Lollipop ,Run,,9296,32.47,,FALSE,,activities/807352790.fit.gz
+732293748,"Sep 30, 2016, 4:59:38 PM",Lunch Run,Run,,4768,9.28,,FALSE,,activities/807354609.fit.gz
+734120596,"Oct 4, 2016, 1:53:44 PM",Spectrum Vagabond Wild Basin,Run,,764,2.72,,FALSE,,activities/809463154.fit.gz
+734120597,"Oct 4, 2016, 2:38:10 PM",Speed Shop to Work Commute,Run,,1133,3.85,,FALSE,,activities/809463139.fit.gz
+734120620,"Oct 4, 2016, 1:33:48 PM",Vagabond Warm Up,Run,,998,2.81,,FALSE,,activities/809463169.fit.gz
+735181287,"Oct 4, 2016, 10:00:52 PM",Work to Speed Shop Commute,Run,,1300,3.86,,FALSE,,activities/810674626.fit.gz
+735181292,"Oct 5, 2016, 12:03:14 PM",Cool Crisp Fall Air...or Not!,Run,,5371,17.83,,FALSE,,activities/810674584.fit.gz
+736497980,"Oct 6, 2016, 5:40:07 PM",Hancock Golf Course Lunch Loop,Run,feeling kinda flat...,2798,9.68,,FALSE,,activities/812222111.fit.gz
+737437812,"Oct 7, 2016, 5:31:05 PM",Kinda Quiet on the Trail Today,Run,,5537,19.31,,FALSE,,activities/813397081.fit.gz
+739506622,"Oct 9, 2016, 12:20:33 PM",Lake Loop Double with Jeff! ,Run,Lots of smiling faces out!,8993,32.7,,FALSE,,activities/815776101.fit.gz
+741687479,"Oct 11, 2016, 4:47:08 PM",Catching up with Thomas,Run,post TRWB camp!,4564,16.36,,FALSE,,activities/818289385.fit.gz
+742387266,"Oct 12, 2016, 12:07:24 PM",Getting Ready for Road Season,Run,,3291,11.84,,FALSE,,activities/819102351.fit.gz
+743663563,"Oct 13, 2016, 4:51:58 PM",Pease Park OutnBack,Run,"nice and warm, solo",4092,14.59,,FALSE,,activities/820585270.fit.gz
+744579929,"Oct 14, 2016, 5:32:52 PM",Yasso's in Speedgoats!,Run,"clumpity clump, clumpity clump",1544,4.05,,FALSE,,activities/821659694.fit.gz
+746895052,"Oct 16, 2016, 2:26:40 PM",Everyone and their Dog,Run,,9556,28.33,,FALSE,,activities/824682713.fit.gz
+749592570,"Oct 19, 2016, 12:36:21 PM",Buehler Duke Bluedevil XC Trail,Run,Forest was closed for hunting,5285,15.97,,FALSE,,activities/828029267.fit.gz
+753629821,"Oct 23, 2016, 1:13:03 PM",Sunday Stroll with Josh first part,Run,Nice morning! ,7909,28.05,,FALSE,,activities/832704890.fit.gz
+755755432,"Oct 25, 2016, 4:37:08 PM",Thomas' Koop Workout,Run,"WU, 3x15' with recovery b/t, CD",5790,21.57,,FALSE,,activities/835162583.fit.gz
+756451990,"Oct 26, 2016, 12:45:33 PM",Commute a Toot Toot,Run,,2137,7.72,,FALSE,,activities/835969787.fit.gz
+757408437,"Oct 26, 2016, 9:26:00 PM",Run Home to Mommy!,Run,,2272,7.97,,FALSE,,activities/837068377.fit.gz
+757685844,"Oct 27, 2016, 5:13:42 PM",I LOVE Yasso's,Run,tried to make a heart in the middle,2267,5.82,,FALSE,,activities/837399355.fit.gz
+758020792,"Oct 28, 2016, 1:09:18 AM",Rogue Haunted House Crawl,Run,with Sandi,4122,9.14,,FALSE,,activities/837770642.fit.gz
+758591667,"Oct 28, 2016, 5:30:00 PM",Hancock Golf Course OnB with 5laps,Run,Forgot my damn watch hurrying out of the office,3300,12.23,,FALSE,,
+759602020,"Oct 29, 2016, 3:14:43 PM",WC Windy and BMX ,Run,,2255,6.28,,FALSE,,activities/839640500.fit.gz
+759602147,"Oct 29, 2016, 4:01:00 PM",Single Lap Saturday ,Run,,4118,12.5,,FALSE,,activities/839640617.fit.gz
+760796259,"Oct 30, 2016, 2:19:41 PM",Ladera Church plus Sunday School,Run,Hills and flats ,7718,25.85,,FALSE,,activities/841002978.fit.gz
+762925386,"Nov 1, 2016, 5:13:10 PM",The Whole Thing is Rigged,Run,with Jason and Thomas,4538,15.75,,FALSE,,activities/843504047.fit.gz
+763577106,"Nov 2, 2016, 11:12:39 AM",Muggy Morning Maceration,Run,,4688,16.97,,FALSE,,activities/844258446.fit.gz
+764927847,"Nov 3, 2016, 4:54:04 PM",B.J. Thomas #1 Hit from 1970,Run,Written for Butch Cassidy and the Sundance Kid movie,3724,12.71,,FALSE,,activities/845829604.fit.gz
+766968323,"Nov 5, 2016, 12:45:06 PM",Spectrum Wonderland Muleshoe ,Run,Trail marathon ,12441,41.29,,FALSE,,activities/848162005.fit.gz
+769727460,"Nov 8, 2016, 2:21:57 PM",Spectrum Vagabond WC Double Nut,Run,anaerobic drifting!,1862,5.79,,FALSE,,activities/851381455.fit.gz
+771723254,"Nov 10, 2016, 6:11:51 PM","WU, LBL7, CD",Run,,5025,18.86,,FALSE,,activities/853683279.fit.gz
+776498078,"Nov 15, 2016, 6:08:20 PM",Late December back in '63,Run,Four seasons?,5123,17.37,,FALSE,,activities/859227097.fit.gz
+779120946,"Nov 18, 2016, 6:22:24 PM",Roads are for Cars Only!,Run,dipshit driver encounter,3443,11.28,,FALSE,,activities/862342726.fit.gz
+779947855,"Nov 19, 2016, 1:33:45 PM",A Few Miles with my Buds,Run,Finally chilly at the start! ,8357,28.04,,FALSE,,activities/863313319.fit.gz
+783841610,"Nov 23, 2016, 6:00:26 PM","Taco Trot 2016, Best Weather Ever",Run,,3822,15.92,,FALSE,,activities/867840977.fit.gz
+789103262,"Nov 29, 2016, 5:54:52 PM",Took a Few Days Off,Run,,1990,7.06,,FALSE,,activities/873780271.fit.gz
+790861428,"Dec 1, 2016, 6:30:07 PM","Move Along, Nothing to See Here",Run,Quick lunch stroll in the sun!,1754,5.98,,FALSE,,activities/875748332.fit.gz
+792831727,"Dec 3, 2016, 12:26:37 PM",Spectrum Circus 3 and 5,Run,,6368,12.67,,FALSE,,activities/877970684.fit.gz
+792831729,"Dec 3, 2016, 9:28:15 PM",Spectrum Circus 5,Run,,2499,7.76,,FALSE,,activities/877970697.fit.gz
+792831736,"Dec 3, 2016, 5:15:49 PM",Spectrum Circus 5,Run,,2365,7.8,,FALSE,,activities/877970704.fit.gz
+792831744,"Dec 3, 2016, 3:34:44 PM",Spectrum Circus 3,Run,,1455,4.73,,FALSE,,activities/877970709.fit.gz
+792831749,"Dec 3, 2016, 7:20:23 PM",Spectrum Circus 3,Run,,1968,4.7,,FALSE,,activities/877970723.fit.gz
+795147565,"Dec 6, 2016, 1:12:46 PM",Spectrum Vagabond Rain Creek,Run,beautiful morning!,1989,8.15,,FALSE,,activities/880601662.fit.gz
+797949890,"Dec 9, 2016, 6:11:13 PM",Been a Long Week,Run,Just enjoying a few laps and getting out of the office.,2933,10.12,,FALSE,,activities/883750653.fit.gz
+799817817,"Dec 11, 2016, 2:00:44 PM",Decker Challenge Pacing,Run,Drizzle but warm! ,5418,21.16,,FALSE,,activities/885842608.fit.gz
+801568983,"Dec 13, 2016, 5:29:10 PM",Mueller Loop with Thomas,Run,Sunshine and sweat!,4024,14.85,,FALSE,,activities/887825791.fit.gz
+803201039,"Dec 15, 2016, 6:12:08 PM",Christmas Magic!,Run,,4092,13.91,,FALSE,,activities/889663712.fit.gz
+804675962,"Dec 17, 2016, 3:07:43 PM",Pre Polar Vortex Prancercise,Run,,7287,23.27,,FALSE,,activities/891364843.fit.gz
+807298085,"Dec 20, 2016, 5:49:04 PM",Bout Time I Made it Back to the Lake,Run,,4084,15,,FALSE,,activities/894290257.fit.gz
+808895782,"Dec 22, 2016, 6:05:20 PM",Christmas Eve Eve Eve Lake Check,Run,with Jason and Thomas,3832,13.38,,FALSE,,activities/896089506.fit.gz
+810517253,"Dec 24, 2016, 1:33:39 PM",Christmas Eve Boogie,Run,24 on the 24th,13624,38.76,,FALSE,,activities/897916057.fit.gz
+812981567,"Dec 27, 2016, 4:09:19 PM",Ready to Run for some new Altras! ,Run,,5072,15.93,,FALSE,,activities/900697994.fit.gz
+814043195,"Dec 28, 2016, 5:24:39 PM",3 x 1 Coffee Cake Burn Off,Run,,1455,4.78,,FALSE,,activities/901865777.fit.gz
+814855292,"Dec 29, 2016, 1:42:50 PM",Ladera OnB with Special Guest,Run,Kate joined from the park! ,6084,17.88,,FALSE,,activities/902775111.fit.gz
+817852280,"Jan 1, 2017, 2:06:34 PM",Nothing Changes on New Year's Day,Run,Setting the tone. Sandi and Justin,8277,25.12,,FALSE,,activities/906089680.fit.gz
+819310812,"Jan 2, 2017, 9:49:25 PM",Pre Slinky Nonsense,Run,,1423,2.76,,FALSE,,activities/907666585.fit.gz
+819310838,"Jan 2, 2017, 10:15:17 PM",Searching for Slinky Vagabond,Run,Fun for a girl and a boy! ,1867,4.88,,FALSE,,activities/907666598.fit.gz
+820175737,"Jan 3, 2017, 6:15:28 PM","No Slinky, Just a Quick Nooner",Run,Thomas and Jason,5071,17.27,,FALSE,,activities/908602066.fit.gz
+822307307,"Jan 5, 2017, 5:59:31 PM",Junk Miles and Steam Room,Run,damn NY resolution walkers on the track...On Your Left!,2119,8.08,,FALSE,,activities/910902528.fit.gz
+823403983,"Jan 6, 2017, 6:00:00 PM",Fire Alarm!,Run,Ran out of the building and forgot my watch...,3780,13.19,,FALSE,,
+825553146,"Jan 8, 2017, 3:50:53 PM",Ladera my Frosty Mistriss,Run,,6122,21.49,,FALSE,,activities/914437722.fit.gz
+827711862,"Jan 10, 2017, 6:16:04 PM",Back to Sunscreen and Sweat!,Run,with TO,4283,15.11,,FALSE,,activities/916747924.fit.gz
+830758993,"Jan 13, 2017, 5:50:18 PM",Hands and Balls,Run,with Thomas! :) ,4145,14.63,,FALSE,,activities/920019846.fit.gz
+831836887,"Jan 14, 2017, 4:12:25 PM",Misty Mountain Hop,Run,,5129,18.64,,FALSE,,activities/921199739.fit.gz
+833103916,"Jan 15, 2017, 4:02:33 PM",Ladera Half Marry,Run,The drizzle is the shizzle ,6118,21.49,,FALSE,,activities/922560183.fit.gz
+837170090,"Jan 18, 2017, 5:48:14 PM",8 Hours of Meetings!?!,Run,"quick escape. WU, 3xMPP, CD",2319,8.62,,FALSE,,activities/927253105.fit.gz
+838456201,"Jan 20, 2017, 7:18:51 PM",Post-Packet Pickup Ponderings,Run,back to work,828,2.88,,FALSE,,activities/928621025.fit.gz
+838456287,"Jan 20, 2017, 5:46:49 PM",3M Pre-Packet Pickup Perusal ,Run,"man, what a nice day!",3658,12.94,,FALSE,,activities/928621057.fit.gz
+840771995,"Jan 22, 2017, 1:30:09 PM",Pacing 3M Half in the WIND! ,Run,,5358,21.28,,FALSE,,activities/931139165.fit.gz
+845245438,"Jan 26, 2017, 6:15:37 PM",Diesel Fumes and Dogma ,Run,with Jason S,4161,14.64,,FALSE,,activities/935967234.fit.gz
+846152728,"Jan 27, 2017, 5:50:11 PM",Lunch Run b/f the Snow Storm!,Run,with Jason and TO,4835,16.4,,FALSE,,activities/936952890.fit.gz
+848557053,"Jan 29, 2017, 2:45:48 PM",My Mind was Wondering Like some Wild Geese in the West ,Run,,8019,24.89,,FALSE,,activities/939603810.fit.gz
+850854944,"Jan 31, 2017, 5:53:56 PM",Starve a Cold and Feed the Fever,Run,Trying to knock the snot out,6418,18.07,,FALSE,,activities/942070707.fit.gz
+856225584,"Feb 5, 2017, 2:20:01 PM",Spectrum Vagabond Cupid's Revenge,Run,,1014,3.71,,FALSE,,activities/947894141.fit.gz
+856225592,"Feb 5, 2017, 1:55:02 PM",Vagabond Cupid Warmup Scouting,Run,,1071,3.69,,FALSE,,activities/947894161.fit.gz
+858273711,"Feb 5, 2017, 6:42:29 PM",Austin Hash House Harriers ,Run,Crusty's 999,7431,9.54,,FALSE,,activities/950108373.fit.gz
+858592903,"Feb 7, 2017, 6:20:16 PM",Junk Miles at Clark in the Sun,Run,damn job cutting into my runs!,2231,8.07,,FALSE,,activities/950427933.fit.gz
+860792253,"Feb 9, 2017, 5:44:03 PM",Lake Visit Variation B.2 sub c,Run,"with Thomas, great weather!",4475,15.5,,FALSE,,activities/952788592.fit.gz
+862735507,"Feb 11, 2017, 1:21:34 PM",Makin Miles with McGinn,Run,Muggy,6494,24.44,,FALSE,,activities/954896464.fit.gz
+869804929,"Feb 17, 2017, 5:50:40 PM",Puny Pacer Practice Party,Run,with TO,3349,9.36,,FALSE,,activities/962491416.fit.gz
+870870171,"Feb 18, 2017, 3:34:20 PM",PSA 5: warm up before stretching ,Run,,1545,4.19,,FALSE,,activities/963647249.fit.gz
+872753125,"Feb 19, 2017, 1:00:11 PM",Austin Marathon Pacing ,Run,"No race clocks on course, ran faster than prescribed. Oh well",11480,42.6,,FALSE,,activities/965656785.fit.gz
+874916703,"Feb 21, 2017, 6:04:11 PM",Shake Out Laps in the Sunshine!,Run,easy does it...100k this Sat,2004,6.45,,FALSE,,activities/967973519.fit.gz
+877219999,"Feb 23, 2017, 5:58:01 PM",Stretch Run on a Sunny Day,Run,"with TO, takin it easy. Race Sat",3226,9.87,,FALSE,,activities/970455680.fit.gz
+880486333,"Feb 25, 2017, 11:03:52 PM","Post 100k Beer Mile, Late Watch Start",Run,,485,1.31,,FALSE,,activities/974109421.fit.gz
+880488816,"Feb 25, 2017, 11:00:04 AM",Spectrum Saddleblazer 100K 2017,Run,Missed two turns for maybe 1 mile total. Orf on my ass all day! ,34230,99.98,,FALSE,,activities/974111437.fit.gz
+889098593,"Mar 5, 2017, 4:34:30 PM",Spectrum Vagabond Dumptruck ,Run,,858,2.88,,FALSE,,activities/986349379.fit.gz
+889099076,"Mar 5, 2017, 4:58:14 PM",New Shoes Beta in the Creek,Run,Hiking with the sticks,3202,4.04,,FALSE,,activities/986349947.fit.gz
+889099126,"Mar 5, 2017, 4:08:54 PM",Spectrum Vagabond Dumptruck Warmup,Run,,1015,2.82,,FALSE,,activities/986350033.fit.gz
+894937396,"Mar 10, 2017, 6:02:54 PM",Ultra-Low Intensity Track Lunch,Run,still in chill mode till after spring break,2382,8.06,,FALSE,,activities/993475124.fit.gz
+896158918,"Mar 11, 2017, 2:25:33 PM",Pole Dancing @ Ladera,Run,Hiking with the sticks,5890,10.09,,FALSE,,activities/994777517.fit.gz
+901209678,"Mar 14, 2017, 5:00:00 PM",Easy Chill Miles at the Track,Run,Takin it easy like a cool breeze,2400,8.04,,FALSE,,
+902804386,"Mar 16, 2017, 5:07:31 PM",Ray LaMontane,Run,"under pressure, got to get out and run!",3651,12.52,,FALSE,,activities/1001844613.fit.gz
+904016009,"Mar 17, 2017, 4:55:19 PM","3 Songs, 1 Beer. Prolly should have switched that up",Run,Waterloo parking lot ,5313,13.38,,FALSE,,activities/1003129495.fit.gz
+912774571,"Mar 24, 2017, 5:11:50 PM",Miss Me?,Run,easin back into it...,2233,8.07,,FALSE,,activities/1012300905.fit.gz
+915539587,"Mar 26, 2017, 2:26:58 PM",To the Track and Back,Run,,2960,10.93,,FALSE,,activities/1015169270.fit.gz
+924100414,"Apr 1, 2017, 11:00:11 AM",Hell's Hills 2017,Run,"5 week taper, felt it! ",15589,47.72,,FALSE,,activities/1023957012.fit.gz
+926385277,"Apr 2, 2017, 7:17:21 PM",Vagabond 1st Birthday Riverplace,Run,Family hike post 50k shakeout,8181,9.07,,FALSE,,activities/1026320500.fit.gz
+930882901,"Apr 6, 2017, 4:54:32 PM",Too Nice to Not Run Somewhere,Run,fun jaunt with Mr Orf,3788,12.53,,FALSE,,activities/1030924729.fit.gz
+932087977,"Apr 7, 2017, 4:59:51 PM",Easy Track Miles pre 50k #2,Run,,1734,5.95,,FALSE,,activities/1032158024.fit.gz
+933680344,"Apr 8, 2017, 11:59:58 AM",Channeling my Inner Sabrina,Run,TNT 50k for back to back Saturdays ,19240,48.08,,FALSE,,activities/1033799823.fit.gz
+975403698,"May 7, 2017, 1:58:15 PM",Spectrum Vagabond HOL 10k,Run,Jog hike with Sandi. Testing the knee after 1mo rest,4302,9.88,,FALSE,,activities/1076741436.fit.gz
+986787089,"May 13, 2017, 6:11:41 PM",Sharptail Ridge,Hike,goofing around the south Denver area with Sandi,6502,8.17,,FALSE,,activities/1089726037.fit.gz
+986787604,"May 12, 2017, 3:18:30 PM",Horesetooth Park,Hike,West Ft. Collins area,10073,10.48,,FALSE,,activities/1089726643.fit.gz
+986787620,"May 11, 2017, 8:59:42 PM",Royal Arch Boulder,Hike,post beer lunch stroll,6575,5.48,,FALSE,,activities/1089726661.fit.gz
+994546487,"May 18, 2017, 5:10:25 PM",Back in the Saddle,Run,with my pigmy ponie,3699,11.36,,FALSE,,activities/1096640914.fit.gz
+998958434,"May 20, 2017, 1:46:27 PM",TacoCabana Rockhopper Challenge,Run,"yuck, but I didn't puke!",7285,15.14,,FALSE,,activities/1101156786.fit.gz
+998960291,"May 21, 2017, 1:01:56 PM",Loop in the Hood,Run,with Josh and Doug,5249,18.05,,FALSE,,activities/1101158768.fit.gz
+1002354700,"May 23, 2017, 5:05:35 PM",Mueller Loop with Thomas,Run,just like the old days!,4237,14.7,,FALSE,,activities/1104652745.fit.gz
+1005443380,"May 25, 2017, 5:19:15 PM",Easy Track Miles in the Sun,Run,get out of the office!,2573,9.04,,FALSE,,activities/1107821456.fit.gz
+1006986036,"May 26, 2017, 6:00:00 PM",Manhunt around the Capitol and Courthouse Area,Run,Forgot my watch at home,4320,15.28,,FALSE,,
+1008245586,"May 27, 2017, 2:15:36 PM",Sweat Box Loop,Run,Slowly building back up,4961,17.41,,FALSE,,activities/1110702739.fit.gz
+1010133324,"May 28, 2017, 3:40:01 PM",Biscuits and Gravy,Run,Mowed the yard and ate before this toaster,3525,12.31,,FALSE,,activities/1112658112.fit.gz
+1011486063,"May 29, 2017, 2:16:02 PM",Never Forget,Run,,6967,22.97,,FALSE,,activities/1114057839.fit.gz
+1014834676,"May 31, 2017, 5:07:06 PM",Hancock Golf Course Lolipop,Run,nice and humid,4874,16.46,,FALSE,,activities/1117496111.fit.gz
+1016365767,"Jun 1, 2017, 4:38:20 PM",Josh's Lunch Loop with Thomas,Run,no joshin!,4800,15.54,,FALSE,,activities/1119074609.fit.gz
+1019908075,"Jun 3, 2017, 12:30:05 PM",The Festival Marathon,Run,Testing out the knee. Happy with result! ,15294,42.28,,FALSE,,activities/1122719320.fit.gz
+1024169428,"Jun 6, 2017, 4:41:41 PM",Wilkie Wonka's Vagabond Factory,Run,"Easy on the knee on the downs, from UT with Thomas in the sun!",6073,18.13,,FALSE,,activities/1127096274.fit.gz
+1025698433,"Jun 7, 2017, 5:18:42 PM",Golf Course Laps Loop,Run,,3954,13.34,,FALSE,,activities/1128640497.fit.gz
+1028594374,"Jun 9, 2017, 4:35:50 PM",More Golf Course Loops,Run,"humid but not that hot, with TO",5098,16.75,,FALSE,,activities/1131564349.fit.gz
+1030360135,"Jun 10, 2017, 7:15:33 PM",Back home after AFM,Run,Stood on my feet for 5 hours,2946,9.65,,FALSE,,activities/1133354025.fit.gz
+1030360217,"Jun 10, 2017, 3:00:41 PM",AFM Challenge Course Check,Run,,485,1.63,,FALSE,,activities/1133354161.fit.gz
+1030360279,"Jun 10, 2017, 1:12:10 PM",To Austin Fit Challenge,Run,,2888,9.72,,FALSE,,activities/1133354188.fit.gz
+1035001427,"Jun 13, 2017, 4:57:31 PM",Wakeboarding DOMs Painful Shakeout,Run,everything hurts,4429,14.7,,FALSE,,activities/1138107357.fit.gz
+1038306411,"Jun 15, 2017, 4:36:23 PM",Still Sore from Wakeboarding Attempt!,Run,"with TO, Andy B sighting",5098,16.12,,FALSE,,activities/1141492785.fit.gz
+1038306664,"Jun 13, 2017, 10:40:33 PM",Home Commute,Ride,"almost every day, both ways, just never log it",2909,8.03,,FALSE,,activities/1141493154.fit.gz
+1041322649,"Jun 17, 2017, 2:27:47 PM",LBL Washtub Scorcher,Run,That was tough,10015,32.36,,FALSE,,activities/1144599197.fit.gz
+1041323033,"Jun 16, 2017, 2:19:46 PM",Morning Ride,Ride,,1244,7.94,,FALSE,,activities/1144599946.fit.gz
+1043152911,"Jun 18, 2017, 1:59:50 PM",To the Madrone and Back,Hike,With Sandi,9346,12.49,,FALSE,,activities/1146502243.fit.gz
+1049323205,"Jun 22, 2017, 5:09:04 PM",Pease Park OnB with TO,Run,steamy nooner!,4623,14.43,,FALSE,,activities/1152823572.fit.gz
+1050306526,"Jun 23, 2017, 11:45:05 AM",LBL-Last Hurrah with Josh S,Run,"Just like the old days, except slower",4520,16.12,,FALSE,,activities/1153827591.fit.gz
+1053477303,"Jun 25, 2017, 12:30:08 AM",Golf Balls and Calf Raises,Run,CK 30k final gear check for HR,9725,29.21,,FALSE,,activities/1157102632.fit.gz
+1067632022,"Jul 4, 2017, 5:46:49 PM",Pre Road Trip Warm Up Stretch,Run,synchd the watch to 30hour on phone,1570,5.28,,FALSE,,activities/1171479968.fit.gz
+1077516430,"Jul 10, 2017, 4:38:33 PM","Telluride, Bear Creek, Wasatch Saddle",Hike,scouting Hardrock trail,14580,19.89,,FALSE,,activities/1181494375.fit.gz
+1092930440,"Jul 14, 2017, 12:00:38 PM",Hardrock 2017 CCW First 92 Miles,Run,watch set for 30 hours and worked,108262,148.78,,FALSE,,activities/1197186819.fit.gz
+1104407536,"Jul 27, 2017, 5:07:20 PM",First Run after Hardrock,Run,no problems so far in recovery,2259,8.13,,FALSE,,activities/1208819580.fit.gz
+1109821049,"Jul 30, 2017, 12:42:24 PM",Beach Recovery Whuppin,Run,man that was humid!,7834,24.15,,FALSE,,activities/1214322936.fit.gz
+1112668285,"Aug 1, 2017, 5:26:46 PM",No Thomas to run with,Run,All by myself...,4312,14.68,,FALSE,,activities/1217213843.fit.gz
+1114298792,"Aug 2, 2017, 5:36:31 PM",Hancock Golf Course Lunch,Run,nice and humid,3909,13.25,,FALSE,,activities/1218868366.fit.gz
+1117269857,"Aug 4, 2017, 4:54:19 PM",UT to LBL OnB,Run,nice Friday jog,3694,12.57,,FALSE,,activities/1221880214.fit.gz
+1120497696,"Aug 6, 2017, 3:17:22 PM",Hiking Mt Youpon with Paul,Run,,1790,3.4,,FALSE,,activities/1225176497.fit.gz
+1120500212,"Aug 6, 2017, 2:35:30 PM",Not a Chance in Hell,Run,vagabond fail,2404,4.91,,FALSE,,activities/1225179062.fit.gz
+1127152349,"Aug 10, 2017, 5:41:56 PM","Off, On, Off, On, Off",Run,round and round for Thomas,2172,8.06,,FALSE,,activities/1231940912.fit.gz
+1128564779,"Aug 11, 2017, 4:47:09 PM",Remember that time we ran Mueller? ,Run,,4243,14.81,,FALSE,,activities/1233376812.fit.gz
+1130087828,"Aug 12, 2017, 2:49:55 PM",Cut Short for Chores,Run,,4814,14.25,,FALSE,,activities/1234947256.fit.gz
+1131787547,"Aug 13, 2017, 2:03:09 PM",LD Church Repent,Run,Felt like Hades,5116,17.86,,FALSE,,activities/1236684858.fit.gz
+1135331580,"Aug 15, 2017, 5:33:20 PM","WU, 800m On, Off...repeat for 5mi",Run,hot,2187,8.07,,FALSE,,activities/1240290826.fit.gz
+1140152327,"Aug 18, 2017, 5:14:35 PM","Lake Check, Still There, Hot Out",Run,,3765,12.91,,FALSE,,activities/1245185360.fit.gz
+1140153183,"Aug 18, 2017, 12:41:17 AM",Turkey Creek Scouting Jog,Run,"with Sandi, missing a half mile",2245,4.33,,FALSE,,activities/1245186496.fit.gz
+1143580616,"Aug 20, 2017, 1:38:24 PM",LBL 20 Social Hours,Run,Chat chat chat. Drank too much cold water at the last stop,10251,32.42,,FALSE,,activities/1248672310.fit.gz
+1146792665,"Aug 22, 2017, 5:12:40 PM",Hancock Golf Course Lunch Round,Run,,3964,13.89,,FALSE,,activities/1251940814.fit.gz
+1148542590,"Aug 23, 2017, 6:13:44 PM",Ran my Age!,Run,,90,0.31,,FALSE,,activities/1253720151.fit.gz
+1148542910,"Aug 23, 2017, 5:25:11 PM",5.0 for my big 50,Run,"wu, random intervals, cd. trying to prep for Zilker Relays!",2667,8.07,,FALSE,,activities/1253720393.fit.gz
+1150295027,"Aug 24, 2017, 5:36:29 PM",Josh's Lunch Loop,Run,,4400,15.48,,FALSE,,activities/1255489558.fit.gz
+1153606314,"Aug 25, 2017, 12:36:45 PM",Morning Ride,Ride,,1109,8.06,,FALSE,,activities/1258845942.fit.gz
+1153606404,"Aug 26, 2017, 4:50:47 PM",Hood work in Harvey,Run,Jog to track and add some 400's,2721,9.46,,FALSE,,activities/1258845989.fit.gz
+1156917638,"Aug 28, 2017, 5:32:00 PM",Prepping for ZR,Run,"1WU, 2on, 800CD, 800on",2113,7.23,,FALSE,,activities/1262207349.fit.gz
+1158691198,"Aug 29, 2017, 5:52:48 PM",Longhorn Dam Lunch Loop,Run,,4232,14.93,,FALSE,,activities/1263993858.fit.gz
+1161889723,"Aug 31, 2017, 5:10:53 PM",Random Intervals,Run,"WU, couple 400s, 800s, mile",2263,6.46,,FALSE,,activities/1267211143.fit.gz
+1163329604,"Sep 1, 2017, 5:38:50 PM",ZR Scout Lunch Mission,Run,gonna be hot and tough,4251,15.05,,FALSE,,activities/1268664334.fit.gz
+1167005538,"Sep 3, 2017, 3:20:23 PM",National Nekid Trail Running Day,Run,Muleshoe,8105,23.85,,FALSE,,activities/1272397355.fit.gz
+1169935509,"Sep 5, 2017, 5:18:10 PM",Yasso Lasso,Run,"1mi WU, then 6 x Halves with rest b/t",2633,6.48,,FALSE,,activities/1275362350.fit.gz
+1174860821,"Sep 8, 2017, 11:37:00 PM",Zilker Relays 2017,Run,Spectrum Trail Racing,903,4.13,,FALSE,,activities/1280349859.fit.gz
+1177828745,"Sep 10, 2017, 2:00:37 PM",Ladera Plus,Run,Great morning,7363,20.92,,FALSE,,activities/1283375376.fit.gz
+1180877592,"Sep 12, 2017, 5:00:49 PM",Just a Little Leg Stretcher,Run,Too nice to stay inside,1904,6.96,,FALSE,,activities/1286463099.fit.gz
+1189256116,"Sep 16, 2017, 11:30:06 AM",Spectrum Sky Island 50k,Run,Fun day after a rough nite! ,17471,49.24,,FALSE,,activities/1294959842.fit.gz
+1195024203,"Sep 21, 2017, 5:35:54 PM",Only Time for a few Easy Miles at Lunch,Run,shaking out from the 50k road trip,2531,8.17,,FALSE,,activities/1300809196.fit.gz
+1199733175,"Sep 24, 2017, 2:00:00 PM",This is why I don't log my bike commute miles,Run,Left my watch on from Friday morning ride to work,4080,12.55,,FALSE,,
+1202967085,"Sep 26, 2017, 4:32:56 PM",Making up some Mueller Miles; Muggy,Run,,4062,14.68,,FALSE,,activities/1308874470.fit.gz
+1206161619,"Sep 28, 2017, 5:07:03 PM",Round and round and round he goes...,Run,,3216,12.08,,FALSE,,activities/1312101529.fit.gz
+1210506846,"Oct 1, 2017, 12:57:02 PM",Tour Guide Practice,Run,A spin with Chris; beautiful morning! ,4546,12.33,,FALSE,,activities/1316513635.fit.gz
+1221183493,"Oct 7, 2017, 10:00:04 AM",Spectrum Trail Running Rawhide 50,Run,"Comfort TX Flat Rock Creek Ranch, muggy!",28352,80.31,,FALSE,,activities/1327323631.fit.gz
+1237910187,"Oct 19, 2017, 5:19:10 PM","Nothing to see here, move along...",Run,just enjoying some sunshine at lunch!,2279,8.09,,FALSE,,activities/1344239844.fit.gz
+1240508736,"Oct 21, 2017, 12:07:29 PM",Spectrum Training Run,Run,With Jason,6134,20.56,,FALSE,,activities/1346869282.fit.gz
+1246671967,"Oct 25, 2017, 5:41:58 PM",Not Training. Always in Training,Run,Nice day for a jog!,2547,8.61,,FALSE,,activities/1353113556.fit.gz
+1255248250,"Oct 31, 2017, 5:32:35 PM",Laying Low...for now,Run,,1627,5.52,,FALSE,,activities/1361777412.fit.gz
+1265672120,"Nov 7, 2017, 6:23:37 PM",Easy Muggy Five b/f the Cool Front Arrives,Run,,2330,8.04,,FALSE,,activities/1372312903.fit.gz
+1268370873,"Nov 9, 2017, 6:25:28 PM",Inside the Mind of a Desert Solstice Runner,Run,,2324,8.05,,FALSE,,activities/1375007949.fit.gz
+1269548080,"Nov 10, 2017, 5:45:25 PM","Cancel the APB for Jason S, Found Him!",Run,,2341,8.05,,FALSE,,activities/1376180497.fit.gz
+1275373630,"Nov 14, 2017, 5:52:52 PM",Div I Women's Soccer Championships?!,Run,who knew?,2478,8.77,,FALSE,,activities/1382046303.fit.gz
+1278167325,"Nov 16, 2017, 6:34:29 PM",Working up a Good Sweat,Run,Cool front Saturday,2240,8.06,,FALSE,,activities/1384845796.fit.gz
+1279356239,"Nov 17, 2017, 6:25:34 PM",Let's Get This Party Started! TGIF,Run,,2318,8.06,,FALSE,,activities/1386036768.fit.gz
+1282270303,"Nov 19, 2017, 2:55:40 PM",Sweet Ladera!,Run,,5869,20.17,,FALSE,,activities/1388983490.fit.gz
+1285196004,"Nov 21, 2017, 6:00:00 PM",Same Thing Different Day,Run,,2280,8.04,,FALSE,,
+1286352610,"Nov 22, 2017, 6:00:40 PM","Taco Trot #38, My 10th or 11th",Run,,3973,15.97,,FALSE,,activities/1393077819.fit.gz
+1290631681,"Nov 25, 2017, 1:59:44 PM",Spectrum The Game,Run,Had fun but needed to have a weekend too!,33679,59.19,,FALSE,,activities/1397388746.fit.gz
+1297065578,"Nov 30, 2017, 8:02:19 PM",Jog back from TRE,Run,,843,2.42,,FALSE,,activities/1403918042.fit.gz
+1297065613,"Nov 30, 2017, 6:06:59 PM",Jog to TRE,Run,,762,2.41,,FALSE,,activities/1403918065.fit.gz
+1309521418,"Dec 10, 2017, 5:06:11 PM","Condo, Desert Solstice Track, Park, Condo",Run,Phoenix AZ,2423,8.7,,FALSE,,activities/1416709259.fit.gz
+1312953108,"Dec 13, 2017, 6:34:19 PM",Desert Solstice Flashbacks,Run,,2138,8.05,,FALSE,,activities/1420236104.fit.gz
+1314022552,"Dec 14, 2017, 6:06:43 PM",Lunch Run,Run,,2842,9.67,,FALSE,,activities/1421324267.fit.gz
+1317784166,"Dec 17, 2017, 6:54:42 PM",Hangover Cure!,Run,,4934,16.89,,FALSE,,activities/1425181722.fit.gz
+1321136386,"Dec 20, 2017, 5:59:53 PM",Ghulam Khan,Run,,3719,12.92,,FALSE,,activities/1428626972.fit.gz
+1322308631,"Dec 21, 2017, 6:33:41 PM",Vitamin D Gathering @ 80F Dec 21,Run,,4316,15.7,,FALSE,,activities/1429827036.fit.gz
+1324626463,"Dec 23, 2017, 4:49:14 PM",Saturday Office Check,Run,Nice day!,7642,19.52,,FALSE,,activities/1432212061.fit.gz
+1325916755,"Dec 24, 2017, 2:45:29 PM",Looking for Reindeer ,Run,,5583,19.54,,FALSE,,activities/1433547968.fit.gz
+1328296996,"Dec 26, 2017, 7:42:14 PM",Cabin Fever,Run,When do I go back to work?,2687,9.6,,FALSE,,activities/1436044765.fit.gz
+1331068035,"Dec 28, 2017, 9:15:50 PM",Killing Time,Run,,6031,20.55,,FALSE,,activities/1438917555.fit.gz
+1332186109,"Dec 29, 2017, 5:39:21 PM","Lake Check, Still There",Run,,11179,33.54,,FALSE,,activities/1440083312.fit.gz
+1335121293,"Dec 31, 2017, 3:54:25 PM",Seventeen for 2017,Run,"With Jeff, great way to end the year! ",7697,28.01,,FALSE,,activities/1443142539.fit.gz
+1336414771,"Jan 1, 2018, 6:04:16 PM",Starting Off with Trail Fun,Run,With Jason,5213,13.95,,FALSE,,activities/1444490941.fit.gz
+1339365002,"Jan 3, 2018, 6:23:17 PM",Warming Up & Thawing Out,Run,finally some sun!,2390,6.97,,FALSE,,activities/1447529320.fit.gz
+1340943497,"Jan 4, 2018, 6:40:03 PM",Ready to Pace @ Bandera,Run,,2356,8.27,,FALSE,,activities/1449146291.fit.gz
+1344512626,"Jan 6, 2018, 8:19:13 PM","Jason Brooks' Bandera 100k, Last 25k",Run,kicked some ass on Cairns and Boyles!,8146,24.17,,FALSE,,activities/1452840197.fit.gz
+1348999093,"Jan 9, 2018, 6:54:22 PM",Vagabond! Boner Points for Nooner!,Run,,1562,4.42,,FALSE,,activities/1457642118.fit.gz
+1348999436,"Jan 9, 2018, 6:11:29 PM",Riverplace Warm Up by Going Dowhill,Run,,1781,4.4,,FALSE,,activities/1457642480.fit.gz
+1353681255,"Jan 12, 2018, 6:16:08 PM",Nice Sunny Lunch Laps,Run,Wish I had time for more!,2859,10.15,,FALSE,,activities/1462436753.fit.gz
+1355658799,"Jan 13, 2018, 8:03:59 PM",Don‰Ûªt Waste Time,Run,Sunny Saturday!,4200,16.17,,FALSE,,activities/1464480564.fit.gz
+1373456631,"Jan 24, 2018, 6:24:41 PM",Back to Your Regularly Scheduled Programming,Run,nice day!,2229,8.06,,FALSE,,activities/1482935267.fit.gz
+1383490556,"Jan 30, 2018, 6:26:41 PM",What a Day for a Daydream!,Run,,3619,12.85,,FALSE,,activities/1493287031.fit.gz
+1385139091,"Jan 31, 2018, 6:13:27 PM",Lane 5,Run,,2530,9.29,,FALSE,,activities/1494999712.fit.gz
+1386806788,"Feb 1, 2018, 6:19:42 PM",Theater in the Round,Run,,2670,9.68,,FALSE,,activities/1496723736.fit.gz
+1417672941,"Feb 20, 2018, 6:43:10 PM",Couch to 100k in 4 Days!?,Run,might be a dumb idea,2027,7.02,,FALSE,,activities/1530097292.fit.gz
+1417672955,"Feb 20, 2018, 1:52:26 PM",Morning Ride,Ride,,1150,5.84,,FALSE,,activities/1530097344.fit.gz
+1440755417,"Mar 3, 2018, 7:57:22 PM",Crested Butte Resurrection Bumps ,Alpine Ski,,204,1.06,,FALSE,,activities/1553984546.fit.gz
+1455868033,"Mar 12, 2018, 4:58:43 PM",Punta Monterrey San Francisco Out N Back,Run,way finding and exploring,8060,17.58,,FALSE,,activities/1569579788.fit.gz
+1457751930,"Mar 6, 2018, 6:18:34 PM",Lunch Run,Run,,3961,13.38,,FALSE,,activities/1571515499.fit.gz
+1457752052,"Feb 4, 2018, 3:24:11 PM",Morning Run,Run,,4000,12.49,,FALSE,,activities/1571515640.fit.gz
+1457756657,"Mar 17, 2018, 1:30:27 PM",Miller Miller Chicken Dinner,Run,Humid,4547,16.42,,FALSE,,activities/1571520158.fit.gz
+1462817711,"Mar 20, 2018, 5:35:36 PM",Easing Back into Shape Hopefully,Run,First day of Spring!,2249,8.07,,FALSE,,activities/1576798150.fit.gz
+1467710039,"Mar 23, 2018, 4:56:31 PM",Lunch Run,Run,,2210,8.06,,FALSE,,activities/1581877373.fit.gz
+1469050429,"Mar 24, 2018, 12:24:59 PM",Chamber of Commerce Jog,Run,Touring prospective grad students ,4921,11.15,,FALSE,,activities/1583265758.fit.gz
+1471904401,"Mar 25, 2018, 12:00:02 PM",The Maze 30k Race,Run,,9602,28.85,,FALSE,,activities/1586284443.fit.gz
+1501004290,"Apr 10, 2018, 5:24:50 PM","Oh My Dog, I Went for a Jog!",Run,Where have I been?,4305,13.93,,FALSE,,activities/1616577689.fit.gz
+1511107746,"Apr 15, 2018, 2:18:17 PM",Muleshoe Fun,Run,Wow. Beautiful morning in the hill country,12372,31.4,,FALSE,,activities/1627062549.fit.gz
+1514515994,"Apr 17, 2018, 5:38:16 PM",Hancock Golf Course Lunch Loops,Run,,3929,13.01,,FALSE,,activities/1630592785.fit.gz
+1516638652,"Apr 18, 2018, 5:04:05 PM",Thomas' Favorite Lunch Loop,Run,without him..,4112,14.66,,FALSE,,activities/1632788288.fit.gz
+1520742854,"Apr 20, 2018, 4:59:36 PM",Friday Half-Marathon Boogie,Run,Needs to be a new tradition for Fridays!,5729,21.06,,FALSE,,activities/1637045660.fit.gz
+1522778175,"Apr 21, 2018, 3:07:01 PM",Early Ladera Church,Run,Been a while!,5899,20.23,,FALSE,,activities/1639176566.fit.gz
+1529461038,"Apr 24, 2018, 4:55:37 PM",Easy 8 with Jason at Shoal Creek & Pease,Run,,4027,13.21,,FALSE,,activities/1646183931.fit.gz
+1531609380,"Apr 25, 2018, 5:47:10 PM",Lick Both Ways Before You...,Run,,3294,11.44,,FALSE,,activities/1648424503.fit.gz
+1536883301,"Apr 28, 2018, 2:16:03 PM","Post Volleyball, Pre 30k Race Stretch Run",Run,,1853,6.36,,FALSE,,activities/1653876412.fit.gz
+1539706583,"Apr 29, 2018, 12:00:04 PM","Rogue Tangle ""30k""ish Flat Creek Ranch",Run,,8619,28.4,,FALSE,,activities/1656784976.fit.gz
+1543658403,"May 1, 2018, 4:57:57 PM",Hyde Park Shake Out with Jason,Run,"nice and humid, felt good to sweat",2698,9.06,,FALSE,,activities/1660847552.fit.gz
+1547668581,"May 3, 2018, 5:19:08 PM",Think Inside the Box,Run,,3547,12.73,,FALSE,,activities/1664942325.fit.gz
+1555644024,"May 5, 2018, 1:15:54 PM",Contra Flow,Run,On course spectating and marker repairs,8364,19.65,,FALSE,,activities/1673156163.fit.gz
+1558487574,"May 8, 2018, 5:40:46 PM",Vagabond Cool Down,Run,,2096,6.72,,FALSE,,activities/1676064509.fit.gz
+1558487732,"May 8, 2018, 5:27:09 PM",Spectrum Vagabond Marshes Ladder,Run,,658,2.69,,FALSE,,activities/1676064721.fit.gz
+1558487768,"May 8, 2018, 5:05:29 PM",Vagabond Warm Up,Run,,1139,3.91,,FALSE,,activities/1676064756.fit.gz
+1565329010,"May 11, 2018, 5:07:14 PM",Random Sampling,Run,,3640,11.02,,FALSE,,activities/1683435299.fit.gz
+1567506665,"May 12, 2018, 2:32:43 PM","Josh's Hangover Run, without Josh",Run,forgot stop watch at end for a bit...,4832,15.35,,FALSE,,activities/1685757615.fit.gz
+1576429758,"May 16, 2018, 5:17:45 PM","Big Loops, little loops",Run,,3766,13.09,,FALSE,,activities/1695000233.fit.gz
+1580468231,"May 18, 2018, 5:29:37 PM",First Summer Sizzler Lunch Buffet ,Run,who's that half-nekkid sweaty guy in the graduation crowd outside the gym?,4897,16.51,,FALSE,,activities/1699169684.fit.gz
+1582007084,"May 19, 2018, 12:05:47 PM",Guest Appearance Spectrum Saturday,Run,,4382,10.28,,FALSE,,activities/1700772613.fit.gz
+1591594395,"May 23, 2018, 5:17:28 PM","Less Hots, More Humids",Run,,4467,16.05,,FALSE,,activities/1710697965.fit.gz
+1610489517,"Jun 1, 2018, 5:25:49 PM",Cracked Ribs Good to Go for Sunday?,Run,only time will tell...ouch.,1816,6.45,,FALSE,,activities/1730790598.fit.gz
+1610489760,"May 30, 2018, 1:19:29 PM",UT Golf Club,Hike,playing and riding in cart,14696,13.47,,FALSE,,activities/1730790841.fit.gz
+1615755759,"Jun 3, 2018, 12:00:04 PM",The Ranch 30k Rogue Spectrum,Run,Final race in the series,10423,32.24,,FALSE,,activities/1736383935.fit.gz
+1619400767,"Jun 5, 2018, 5:42:50 PM",Toasty Shake Out 4 for Lunch,Run,,1828,6.54,,FALSE,,activities/1740314992.fit.gz
+1621552423,"Jun 6, 2018, 5:24:06 PM",Sunny 7 at the Golf Course,Run,,3272,11.29,,FALSE,,activities/1742713998.fit.gz
+1623599660,"Jun 7, 2018, 4:34:16 PM",Urban Sprawl,Run,,4371,15.37,,FALSE,,activities/1744929237.fit.gz
+1625712652,"Jun 8, 2018, 5:51:55 PM",Whew! ,Run,,5388,17.85,,FALSE,,activities/1747180552.fit.gz
+1629788470,"Jun 10, 2018, 11:57:58 AM",Ladera the Cruel Mistriss,Run,,5490,17.94,,FALSE,,activities/1751472606.fit.gz
+1636624596,"Jun 13, 2018, 5:08:05 PM",Mt Bonnell Microwave Lunch,Run,,4990,15.81,,FALSE,,activities/1758641746.fit.gz
+1640559589,"Jun 15, 2018, 5:29:54 PM",Quick Break from the Office Chair,Run,,2477,8.89,,FALSE,,activities/1762767580.fit.gz
+1645037314,"Jun 17, 2018, 12:55:10 PM","Laderaaa, I am Your Faaather",Run,,5250,17.8,,FALSE,,activities/1767461581.fit.gz
+1651418788,"Jun 20, 2018, 5:46:58 PM",Ready to Crew & Pace at States!,Run,#millertime ,3893,13.39,,FALSE,,activities/1774136497.fit.gz
+1663315178,"Jun 22, 2018, 5:01:05 PM",Altra Uphill Challenge,Run,,5164,9.72,,FALSE,,activities/1786581173.fit.gz
+1663315493,"Jun 24, 2018, 2:50:11 AM",Western States Pacing,Run,Foresthill to Rucky Chucky with Jeff Miller,12037,25,,FALSE,,activities/1786580930.fit.gz
+1666229891,"Jun 27, 2018, 4:56:58 PM",Fore times Two,Run,,3728,13.05,,FALSE,,activities/1789595326.fit.gz
+1668231774,"Jun 28, 2018, 5:08:27 PM","Trail Closed, Construction Everywhere",Run,poo poo,3711,12.91,,FALSE,,activities/1791663524.fit.gz
+1670196749,"Jun 29, 2018, 4:50:02 PM",Dehydration Station,Run,,5394,17.1,,FALSE,,activities/1793697055.fit.gz
+1674548979,"Jul 1, 2018, 1:38:47 PM",Walnutbuster,Run,Gear check toaster,8700,25.06,,FALSE,,activities/1798225943.fit.gz
+1678838960,"Jul 3, 2018, 5:17:13 PM","No Fireworks, Just Fire",Run,,3878,13.47,,FALSE,,activities/1802665800.fit.gz
+1683082295,"Jul 5, 2018, 4:53:03 PM",Only 90F Out There Today!,Run,"plenty humid but felt good, easy 8",3987,13.32,,FALSE,,activities/1807047304.fit.gz
+1683082455,"Jul 4, 2018, 1:09:27 PM",Riverplace is Officially Ruined Jog/Hike,Run,9 million people and 8 million dogs,3973,7.39,,FALSE,,activities/1807047487.fit.gz
+1685125785,"Jul 6, 2018, 5:02:12 PM",What a Difference a Couple Inches Makes!,Run,Rain People! Rain cooled temps....geez.,6215,21.15,,FALSE,,activities/1809156324.fit.gz
+1689392218,"Jul 8, 2018, 1:33:15 PM",Two Bottle Tour,Run,,7347,24.85,,FALSE,,activities/1813595793.fit.gz
+1694020567,"Jul 10, 2018, 5:26:01 PM",Headwaters of Waller Creek?,Run,,4254,14.9,,FALSE,,activities/1818435711.fit.gz
+1696064423,"Jul 11, 2018, 5:03:21 PM",Only Time for Five,Run,clockwise?,2309,8.13,,FALSE,,activities/1820558743.fit.gz
+1700385711,"Jul 13, 2018, 5:27:24 PM",Friday Fun Day Lunch Loop,Run,,6129,21.5,,FALSE,,activities/1825042135.fit.gz
+1702388544,"Jul 14, 2018, 3:36:53 PM",Mac Track 2x1mile,Run,,2616,8.62,,FALSE,,activities/1827129522.fit.gz
+1704641258,"Jul 15, 2018, 12:49:28 PM",Walnut Quickie Before Soccer,Run,,5708,17.26,,FALSE,,activities/1829478614.fit.gz
+1709158390,"Jul 17, 2018, 5:01:24 PM",Hancock Hackers!,Run,almost got hit twice by big bad slices...,3719,12.87,,FALSE,,activities/1834152589.fit.gz
+1711415240,"Jul 18, 2018, 5:07:39 PM",Jog Around Campus,Run,easy jog and some stretching,2430,8.53,,FALSE,,activities/1836493853.fit.gz
+1713779779,"Jul 19, 2018, 5:23:47 PM",Rather be in the Mountains,Run,missing hardrock about now...,3916,13.99,,FALSE,,activities/1838935659.fit.gz
+1715875604,"Jul 20, 2018, 5:07:19 PM",Friday Half-Marathon Boogie,Run,let the weekend begin!,6104,21.06,,FALSE,,activities/1841106036.fit.gz
+1720554796,"Jul 22, 2018, 2:08:12 PM",Not Bad In the Shade,Run,Which there wasn‰Ûªt much of,5202,17.79,,FALSE,,activities/1846667477.fit.gz
+1727626561,"Jul 25, 2018, 5:45:57 PM",Office Escape!,Run,run away!,4032,13.87,,FALSE,,activities/1854025509.fit.gz
+1729779030,"Jul 26, 2018, 5:37:33 PM",Spying on Chris W's New Place,Run,,5015,15.84,,FALSE,,activities/1856273459.fit.gz
+1731739923,"Jul 27, 2018, 5:02:08 PM",Keep On Chooglin,Run,,5016,16.63,,FALSE,,activities/1858298384.fit.gz
+1737929395,"Jul 29, 2018, 6:45:01 PM",Skydive San Marcos,Velomobile,,4465,91.04,,FALSE,,activities/1864739225.fit.gz
+1740710652,"Jul 31, 2018, 5:14:48 PM",3 Days Off and Cloud Cover!,Run,,3876,13.6,,FALSE,,activities/1867608166.fit.gz
+1743032894,"Aug 1, 2018, 5:28:25 PM",Short Ladder Speed Work,Run,"WU, 2x400, 2x800, 1x1mi, 2x800",2650,6.98,,FALSE,,activities/1869999795.fit.gz
+1745485359,"Aug 2, 2018, 5:29:39 PM",West Campus and Beyond,Run,,3958,13.3,,FALSE,,activities/1872752641.fit.gz
+1747638212,"Aug 3, 2018, 5:49:50 PM",Extra Freaks in Town Today,Run,animation and gaming convention!,6343,22,,FALSE,,activities/1874979429.fit.gz
+1754417704,"Aug 6, 2018, 5:02:11 PM",No Hot Tub Monday for Me,Run,,4070,14.56,,FALSE,,activities/1883581223.fit.gz
+1763419478,"Aug 10, 2018, 6:23:18 PM",See Forever to Bear Creek,Run,,5669,12.58,,FALSE,,activities/1893350742.fit.gz
+1767552636,"Aug 12, 2018, 2:03:20 PM",Sunshine Mesa and Bilk Creek,Run,,4807,11.77,,FALSE,,activities/1897671551.fit.gz
+1771333757,"Aug 13, 2018, 1:49:34 PM",Ice and Island Lakes,Hike,,14031,12.88,,FALSE,,activities/1901569499.fit.gz
+1776918496,"Aug 16, 2018, 5:35:02 PM",Back to the Heat Shakeout Lunch,Run,,3328,11.89,,FALSE,,activities/1907329173.fit.gz
+1781126601,"Aug 18, 2018, 2:12:25 PM","Lake Check, Still There",Run,Toasty,10759,34.61,,FALSE,,activities/1911660898.fit.gz
+1788214886,"Aug 21, 2018, 5:26:33 PM",Dog Days of Summer,Run,,3851,13.84,,FALSE,,activities/1918971594.fit.gz
+1794827837,"Aug 24, 2018, 5:16:18 PM",#MilesForMollie,Run,I promise to beat the snot out of anyone who dares to lay harm on any fellow runner in my vicinity. ,6466,21.94,,FALSE,,activities/1925762859.fit.gz
+1798997624,"Aug 26, 2018, 1:29:53 PM",Sunday Services,Run,,6105,20.49,,FALSE,,activities/1930070127.fit.gz
+1803735487,"Aug 28, 2018, 5:07:18 PM",Wandering and Wondering,Run,,4247,14.83,,FALSE,,activities/1934923475.fit.gz
+1806052673,"Aug 29, 2018, 5:29:59 PM",Random High Five on Rainey Street!,Run,,3892,13.88,,FALSE,,activities/1937296099.fit.gz
+1808166667,"Aug 30, 2018, 5:00:03 PM","Quick Sex, er Six on the Streets",Run,,2951,10.87,,FALSE,,activities/1939466587.fit.gz
+1810283560,"Aug 31, 2018, 4:51:25 PM","Free Beer Friday Fail, for Now",Run,@Austindailypress scouting,6888,21.74,,FALSE,,activities/1941629861.fit.gz
+1814965682,"Sep 2, 2018, 11:08:32 AM",Summer Salty,Run,Fun run at the annual event,8283,24.6,,FALSE,,activities/1946457364.fit.gz
+1819497037,"Sep 4, 2018, 5:33:09 PM",Sweaty Seven in the Sauna,Run,then 7min in the inside sauna; bonus sweat!,3299,11.69,,FALSE,,activities/1951114404.fit.gz
+1821777611,"Sep 5, 2018, 5:21:00 PM",This Town is a Zoo; Ready for the Woods,Run,,3671,13.09,,FALSE,,activities/1953448157.fit.gz
+1825941736,"Sep 7, 2018, 5:06:21 PM",Got Rained On & Luved It!,Run,last half mile in the locker room I think!,7042,22.21,,FALSE,,activities/1957720433.fit.gz
+1831111387,"Sep 9, 2018, 6:48:04 PM",Late Ladera Interuptus,Run,Random dude flagged me down to help him unload a big desk from his car,5482,17.65,,FALSE,,activities/1963089080.fit.gz
+1835069081,"Sep 11, 2018, 5:09:05 PM",Easy 6 with Jason then 2 at Track Ramp/Stairs,Run,,4052,13.23,,FALSE,,activities/1967163758.fit.gz
+1839534583,"Sep 13, 2018, 5:21:05 PM",Was Drier Running in the Rain!,Run,,3814,14.01,,FALSE,,activities/1971747858.fit.gz
+1841481018,"Sep 14, 2018, 4:58:32 PM",USC Fans Invade Austin! Run for your Lives!,Run,,6102,21.85,,FALSE,,activities/1973743810.fit.gz
+1862699034,"Sep 18, 2018, 2:07:36 PM",Emory Peak Big Bend Highest Point,Hike,hike with Sandi. had the park to ourselves!,17032,15.72,,FALSE,,activities/1995784264.fit.gz
+1862699393,"Sep 22, 2018, 11:00:14 AM",Sky Island 50k Spectrum Trail Racing ,Run,2nd by under a minute I think. Cool mist most of the morning,18120,49.48,,FALSE,,activities/1995784552.fit.gz
+1880089591,"Oct 2, 2018, 5:14:30 PM",'Running' a few Errands,Run,Getting loose for AT100 this Saturday!,3827,11.59,,FALSE,,activities/2013748001.fit.gz
+1882149921,"Oct 3, 2018, 5:14:47 PM",Easy 3 and Some Stretching,Run,road trip tomorrow,1473,4.99,,FALSE,,activities/2015856869.fit.gz
+1898717841,"Oct 6, 2018, 10:59:41 AM",Arkansas Traveller 100 Trail Race,Run,manual gpx upload to correct Strava issue maybe?,63426,161.02,,FALSE,,activities/2033048056.gpx.gz
+1908888102,"Oct 12, 2018, 5:40:15 PM",ACL Crowd Watching Beer Lunch,Ride,easy riding around on a nice day,4395,13.7,,FALSE,,activities/2043625914.fit.gz
+1910773091,"Oct 16, 2018, 5:00:00 PM",Dreadmill Recovery Jog ,Run,Status of the apparatus?,2520,8.04,,FALSE,,
+1911072722,"Oct 17, 2018, 5:33:06 PM",Easing Back Into It With Cool Temps = Yay!,Run,,4227,14.25,,FALSE,,activities/2045873737.fit.gz
+1914837752,"Oct 19, 2018, 5:18:19 PM",Open More Fungates at the Dam!,Run,,4671,13.94,,FALSE,,activities/2049749097.fit.gz
+1919121464,"Oct 21, 2018, 2:18:34 PM",Sunshine! What a Morning!,Run,Finally,5936,20.14,,FALSE,,activities/2054231459.fit.gz
+1923264407,"Oct 23, 2018, 5:26:08 PM",Vote for Me!,Run,,3939,13.18,,FALSE,,activities/2058517833.fit.gz
+1927091862,"Oct 25, 2018, 5:13:18 PM",Visiting my Grandpuppy!,Run,,4795,12.12,,FALSE,,activities/2062446293.fit.gz
+1928823973,"Oct 26, 2018, 5:15:30 PM","Lake Check, Still Brown and Churning",Run,,6049,21.28,,FALSE,,activities/2064219810.fit.gz
+1933960290,"Oct 28, 2018, 1:51:44 PM",Wimberley Wanderings before Chores,Run,Blanco river looked nice!,2351,8.05,,FALSE,,activities/2069544336.fit.gz
+1936123435,"Oct 30, 2018, 4:22:18 PM",Running off Last Night's Dinner!,Run,,3862,14.01,,FALSE,,activities/2071777029.fit.gz
+1938211853,"Oct 31, 2018, 5:26:14 PM",Humid Slog before the Cool Front Arrives,Run,,3666,12.89,,FALSE,,activities/2073917111.fit.gz
+1941823261,"Nov 2, 2018, 5:43:44 PM",Packet Pick Up Downtown Fleet Feet,Run,Back on my Feet 30k trail tomorrow,3306,7.92,,FALSE,,activities/2077634706.fit.gz
+1943950760,"Nov 3, 2018, 12:15:23 PM",BOMF 30k Trail,Run,San Marcos ,9016,28.87,,FALSE,,activities/2079835060.fit.gz
+1951823886,"Nov 7, 2018, 5:58:33 PM",Last Humid Toasty Run of this Year?,Run,cool new art at Festival Beach area,4749,16.3,,FALSE,,activities/2087965892.fit.gz
+1962934087,"Nov 13, 2018, 6:40:55 PM","Plants, Pipes, Pets and Balls!",Run,baby it's cold outside!,2272,8.08,,FALSE,,activities/2099391377.fit.gz
+1966782790,"Nov 15, 2018, 5:25:28 PM",Mr Rogers Kind of Day!,Run,,4624,16.51,,FALSE,,activities/2103326922.fit.gz
+1968378128,"Nov 16, 2018, 6:37:55 PM",Too Nice to Stay Inside,Run,,4900,17.42,,FALSE,,activities/2104958046.fit.gz
+1975836897,"Nov 20, 2018, 6:26:36 PM",Running an Errand ,Run,nice out there!,3238,7.95,,FALSE,,activities/2112701865.fit.gz
+1977700728,"Nov 21, 2018, 6:01:53 PM","Taco Trot #39, #12 for me I Think",Run,,3840,15.91,,FALSE,,activities/2114644735.fit.gz
+1988174019,"Nov 27, 2018, 6:21:54 PM",Mueller Variation #27.5,Run,,3765,13.03,,FALSE,,activities/2125595560.fit.gz
+1989925371,"Nov 28, 2018, 6:16:03 PM",Friday Lake Check on Wednesday,Run,breezy but niiiiiice!,4520,16.61,,FALSE,,activities/2127421572.fit.gz
+1991548233,"Nov 29, 2018, 5:50:33 PM",Warm Sunshine Feels Goooood!,Run,,3568,13,,FALSE,,activities/2129117775.fit.gz
+1993116175,"Nov 30, 2018, 5:59:34 PM",Damn After Lunch Meetings!,Run,,3373,12.79,,FALSE,,activities/2130752677.fit.gz
+1997075008,"Dec 2, 2018, 4:09:44 PM",Muleshoe Sunshine in December ,Run,With Sandi,8616,24.49,,FALSE,,activities/2134907358.fit.gz
+2000244074,"Dec 4, 2018, 5:52:55 PM",Early Lunch Mueller with Jason,Run,"breezy and cool, felt good",3520,12.27,,FALSE,,activities/2138214931.fit.gz
+2002103884,"Dec 5, 2018, 6:34:23 PM",Hancock Lunch Loops in Nice Running Weather,Run,cloudy and cool but not cold!,3540,13.1,,FALSE,,activities/2140139396.fit.gz
+2003735389,"Dec 6, 2018, 6:26:55 PM",5 in the Cool Drizzle; Kinda Nice!,Run,,2169,8.28,,FALSE,,activities/2141818941.fit.gz
+2005261182,"Dec 7, 2018, 5:59:36 PM",Not So Many Peeps Out There Today,Run,,3745,13.78,,FALSE,,activities/2143385041.fit.gz
+2007257146,"Dec 8, 2018, 7:39:19 PM",Circus Relay Lap 3,Run,,2246,7.43,,FALSE,,activities/2145458233.fit.gz
+2007270957,"Dec 8, 2018, 3:25:23 PM",Circus Relay Lap 1,Run,,2296,7.52,,FALSE,,activities/2145472841.fit.gz
+2007271000,"Dec 8, 2018, 5:44:06 PM",Circus Relay Lap 2,Run,,2241,7.46,,FALSE,,activities/2145472857.fit.gz
+2012273074,"Dec 11, 2018, 6:00:48 PM",Too Nice to Not Get Out for a Run!,Run,Half lake loop with Jason,3679,13.68,,FALSE,,activities/2150691087.fit.gz
+2014075703,"Dec 12, 2018, 6:19:42 PM",Josh's Lunch Loop Variation 5a,Run,,3547,12.72,,FALSE,,activities/2152564787.fit.gz
+2015652370,"Dec 13, 2018, 6:20:04 PM",Nice and Warm before the Cold Wind Blows,Run,only time for 6,2434,9.67,,FALSE,,activities/2154208897.fit.gz
+2018687870,"Dec 15, 2018, 3:38:15 PM",LSD Trip,Run,Long slow distance ,8788,30.63,,FALSE,,activities/2157405438.fit.gz
+2020490903,"Dec 16, 2018, 3:25:40 PM",My Lady Ladera,Run,,5014,17.72,,FALSE,,activities/2159322263.fit.gz
+2023823719,"Dec 18, 2018, 5:57:45 PM",Easy 8 with Jason to Mueller and Back,Run,,3909,13.58,,FALSE,,activities/2162827123.fit.gz
+2025532492,"Dec 19, 2018, 6:23:58 PM",So Many Obstacles!,Run,"you name it, I dodged it",3513,12.89,,FALSE,,activities/2164622063.fit.gz
+2027052575,"Dec 20, 2018, 6:23:59 PM",Wind Only Blew My Hat Off Once!,Run,blustery day in the 100 acre wood,3236,12.15,,FALSE,,activities/2166216545.fit.gz
+2028485128,"Dec 21, 2018, 6:32:59 PM",Saw My First Real Scooter Wipeout!,Run,"milf with a phone in her breaking hand, downhill...",4490,16.7,,FALSE,,activities/2167703276.fit.gz
+2029917750,"Dec 22, 2018, 12:08:26 PM",Annual Christmas Ridge Run,Run,With Paul and Thomas,10909,33.4,,FALSE,,activities/2169189850.fit.gz
+2038550956,"Dec 27, 2018, 2:54:03 PM",Morning Run,Run,,5113,17.79,,FALSE,,activities/2178299420.fit.gz
+2044962028,"Dec 30, 2018, 5:16:04 PM",At Least it is Something!,Run,"Lazy morning, lazy afternoon ",2955,9.71,,FALSE,,activities/2185098870.fit.gz
+2048785598,"Jan 1, 2019, 2:35:04 PM",DIY Black Eyed Pea Run,Run,,4290,16.34,,FALSE,,activities/2189183685.fit.gz
+2055599554,"Jan 4, 2019, 6:06:19 PM",Only Time for Five,Run,Sunshine!!,2187,8.05,,FALSE,,activities/2196375537.fit.gz
+2058071959,"Jan 5, 2019, 1:40:20 PM",Explorations with Captain Paul,Run,Great morning!,14054,37.17,,FALSE,,activities/2198982826.fit.gz
+2064895296,"Jan 8, 2019, 5:55:20 PM",Back in the Lunch Groove,Run,sunny miles with Jason,3391,11.75,,FALSE,,activities/2206099649.fit.gz
+2067345538,"Jan 9, 2019, 6:19:09 PM",Like a Spring Chicken!,Run,I think my watch was on in the locker room still,4983,12.97,,FALSE,,activities/2208615615.fit.gz
+2071699263,"Jan 11, 2019, 6:33:39 PM",Friday Half-Marathon Boogie,Run,,5599,21.17,,FALSE,,activities/2213124140.fit.gz
+2073995726,"Jan 12, 2019, 5:16:19 PM",Slip Slide Saturday ,Run,"Too much mud, people and dogs to go for a second lap",4109,12.41,,FALSE,,activities/2215533447.fit.gz
+2076565244,"Jan 13, 2019, 3:46:37 PM",My Church Service,Run,,6044,21.46,,FALSE,,activities/2218616612.fit.gz
+2081104827,"Jan 15, 2019, 6:20:10 PM","Fire, Flood, Cleanup...Lunch Run",Run,Good solid 3 hours sleep last night!,3683,13.69,,FALSE,,activities/2223398553.fit.gz
+2085461917,"Jan 17, 2019, 6:17:16 PM",Get Me Outside...Now!,Run,,3908,14.01,,FALSE,,activities/2227891076.fit.gz
+2087533408,"Jan 18, 2019, 6:07:51 PM",Friday Half-Marathon Boogie,Run,,5737,21.43,,FALSE,,activities/2230031323.fit.gz
+2092569941,"Jan 20, 2019, 4:11:03 PM",Not the 3M Half!,Run,"To work, then farmers market",6690,20.95,,FALSE,,activities/2235269648.fit.gz
+2094126245,"Jan 21, 2019, 3:19:38 PM",Sunday on a Monday,Run,,6103,21.91,,FALSE,,activities/2236883383.fit.gz
+2096490954,"Jan 22, 2019, 5:39:01 PM",Bringing Back an Old Favorite...Not,Run,,2626,9.66,,FALSE,,activities/2239300668.fit.gz
+2100990578,"Jan 24, 2019, 6:21:44 PM",Friday on a Thursday,Run,,5619,21.52,,FALSE,,activities/2243870082.fit.gz
+2105391010,"Jan 26, 2019, 9:51:49 PM",Maui Exploring,Ride,,5588,18,,FALSE,,activities/2248393004.fit.gz
+2105391149,"Jan 26, 2019, 9:51:55 PM",Maui Exploring,Ride,,3576,13.17,,FALSE,,activities/2248393194.fit.gz
+2107637603,"Jan 27, 2019, 4:47:11 PM",Valley Island Road Runners,Run,Sunday group run. Met some great new friends!,6480,22,,FALSE,,activities/2250725475.fit.gz
+2112338751,"Jan 29, 2019, 8:23:36 PM",Makahiku Falls and Seven Sacred Pools ,Hike,Maui,7297,7.24,,FALSE,,activities/2255656005.fit.gz
+2113743930,"Jan 30, 2019, 5:47:35 PM",Surf and Turf,Run,Pre snorkel shake out after yesterday‰Ûªs hiking,2734,10.05,,FALSE,,activities/2257125846.fit.gz
+2116345637,"Jan 31, 2019, 7:39:44 PM",Haleakala,Hike,43F and 50mph wind driven light rain!,703,0.43,,FALSE,,activities/2259787274.fit.gz
+2123859472,"Feb 3, 2019, 3:30:00 PM",Back From Maui,Run,Back to reality but the mammaries are all mine forever! Watch didn't like the transition back to CST and didn't save as a gpx file for some reason.,6070,21.4,,FALSE,,
+2126424266,"Feb 5, 2019, 6:02:07 PM",Baby Hills are Better than No Hills,Run,"10 straight, no break",2428,9.26,,FALSE,,activities/2270225867.fit.gz
+2130914313,"Feb 7, 2019, 6:28:11 PM",Nothin but a Cool Breeze,Run,,4624,15.27,,FALSE,,activities/2274822942.fit.gz
+2136837876,"Feb 4, 2019, 11:42:56 PM",Afternoon Ride,Ride,,52508,38.49,,FALSE,,activities/2280960809.fit.gz
+2136843647,"Feb 9, 2019, 1:29:35 PM",Spectrum Trail Racing Escarpment 50K,Run,Slippery but fun!,16117,52.45,,FALSE,,activities/2280966974.fit.gz
+2144142389,"Feb 13, 2019, 6:36:31 PM",Random Five Just to Get Outside!,Run,wash tub laps with a tiny vert steps/ramps.,2280,8.29,,FALSE,,activities/2288481500.fit.gz
+2149200946,"Feb 14, 2019, 5:53:48 PM",Josh's Lunch Loop with Jason,Run,,3684,12.81,,FALSE,,activities/2290629039.fit.gz
+2151415224,"Feb 15, 2019, 6:30:01 PM",Early Start on Heat Training,Run,87F out on the lake trail at 1pm!,5945,21.18,,FALSE,,activities/2292911606.fit.gz
+2156394460,"Feb 17, 2019, 3:32:29 PM",Ladera Plus,Run,Thought I stopped the watch but went inside still on,7718,24.79,,FALSE,,activities/2298299580.fit.gz
+2163241344,"Feb 20, 2019, 6:13:01 PM",Baby Hills in the Sunshine!,Run,,2615,9.4,,FALSE,,activities/2306216670.fit.gz
+2165615641,"Feb 21, 2019, 6:30:05 PM",JLL v3.1 Hancock Edition CCW,Run,,3424,12.59,,FALSE,,activities/2308656098.fit.gz
+2167713740,"Feb 22, 2019, 6:08:36 PM",Smollett Cut the Stitches on Zion's Shoe!,Run,,5852,21.29,,FALSE,,activities/2310812594.fit.gz
+2172705809,"Feb 24, 2019, 2:31:58 PM",The Road Goes on Forever,Run,,7277,25.84,,FALSE,,activities/2315986365.fit.gz
+2177686287,"Feb 26, 2019, 6:22:01 PM","777, Sign of the Hypotenuse ",Run,checked on the dog and played a bit,4283,12.51,,FALSE,,activities/2321101749.fit.gz
+2179998037,"Feb 27, 2019, 5:46:38 PM",Everyone is Mowing the Grass Today,Run,,3637,13.56,,FALSE,,activities/2323468234.fit.gz
+2195686722,"Mar 6, 2019, 6:13:00 PM",First Run in a Week!?!,Run,,3723,14.1,,FALSE,,activities/2339618608.fit.gz
+2197818458,"Mar 7, 2019, 6:29:25 PM",Unauthorized Thursday Lake Check,Run,Nice and Sunny and Warm!,5049,17.13,,FALSE,,activities/2341801380.fit.gz
+2199888756,"Mar 8, 2019, 6:25:53 PM",SXSW Zoo: Animal Watching,Run,crazy around Rainey and the Conf Center,4709,17.17,,FALSE,,activities/2343910211.fit.gz
+2207486109,"Mar 10, 2019, 12:41:45 PM",4 Hour 4k Climb Sunday Funday with Paul T,Run,Just what the Dr. ordered,15176,41.02,,FALSE,,activities/2351750970.fit.gz
+2209037069,"Mar 12, 2019, 5:29:11 PM",Warm Muggy Pease Park OnB,Run,,3988,13.94,,FALSE,,activities/2353332297.fit.gz
+2211297009,"Mar 13, 2019, 5:27:39 PM",SXSW Tour of my Austin TX,Run,stopped by Waterloo for a beer and a song,4797,13.35,,FALSE,,activities/2355645598.fit.gz
+2217819223,"Mar 16, 2019, 3:00:44 PM","Such a Nice Morning! 7down, 7around, 7up",Run,social hour around the lake with my peeps everywhere!,10753,34.27,,FALSE,,activities/2362350478.fit.gz
+2220316043,"Mar 17, 2019, 2:28:26 PM","Sunday Service, Ladera Style",Run,,5412,18.51,,FALSE,,activities/2364956853.fit.gz
+2225144790,"Mar 19, 2019, 5:17:05 PM",Scene of the Crime!,Run,CapMetro is out to kill us all!,3944,13.3,,FALSE,,activities/2369940430.fit.gz
+2234575252,"Mar 22, 2019, 4:57:29 PM",LBL Carp Fishing Tournament ,Run,"Lots of fishermen, didn‰Ûªt see any catching going on",5992,21.57,,FALSE,,activities/2379682501.fit.gz
+2234576449,"Mar 23, 2019, 2:51:10 PM","WU, 5x1, CD",Run,,4182,13.1,,FALSE,,activities/2379684067.fit.gz
+2237786434,"Mar 24, 2019, 1:02:21 PM",Early Bird Gets the Spiders,Run,"Every, single, web...",10315,27.83,,FALSE,,activities/2383049681.fit.gz
+2242686796,"Mar 26, 2019, 5:17:42 PM",Strolling Thru the Urban Wildflowers,Run,what a day for a daydream,4151,14.96,,FALSE,,activities/2388145303.fit.gz
+2245129916,"Mar 27, 2019, 5:18:15 PM",Only Time for Seven.Five,Run,Nice day for a run!,3369,12.07,,FALSE,,activities/2390662059.fit.gz
+2247626156,"Mar 28, 2019, 5:15:42 PM",Pecos Schmecos,Run,,3879,14.16,,FALSE,,activities/2393229613.fit.gz
+2250029372,"Mar 29, 2019, 5:04:53 PM",Horse Shit on the Boardwalk?,Run,what's up with that...APD Mounted Patrol?,5982,22.06,,FALSE,,activities/2395710834.fit.gz
+2260468205,"Apr 2, 2019, 5:22:59 PM",Taper Week! ,Run,checking the fluid levels and letting the dog out,4632,12.7,,FALSE,,activities/2406635304.fit.gz
+2267284123,"Apr 5, 2019, 5:02:21 PM",Race Tomorrow!,Run,Goal is to have 3ea relatively even splits of around 2:30 unless it's muddy,2016,6.55,,FALSE,,activities/2413664298.fit.gz
+2270512516,"Apr 6, 2019, 10:00:01 AM",Hell‰Ûªs Hills 50,Run,Played it safe and got a little fatigued on 3rd lap but satisfied with most aspects of this race. Lightning and some rain!,28446,79.81,,FALSE,,activities/2417033291.fit.gz
+2280161605,"Apr 10, 2019, 5:15:58 PM",Easy 4 Shake Out in the Sun,Run,ready to ease back into it...,1900,6.61,,FALSE,,activities/2427123019.fit.gz
+2282618696,"Apr 11, 2019, 5:09:31 PM","5 on the Track, 10 in the Steam Room",Run,,2362,8.26,,FALSE,,activities/2429619954.fit.gz
+2294836167,"Apr 16, 2019, 5:19:40 PM",Baby Hill Repeats: 10 x .25mi up,Run,humid and breezy!,2584,9.2,,FALSE,,activities/2442399041.fit.gz
+2297562168,"Apr 17, 2019, 5:23:17 PM",Mueller Lunch Loop,Run,warm and humid,4062,13.55,,FALSE,,activities/2445221752.fit.gz
+2300036097,"Apr 18, 2019, 5:02:53 PM",Josh's Lunch Loop v 2.8b,Run,,3749,13.6,,FALSE,,activities/2447796188.fit.gz
+2302772337,"Apr 19, 2019, 4:55:15 PM",Group Think?,Run,How many people had the same idea to ride bikes around the lake and downtown today?,5917,21.46,,FALSE,,activities/2450651475.fit.gz
+2305322210,"Apr 20, 2019, 1:42:35 PM",Road Runner: BeepBeep!,Run,Saw a chaparral with a lizard in its mouth at the top of Ladera!,6142,22.06,,FALSE,,activities/2453323571.fit.gz
+2307963129,"Apr 21, 2019, 1:04:56 PM",LBL Double with Thomas ,Run,Good clean fun! ,9006,32.35,,FALSE,,activities/2456104785.fit.gz
+2313613479,"Apr 23, 2019, 5:29:54 PM",Tuesday Granddog Welfare Check,Run,i.e. potty break,4819,14.08,,FALSE,,activities/2462070325.fit.gz
+2316401980,"Apr 24, 2019, 7:50:00 PM",Dreadmill 3 and 20min in Sauna,Run,,1500,4.82,,FALSE,,
+2318791807,"Apr 25, 2019, 5:25:20 PM",Home for Lunch,Run,,5345,16.52,,FALSE,,activities/2467478215.fit.gz
+2321022887,"Apr 26, 2019, 5:03:26 PM",Now That's a Good Friday!,Run,10min post run sauna to bake it out,5775,21.42,,FALSE,,activities/2469804202.fit.gz
+2326497751,"Apr 28, 2019, 12:00:03 PM",Rogue 30k ish,Run,Speed work when training for a 100,7899,28.78,,FALSE,,activities/2475558111.fit.gz
+2331373725,"Apr 30, 2019, 5:36:30 PM","5mi in the Outdoor Sauna, 10min in the Indoor One!",Run,good heat training,2577,9.22,,FALSE,,activities/2480638447.fit.gz
+2334619575,"May 1, 2019, 5:25:23 PM",Surprise Inspection Wednesday Lake Check,Run,still there. nice and humid,5667,20.93,,FALSE,,activities/2484027799.fit.gz
+2336921927,"May 2, 2019, 5:19:13 PM",Josh's Lunch Loop v2.1s,Run,,3612,12.76,,FALSE,,activities/2486435071.fit.gz
+2345356790,"May 5, 2019, 3:50:21 PM",Good practice for States,Run,"Downhill, post hole, snow, ice, mud...etc",6893,18.51,,FALSE,,activities/2495261715.fit.gz
+2349763999,"May 7, 2019, 3:00:10 PM",Sunshine Mesa to Bridal Veil,Run,,8013,24.17,,FALSE,,activities/2499862220.fit.gz
+2367721816,"May 14, 2019, 5:19:03 PM",Shaking Off a Head Cold and Road Trip,Run,,3804,13.57,,FALSE,,activities/2518485456.fit.gz
+2373201951,"May 16, 2019, 5:09:36 PM",Back to Some Decent Heat Training,Run,,5847,21.18,,FALSE,,activities/2524130296.fit.gz
+2378557591,"May 18, 2019, 11:30:02 AM",Spectrum Trail Racing Aurora 10/20,Run,"Once again, rain and slippery rocks but it wasn't too bad. Kinda nice running in the rain.",11936,33.1,,FALSE,,activities/2529667978.fit.gz
+2380717813,"May 19, 2019, 1:43:42 PM",Recovery with Ladera?,Run,What was I thinking!,5336,17.8,,FALSE,,activities/2531917699.fit.gz
+2386122054,"May 21, 2019, 5:36:31 PM",Josh's Lunch Loop v. 1.5b,Run,nice out there!,3889,13.37,,FALSE,,activities/2537476586.fit.gz
+2388810411,"May 22, 2019, 4:51:06 PM",Hancock Lunch Loops,Run,nice and sweaty,3636,13.06,,FALSE,,activities/2540232178.fit.gz
+2391570307,"May 23, 2019, 5:23:48 PM","I've Got Your ""Feels Like"" Temperature Right Here Buddy!",Run,,3789,13.61,,FALSE,,activities/2543073193.fit.gz
+2393962526,"May 24, 2019, 5:55:33 PM",Back to Work,Run,,2232,8.04,,FALSE,,activities/2545534522.fit.gz
+2393962619,"May 24, 2019, 4:56:28 PM",Home for Lunch,Run,,2244,8,,FALSE,,activities/2545534570.fit.gz
+2396665872,"May 25, 2019, 1:30:37 PM",HOL with no Horse Flies!,Run,,6276,11.82,,FALSE,,activities/2548330232.fit.gz
+2401808811,"May 27, 2019, 2:53:24 PM",NOT Hot Tub Monday!,Run,Flat and easy,5121,18.28,,FALSE,,activities/2553696549.fit.gz
+2404684573,"May 28, 2019, 5:16:31 PM",Another Windy Day,Run,muggy but not that hot,4752,16.77,,FALSE,,activities/2556658909.fit.gz
+2407106947,"May 29, 2019, 4:59:59 PM",Finally Hot and Muggy!,Run,,3676,13.02,,FALSE,,activities/2559157582.fit.gz
+2409891371,"May 30, 2019, 5:13:50 PM","Back to Just Muggy, not Hot",Run,,3716,13.21,,FALSE,,activities/2562040480.fit.gz
+2412489064,"May 31, 2019, 5:26:23 PM",Medium Hot with a Large Side of Muggy,Run,,5917,21.01,,FALSE,,activities/2564726688.fit.gz
+2415156283,"Jun 1, 2019, 2:58:01 PM",Might have to buy a new hat for States,Run,Ice hat test fail,6174,20.47,,FALSE,,activities/2567492520.fit.gz
+2423662383,"Jun 4, 2019, 5:14:30 PM",Mueller Lunch Loop plus locker room data!,Run,watch stayed on for shower and walk to office!,3802,13.59,,FALSE,,activities/2576304414.fit.gz
+2426463588,"Jun 5, 2019, 5:30:43 PM",Soggy Warm Blanket Goodness,Run,,3815,13.69,,FALSE,,activities/2579196138.fit.gz
+2429122102,"Jun 6, 2019, 5:23:23 PM",Maybe I Should Wash My Gym Towel More Than Once a Semester,Run,still marveling at how fresh it smells after I washed it this past weekend!,3675,12.89,,FALSE,,activities/2581938418.fit.gz
+2431545679,"Jun 7, 2019, 5:23:22 PM",Felt Pretty Good in the Heat Today,Run,backed off the pace I felt like running to focus on form and keep feeling good in the heat.,6021,21.44,,FALSE,,activities/2584437128.fit.gz
+2433413929,"Jun 8, 2019, 12:42:45 PM","Nice Morning, Felt Good, New Hat",Run,,5865,20.95,,FALSE,,activities/2586374185.fit.gz
+2436726393,"Jun 9, 2019, 1:22:01 PM",Salvation in a Yard Sprinkler,Run,One last Ladera till July or August,6340,21.61,,FALSE,,activities/2589821717.fit.gz
+2442305791,"Jun 11, 2019, 5:10:38 PM","Easy 5 on the Track, Easier 10 in the Steam Room",Run,,2255,8.26,,FALSE,,activities/2595597693.fit.gz
+2444963828,"Jun 12, 2019, 5:14:37 PM",Groundhog Run,Run,"same as yesterday, 5 and 10",2224,8.07,,FALSE,,activities/2598338271.fit.gz
+2447468488,"Jun 13, 2019, 5:03:21 PM",Easy Taper Miles in the Park,Run,"nice day, just keeping the train on the tracks",2930,9.96,,FALSE,,activities/2600923229.fit.gz
+2449952599,"Jun 14, 2019, 5:30:15 PM",Lots of People Milling Around Aimlessly in this Town Today,Run,,3837,13.53,,FALSE,,activities/2603482804.fit.gz
+2461007577,"Jun 18, 2019, 5:02:18 PM",Waking up after last week's taper/recovery,Run,,3829,13.63,,FALSE,,activities/2614942352.fit.gz
+2463819042,"Jun 19, 2019, 5:10:33 PM","Circles in the Park, Nice and Hot!",Run,,2806,9.98,,FALSE,,activities/2617838980.fit.gz
+2469142078,"Jun 21, 2019, 5:13:10 PM",Not as Many Peeps Braving the Heat Today,Run,Just keeping the motor running,3714,12.89,,FALSE,,activities/2623347307.fit.gz
+2479987661,"Jun 25, 2019, 5:13:40 PM","Systems Check, T Minus 90 hours and counting",Run,,2772,9.41,,FALSE,,activities/2634600412.fit.gz
+2482737465,"Jun 26, 2019, 5:11:44 PM",Taper Madness! Warm up and some stretching,Run,,1882,6.44,,FALSE,,activities/2637418765.fit.gz
+2487535743,"Jun 28, 2019, 3:49:04 PM",Squaw Valley start line,Hike,Walk up the hill a bit,2862,5.12,,FALSE,,activities/2642345879.fit.gz
+2495059717,"Jun 29, 2019, 11:59:30 AM",Western States Endurance Run 2019,Run,"Good enough to break the old man record that had stood for 30 years and got to send a 10 sec ""thank you"" video to the previous record holder Doug L!",65730,160.99,,FALSE,,activities/2650279991.fit.gz
+2518436230,"Jul 9, 2019, 5:30:00 PM",Easy Track Miles on the First Day Back Post-States,Run,Nice and muggy/hot. Feeling fine but taking my time ramping back up. So into recovery my watch is still in my closet!,1440,4.82,,FALSE,,
+2521140575,"Jul 10, 2019, 5:11:20 PM",More Easy Recovery Miles on the Track,Run,,1863,6.48,,FALSE,,activities/2676840756.fit.gz
+2523956020,"Jul 11, 2019, 5:34:44 PM",And Then There Were Five,Run,,2272,8.18,,FALSE,,activities/2679719669.fit.gz
+2537809054,"Jul 12, 2019, 4:18:59 PM",Chimney Gulch Hike with Sierra and Sandi,Hike,working off a big breakfast in Golden,6694,7.53,,FALSE,,activities/2694066767.fit.gz
+2537809158,"Jul 16, 2019, 5:06:45 PM",Toasty Mueller Lunch Loop,Run,trying to get back in it...,4083,13.57,,FALSE,,activities/2694066691.fit.gz
+2557153674,"Jul 23, 2019, 5:13:01 PM",4 Days of Fever is Harder than 100 Mile Race,Run,knocked me the f back man,4068,7.8,,FALSE,,activities/2714001578.fit.gz
+2560043992,"Jul 24, 2019, 5:09:52 PM","Hello Lake, It's Been a While!",Run,,4444,15.58,,FALSE,,activities/2716963662.fit.gz
+2562730042,"Jul 25, 2019, 4:35:09 PM",Hancock Loops and North Campus,Run,nice day!,3902,13.35,,FALSE,,activities/2719725960.fit.gz
+2565353245,"Jul 26, 2019, 4:38:56 PM",Back into My Friday Routine,Run,,6416,21.64,,FALSE,,activities/2722426322.fit.gz
+2570393360,"Jul 28, 2019, 1:04:26 PM",Atoning for my Sins,Run,Lost some lung capacity while sick!,6108,20.41,,FALSE,,activities/2727660638.fit.gz
+2576485590,"Jul 30, 2019, 5:18:17 PM",Toasty Tuesday Trot,Run,,3928,13.63,,FALSE,,activities/2733956563.fit.gz
+2579315750,"Jul 31, 2019, 5:23:35 PM","Simple Track Miles, Nothing Special Here",Run,didn't want to battle traffic and construction today,2280,8.06,,FALSE,,activities/2736891793.fit.gz
+2582192631,"Aug 1, 2019, 4:55:56 PM","Josh's Lunch Loop: Straight, No Chaser",Run,wouldn't call it 'zip' but getting something back finally,4042,13.66,,FALSE,,activities/2739859907.fit.gz
+2584949683,"Aug 2, 2019, 5:22:59 PM","Perceived Effort? Yes, Effort was Perceived for Sure!",Run,,6547,21.72,,FALSE,,activities/2742699966.fit.gz
+2591097735,"Aug 4, 2019, 2:45:18 PM",Humid Slog Around the Lake,Run,Stopped for a cool down dip in the spillway,5696,18.11,,FALSE,,activities/2749243129.fit.gz
+2593635992,"Aug 5, 2019, 5:18:29 PM","Hot Tub Broken Again, Guess I'll Go For a Jog",Run,Pretty lonely on the hot track at noon!,2199,8.26,,FALSE,,activities/2752073086.fit.gz
+2596618038,"Aug 6, 2019, 5:20:55 PM",Hancock Lunch Loops in the Sun ,Run,not so many golfers today...,3806,13.27,,FALSE,,activities/2755156606.fit.gz
+2599624913,"Aug 7, 2019, 5:25:13 PM",Filing Some SWPPP Violations on Austin 311.com,Run,silt gutter guards in the new development are full of trash and debris across the whole area,3876,13.72,,FALSE,,activities/2758269413.fit.gz
+2602385913,"Aug 8, 2019, 4:52:19 PM",Mt Bonnell Microwave Lunch,Run,"Too hot for the watch I guess, glitch on final approach up to MB",4838,16.51,,FALSE,,activities/2761135156.fit.gz
+2605050240,"Aug 9, 2019, 5:01:21 PM",Where's Thomas?,Run,Looked high and low for him but...,6241,21.48,,FALSE,,activities/2763902228.fit.gz
+2610162425,"Aug 11, 2019, 12:52:35 PM",Early Service with Justin,Run,,6295,21.42,,FALSE,,activities/2769249217.fit.gz
+2616324922,"Aug 13, 2019, 4:58:40 PM",Following Up On My 311 Complaint,Run,emailing with inspector but no action taken yet,3910,13.56,,FALSE,,activities/2775665885.fit.gz
+2622102261,"Aug 15, 2019, 5:18:51 PM",Josh's Lunch Loop - Hot and Humid Version,Run,,3630,12.72,,FALSE,,activities/2781656858.fit.gz
+2624806056,"Aug 16, 2019, 5:22:12 PM",Saved a Little for Hot Sand Vball After Work,Run,,4787,16.39,,FALSE,,activities/2784464562.fit.gz
+2630589767,"Aug 18, 2019, 11:10:43 AM","Summer Salty, ask me how YOU too can join next time! ",Run,,9191,24.6,,FALSE,,activities/2790515122.fit.gz
+2636293976,"Aug 20, 2019, 5:13:56 PM",It's All Relative(s)?,Run,Found a big 'Moore' plot at Oakwood and asked a few questions but didn't get a reply...,3644,11.52,,FALSE,,activities/2796477607.fit.gz
+2639311047,"Aug 21, 2019, 5:29:20 PM",Didn't Feel Like Playing in Traffic Today,Run,,2674,10.13,,FALSE,,activities/2799605612.fit.gz
+2644961151,"Aug 23, 2019, 5:11:20 PM",Celebrating with ATX!,Run,"I decided all the traffic, sirens, road closures, honks and one-fingered salutes were all just to help me celebrate my birthday! Thanks!",5946,21.24,,FALSE,,activities/2805476982.fit.gz
+2656732360,"Aug 27, 2019, 4:51:21 PM",Clouds! How Nice! Muggy but not Brutal Sun,Run,"come on rain, I dare ya!",3837,13.65,,FALSE,,activities/2817774786.fit.gz
+2659802286,"Aug 28, 2019, 5:08:24 PM",Josh's Lunch Loop-Students are Back Version,Run,,3715,13.05,,FALSE,,activities/2820950727.fit.gz
+2662617982,"Aug 29, 2019, 4:55:33 PM",Hancock Lunch Loops,Run,,3643,13.29,,FALSE,,activities/2823874231.fit.gz
+2665322766,"Aug 30, 2019, 4:47:14 PM",All Quiet on the Western Front,Run,Recon Friday. Saved a little for vball. Not too brutal out there really!,5447,19.82,,FALSE,,activities/2826686469.fit.gz
+2671964527,"Sep 1, 2019, 2:04:25 PM","New FISCAL year, Ladera UnCHANGEd",Run,See what I did there? ,6714,22.81,,FALSE,,activities/2833640822.fit.gz
+2680023099,"Sep 4, 2019, 5:04:11 PM",Spontaneous Summer Sight Seeing ,Run,ran by the old party pad duplex,3703,13.1,,FALSE,,activities/2841976288.fit.gz
+2682871856,"Sep 5, 2019, 5:31:43 PM",My Zach Bitter Imitation ,Run,where is everyone? lonely laps in the sun,2560,9.96,,FALSE,,activities/2844907789.fit.gz
+2685461801,"Sep 6, 2019, 4:56:00 PM","Man, This Town Needs a Good Shower! Come on Rain!",Run,"Felt good, had to dial back a few times to make sure I didn't Fly-N-Die",6003,21.92,,FALSE,,activities/2847585111.fit.gz
+2687967012,"Sep 7, 2019, 3:10:25 PM",Mac Track Smack,Run,Just a few at 75% or so,2645,9.12,,FALSE,,activities/2850193338.fit.gz
+2697099327,"Sep 10, 2019, 5:09:24 PM",Easy Lunch Loops at Hancock,Run,taper time!,3206,11.19,,FALSE,,activities/2859705761.fit.gz
+2699987661,"Sep 11, 2019, 5:04:27 PM",Drizzle + Sun = Steam!,Run,easy five and some stretching #imtuf pacer duty saturday,2405,8.79,,FALSE,,activities/2862688774.fit.gz
+2705203086,"Sep 13, 2019, 4:30:07 PM",McCall Idaho ReCon,Run,Disc course and lakefront,3731,7.94,,FALSE,,activities/2868070795.fit.gz
+2719371747,"Sep 15, 2019, 1:06:33 AM",Pacing IMTUF: Last 50 with Top Ten Justin!,Run,Justin moved up in the field all day and snagged a top ten on a tough course; smart race.,44428,77.72,,FALSE,,activities/2882803809.fit.gz
+2723157643,"Sep 19, 2019, 4:55:49 PM",Just Like the Weather in Idaho!,Run,minus the heat and humidity...,3955,13.61,,FALSE,,activities/2886697607.fit.gz
+2725819526,"Sep 20, 2019, 5:21:18 PM",Friday Lake Check. Still There.,Run,medium effort,6297,20.96,,FALSE,,activities/2889452984.fit.gz
+2731444410,"Sep 22, 2019, 3:10:24 PM",Easy Hood Leg Stretcher ,Run,,1827,6.43,,FALSE,,activities/2895333115.fit.gz
+2731446587,"Sep 22, 2019, 2:40:02 PM",Dog Jog to the Park,Run,Distractions,1375,2.83,,FALSE,,activities/2895335295.fit.gz
+2734355842,"Sep 23, 2019, 4:48:17 PM",Mates From Down Under in Town!,Run,"met at Alta's, 7 mile loop, couple of beers...",4319,13.65,,FALSE,,activities/2898357004.fit.gz
+2736851558,"Sep 24, 2019, 5:14:58 PM","Same Song, Same Dance, Different Day",Run,,3869,13.59,,FALSE,,activities/2900934373.fit.gz
+2739521784,"Sep 25, 2019, 5:01:04 PM",Eight Point Four...What Does it Mean?,Run,,3882,13.51,,FALSE,,activities/2903690651.fit.gz
+2742167430,"Sep 26, 2019, 5:39:25 PM",Josh's Lunch Loop-Short Course,Run,late start,3273,11.04,,FALSE,,activities/2906438410.fit.gz
+2744525175,"Sep 27, 2019, 5:54:09 PM",Back to Work,Run,,2281,8.4,,FALSE,,activities/2908874628.fit.gz
+2744525298,"Sep 27, 2019, 4:54:05 PM",Courtesy Dog Check,Run,,2446,8.39,,FALSE,,activities/2908874769.fit.gz
+2750203067,"Sep 29, 2019, 2:24:23 PM",Cool Moto Rally on Burnet,Run,Steamy slog,8229,28.04,,FALSE,,activities/2914803916.fit.gz
+2755250548,"Oct 1, 2019, 5:20:16 PM",Mueller Lunch Loop,Run,,3794,13.82,,FALSE,,activities/2920089336.fit.gz
+2757900589,"Oct 2, 2019, 5:20:59 PM",Misc Miles on the Track,Run,didn't want to battle cars today,3055,11.26,,FALSE,,activities/2922834860.fit.gz
+2760436796,"Oct 3, 2019, 5:04:39 PM",Josh's Lunch Loop v. 3.1n,Run,still toasty ,3605,13,,FALSE,,activities/2925454065.fit.gz
+2762741251,"Oct 4, 2019, 4:57:21 PM",Friday Lake Check-ACL Music Fest Version,Run,,5071,17.01,,FALSE,,activities/2927844681.fit.gz
+2768705024,"Oct 6, 2019, 6:26:49 PM","Beer Mile Relay, Includes Beer Drinking",Run,,80,0.38,,FALSE,,activities/2934097328.fit.gz
+2773418421,"Oct 8, 2019, 4:52:35 PM",What a Day For a Daydream! ,Run,"so nice out there, could run all afternoon...",5695,21.18,,FALSE,,activities/2939003268.fit.gz
+2775976724,"Oct 9, 2019, 5:05:28 PM",Mueller Lunch Loop with a Twist,Run,,3976,14.07,,FALSE,,activities/2941656776.fit.gz
+2783852312,"Oct 12, 2019, 11:00:04 AM",We Will Not Be Tamed by Spectrum,Run,Leg 1 of a 3 person 100k relay with JG and Garrett,11625,33.2,,FALSE,,activities/2949948343.fit.gz
+2791498555,"Oct 15, 2019, 4:45:55 PM",Still Warm and Muggy in ATX,Run,,4427,14.9,,FALSE,,activities/2958117715.fit.gz
+2796563826,"Oct 17, 2019, 5:10:06 PM",Mueller Start and Hyde Park Finish,Run,"finally a bit cooler, even though I like the heat...",4161,15.02,,FALSE,,activities/2963461504.fit.gz
+2798831130,"Oct 18, 2019, 5:04:06 PM",Friday Lake Check and Watch Experiment ,Run,"Never stopped moving and never turned my watch off, moving time and elapsed should be the same",5746,21.91,,FALSE,,activities/2965871412.fit.gz
+2803982545,"Oct 20, 2019, 2:49:35 PM",Cool Down,Run,,2121,6.32,,FALSE,,activities/2971409043.fit.gz
+2803983191,"Oct 20, 2019, 2:16:18 PM",Spectrum Vagabond VC to HOL,Run,Fly and die...,1756,6.36,,FALSE,,activities/2971409710.fit.gz
+2811645790,"Oct 23, 2019, 5:02:33 PM",Josh's Half Eaten Lunch Loop,Run,,3893,14.31,,FALSE,,activities/2979594003.fit.gz
+2814169178,"Oct 24, 2019, 4:46:33 PM",Friday Lake Check on Thursday,Run,likely very windy tomorrow. tagged as race to make pace more realistic. ,5705,21.7,,FALSE,,activities/2982285460.fit.gz
+2821712855,"Oct 27, 2019, 1:40:52 PM","Nervous Energy, Go Astro‰Ûªs! ",Run,,6094,21.47,,FALSE,,activities/2990467242.fit.gz
+2829151052,"Oct 30, 2019, 5:07:24 PM",Mindless Track Miles,Run,a little brisk but great running weather,2270,8.57,,FALSE,,activities/2998547600.fit.gz
+2831478509,"Oct 31, 2019, 5:23:35 PM",Nipply North Wind a Blowin,Run,,3561,13.04,,FALSE,,activities/3001090469.fit.gz
+2838311585,"Nov 2, 2019, 12:29:58 PM",Spectrum Wonderland,Run,Trail almost marathon,12486,40.31,,FALSE,,activities/3008684523.fit.gz
+2843534602,"Nov 5, 2019, 5:43:51 PM",More Than Recovery but Less Than Full Effort,Run,"muggy and warm, ok by me!",3623,13.53,,FALSE,,activities/3014500073.fit.gz
+2846084761,"Nov 6, 2019, 6:03:14 PM",Josh's Lunch Loop,Run,,3599,13.05,,FALSE,,activities/3017324987.fit.gz
+2850577164,"Nov 8, 2019, 6:06:42 PM",Track Miles in the Drizzle and Steam Room After,Run,,2315,8.68,,FALSE,,activities/3022705281.fit.gz
+2862755976,"Nov 13, 2019, 5:54:06 PM",Calling This a Recovery Week,Run,weather and work preventing big miles this week. oh well,2365,8.44,,FALSE,,activities/3036780700.fit.gz
+2867067096,"Nov 15, 2019, 5:41:30 PM",Friday Lake Check-Sunshine Edition!,Run,man what a nice day finally!,5892,21.64,,FALSE,,activities/3042030056.fit.gz
+2874358108,"Nov 18, 2019, 4:43:39 PM",Spectrum Vagabond Slaughter Creek,Run,Fly and die,2157,7.92,,FALSE,,activities/3050853959.fit.gz
+2888685424,"Nov 24, 2019, 3:04:25 PM",Spreading my DNA,Run,"Sick all last week, clearing out the junk",5713,20.14,,FALSE,,activities/3068745133.fit.gz
+2893447817,"Nov 26, 2019, 6:09:10 PM","5 on the Track, 10 in the Steam Room",Run,Taco Trot 10mi Tomorrow,2195,8.25,,FALSE,,activities/3074853361.fit.gz
+2895849944,"Nov 27, 2019, 6:00:02 PM",Taco Trot Turns 40!,Run,Tradition live on!,3945,15.93,,FALSE,,activities/3077864222.fit.gz
+2909156070,"Dec 3, 2019, 6:15:18 PM",I Can Tell I've Been Slacking!,Run,Time to get back in the groove!,3642,13.6,,FALSE,,activities/3093934080.fit.gz
+2911364572,"Dec 4, 2019, 5:48:23 PM",Kind Of Like Speed Work?,Run,Vagabond while I'm at it,3568,12.98,,FALSE,,activities/3096542405.fit.gz
+2915570144,"Dec 6, 2019, 5:55:39 PM",Friday Lake Check!,Run,"man, what a nice day...",5648,21.59,,FALSE,,activities/3101549908.fit.gz
+2917729359,"Dec 7, 2019, 2:54:13 PM",Waiting for Jedi Inspection ,Run,Nice day!,4393,16.11,,FALSE,,activities/3104053125.fit.gz
+2920171143,"Dec 8, 2019, 3:04:08 PM",Something Different Sunday ,Run,,5512,19.72,,FALSE,,activities/3106889237.fit.gz
+2924704786,"Dec 10, 2019, 6:00:00 PM",Dreadmill ,Run,Yucky outside and need to dial in a steady 8:30 pace for the long haul.,3120,9.65,,FALSE,,
+2926719667,"Dec 11, 2019, 5:39:53 PM",Turn the Brain Off and Run in Circles,Run,,2739,10.22,,FALSE,,activities/3114583039.fit.gz
+2928836379,"Dec 12, 2019, 6:06:24 PM",Friday Lake Check on Thursday,Run,Circus on Saturday!,3658,13.7,,FALSE,,activities/3117056460.fit.gz
+2935057725,"Dec 14, 2019, 3:03:40 PM",Spectrum Circus Lap 2 for 5,Run,Wait and Hurry Up!,2190,7.6,,FALSE,,activities/3124254631.fit.gz
+2935066614,"Dec 14, 2019, 9:27:16 PM",Spectrum Circus Lap 5 for 3,Run,Wait and Hurry Up!,1376,4.62,,FALSE,,activities/3124264639.fit.gz
+2935066894,"Dec 14, 2019, 7:29:46 PM",Spectrum Circus Lap 4 for 5,Run,Wait and Hurry Up!,2285,7.55,,FALSE,,activities/3124264928.fit.gz
+2935066985,"Dec 14, 2019, 4:56:34 PM",Spectrum Circus Lap 3 for 3,Run,Wait and Hurry Up!,1307,4.54,,FALSE,,activities/3124265043.fit.gz
+2939546494,"Dec 14, 2019, 11:59:58 AM",Spectrum Circus Lap 1 for 7,Run,Wait and Hurry Up!,3256,11.04,,FALSE,,activities/3129435471.fit.gz
+2939546930,"Dec 17, 2019, 6:18:24 PM",More Mindless Track Miles,Run,nothing special here...chilly wind but OK,2648,9.88,,FALSE,,activities/3129435956.fit.gz
+2941664502,"Dec 18, 2019, 5:55:39 PM",Mueller Loop Looking for Bueller,Run,,3708,13.58,,FALSE,,activities/3131868783.fit.gz
+2943752404,"Dec 19, 2019, 6:39:09 PM",Friday Lake Check a Day Early,Run,nuthin but a cool breeze,4285,16.19,,FALSE,,activities/3134281155.fit.gz
+2945432326,"Dec 20, 2019, 6:00:00 PM",More Dreadmill for notFun,Run,Damn thing kept shocking me when I touched it!,2700,8.69,,FALSE,,
+2953898061,"Dec 22, 2019, 12:04:38 PM",Annual Christmas Ridge Run,Run,Good times with Thomas and Patrick!,10780,33.4,,FALSE,,activities/3145929807.fit.gz
+2953898560,"Dec 24, 2019, 3:26:52 PM",Skeleton Crew,Run,quick building check,2163,7.9,,FALSE,,activities/3145930652.fit.gz
+2954116391,"Dec 24, 2019, 5:26:59 PM",Run Back Home,Run,,2281,8.07,,FALSE,,activities/3146180058.fit.gz
+2958311195,"Dec 26, 2019, 2:01:53 PM",Festivus For The Rest of Us!,Run,good miles with Matt post holidaze,11730,42.18,,FALSE,,activities/3151049754.fit.gz
+2990536095,"Dec 29, 2019, 6:51:54 PM",Skiing at Homewood CA,Alpine Ski,just goofing around with the gps on the runs and lifts,6605,17.47,,FALSE,,activities/3187688203.fit.gz
+2993860234,"Jan 8, 2020, 5:48:29 PM",First Run Since Festivus,Run,going just fine until a total wipeout near the end. #fullsuperman ,4075,13.63,,FALSE,,activities/3191438313.fit.gz
+3011289500,"Jan 14, 2020, 5:47:44 PM",Systems Check,Run,post last week's crash and lingering foot issue. know more tomorrow,3781,13.54,,FALSE,,activities/3210950163.fit.gz
+3017149684,"Jan 16, 2020, 5:47:56 PM",Decent Progress,Run,,3156,11.32,,FALSE,,activities/3217503616.fit.gz
+3030704824,"Jan 20, 2020, 8:21:51 PM",Easy 'Hood Stroll; Bobbin' and Weavin',Run,,2842,9.51,,FALSE,,activities/3232700372.fit.gz
+3030706673,"Jan 19, 2020, 4:52:23 PM",Golf at Avery Ranch with Marty,Hike,Forgot to turn watch off after the round,14335,14.1,,FALSE,,activities/3232702436.fit.gz
+3031506066,"Jan 21, 2020, 5:52:34 PM",The Students are Baaaaack!,Run,,3494,12.96,,FALSE,,activities/3233581713.fit.gz
+3037147560,"Jan 23, 2020, 5:46:01 PM",Gettin Ready to Get Ready,Run,,3832,13.72,,FALSE,,activities/3239856758.fit.gz
+3039847808,"Jan 24, 2020, 5:41:47 PM",Heck of a Nice Day Out There!,Run,somebody say leave early today?,6187,21.44,,FALSE,,activities/3242871866.fit.gz
+3045881789,"Jan 26, 2020, 1:33:59 PM",Dumptruck with Sandi,Run,Taper week,5009,9.48,,FALSE,,activities/3249580608.fit.gz
+3051582653,"Jan 28, 2020, 6:02:39 PM",Easy Six and Some Stretching in the Sun,Run,,2765,9.65,,FALSE,,activities/3256045385.fit.gz
+3057290921,"Jan 30, 2020, 6:18:21 PM",Confirming Some Watch Settings Changes,Run,RR100 on Sat; wanted to see avg pace first,932,3.2,,FALSE,,activities/3262565554.fit.gz
+3068476136,"Feb 1, 2020, 12:00:00 PM",Rocky Raccoon 2020,Run,Couch to 100mi race doesn't work peeps!,66774,158.19,,FALSE,,activities/3275146492.fit.gz
+3094456669,"Feb 12, 2020, 6:41:29 PM",Shaking Out the Kinks,Run,first run post 100,1778,6.46,,FALSE,,activities/3304047953.fit.gz
+3099795121,"Feb 14, 2020, 6:50:07 PM",Too Nice of a Day to Stay Inside!,Run,,2390,8.33,,FALSE,,activities/3310029291.fit.gz
+3111537598,"Feb 18, 2020, 6:00:24 PM",Sweaty Lunch Miles b/f the Cool Front,Run,,3372,11.49,,FALSE,,activities/3323208453.fit.gz
+3128895190,"Feb 24, 2020, 6:04:19 PM",Thomas' Lunch Loop,Run,since I already have Josh's Lunch Loop and this is one of Thomas' favorites,3843,13.46,,FALSE,,activities/3342534642.fit.gz
+3131820153,"Feb 25, 2020, 5:58:27 PM",Josh's Lunch Loop,Run,nice day! ,3686,12.38,,FALSE,,activities/3345767464.fit.gz

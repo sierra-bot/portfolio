@@ -1,0 +1,215 @@
+---
+title: 'Project #1 - Running Man, Weather Man'
+author: "Sierra Moore"
+date: "March 13, 2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE, fig.align = "center", warning = F, message = F,
+tidy=TRUE, tidy.opts=list(width.cutoff=60), R.options=list(max.print=100))
+```
+
+## Running Man, Weather Man
+
+  Austin, Texas is city that boasts great people and great weather. This project explores the running habits of a local Austinite, Steve, who runs all around town and even partakes in ultra-marathons across the country. Since 2013, Steve has recorded data for many, if not most, of his runs in the fitness app, Strava. With Strava, users can record and upload data about a range of activities including running, biking, hiking, or even watersports. Steve's Strava data was exported from his account to create the `activities` dataset, which originally featured 11 variables and 1173 observations. Each activity was recorded as an observation with a unique Activity ID and other defining variables such as Activity Type, Date, Elapsed Time, Distance.
+  
+  Steve prefers trail running, which is strictly an outdoor sport. Thus, the dataset `austin_weather` was also acquired for this data analysis project. The data was compiled by the National Centers for Climate Information and exported for use via their public website. The dataset is, essentially, a log of daily weather parameters from January 1, 2013 to February 18, 2020. It has 19 variables including date, maximum and minimum daily temperatures (TMAX, TMIN), and inches of precipitation (PRCP). Each observation (2605 total) corresponds to a single day within the time period. All weather data was recorded from the Camp Mabry weather station in Austin. 
+  
+  Common sense, and experience living through Austin's hotter seasons, would suggest that an obvious relationship between maximum temperature and run distance should be observed. These two datasets can be used to address that hypothesis as well as the nature of connections between other key variables. Of particular interest is the ability to see patterns of Steve's running schedule over the course of several days, or within an average week.
+
+```{r}
+#import datasets here
+library(readr)
+austin_weather <- read_csv("austin weather.csv")
+activities <- read_csv("activities.csv")
+```
+
+## 1) Joining Data
+
+The datasets `activities` and `austin_weather` were nearly tidy to begin with, however they require slight modifications. In `activities`, I started by converting the `Activity.Date` variable to four distinct variables, `Month`, `Day`, `Year`, and `Time` using the `separate` function. To prepare the dataset for future joining, I then used `unite` to bring the three date variables into one, with the standard format of MM-DD-YYYY. Finally, I selected only columns 1 through 8, leaving out the last 4 variables that contained filename information or activity data that was not recorded for any of the entries (ex: `Activity.Gear`). The prepared dataset was saved as `activities_tojoin`.
+
+`austin_weather` required similar manipulation with a few extra steps. First, I separated the `DATE` variable, and converted the resulting three columns to numeric variables. I used `mutate` to change the year values from "13" to "2013", "14" to "2014", etc., for each year. `mutate` was used again, along with `recode` to change the month values from numbers to their corresponding three letter abreviations to match the `activities` values for `Month`. The weather data was also sliced to omit the first row, which represented unnecessary column titles from the original Excel spreadsheet. This action did not remove any recorded weather observations. To keep the scope of this analysis manageable, I selected only the three date variables along with `PRCP`, `TMAX`, and `TMIN`. The consequence of this selective action was a loss of snow and other complex weather pattern measurements. 
+
+After uniting the weather dates to match the standard date format, I used `left_join` to add `weather_tojoin` to `activities_tojoin` by the `Date` variable. This specific join function was used in order to retain all observations of `activities_tojoin`, adding the specific daily weather data to each logged activity. As Steve, loggically, did not have a recorded activity for every day in the selected 7 year period, `left_join` ensured that days without logged activity would not be added to the resulting dataset. The joined data was saved as `fulldata`. To facilitate later exploration and analysis, the `Date` variable was separated into `Month`, `Day`, and `Year`, each month was recoded to its numeric equivalent, and a new `Date` variable was added. 
+
+```{r}
+library(tidyverse)
+activities_tojoin <- activities %>% separate(Activity.Date,into=c("Month_Day","Year", "Time"),sep=",", convert=T)%>% separate(Month_Day,into=c("Month","Day"),sep=" ")
+activities_tojoin <- activities_tojoin%>%unite(Month, Day, Year, col="Date",sep="-") 
+activities_tojoin <- activities_tojoin %>% select(1:8)
+weather_tojoin <- austin_weather %>% separate(DATE,into=c("Month","Day", "Year"),sep="/", convert=T)%>% mutate(Year=(Year+2000)) %>% mutate(Month=recode(Month,"1"="Jan","2"="Feb","3"="Mar", "4"="Apr","5"="May","6"="Jun", "7"="Jul","8"="Aug","9"="Sep", "10"="Oct", "11"="Nov", "12"="Dec"))%>%select("Month","Day","Year","PRCP","TMAX","TMIN")%>%slice(2:2606)
+weather_tojoin <- weather_tojoin%>%unite(Month, Day, Year, col="Date",sep="-")
+fulldata<-activities_tojoin %>% left_join(weather_tojoin)
+fulldata <- fulldata %>% separate(Date, into=c("Month", "Day", "Year")) %>% mutate(Month=recode(Month,"Jan"="1","Feb"="2","Mar"="3", "Apr"="4","May"="5","Jun"="6", "Jul"="7","Aug"="8","Sep"="9", "Oct"="10", "Nov"="11","Dec"="12"))%>%unite(Year, Month, Day, col="Date",sep="-") 
+```
+
+
+The additional `Date` column created in the final step above was performed in anticipation of creating a new variable, `DoW`, to assign each activity to the day of the week it occured on. Formatting the original date variables in the standard form recognized by R allowed me to utilize the `as.Date` and `weekdays` functions to achieve this step. 
+
+Before exploration and summarization, the final dataset, `fulldata`, contained 1173 observations and 14 variables. 
+
+```{r}
+fulldata$DoW <- as.Date(fulldata$Date)
+fulldata$DoW <-weekdays(fulldata$DoW)
+fulldata <- fulldata %>% separate(Date, into=c("Year","Month","Day"), sep="-", convert = T)
+glimpse(fulldata)
+```
+## 2) Wrangling
+
+The following code was used to explore, wrangle, and summarize the `fulldata` dataset. Noteably, the first code chunk created two new variables, `Distance_mi` (activity distance in miles) and `Elps_Time_hrs` (elapsed activity time in hours), from the original variables that measured distance in kilometeres and elapsed time in seconds.
+
+```{r}
+#summary data here
+#summaries
+#Convert distance in km to distance in miles
+fulldata %>% mutate(Distance_mi=(Distance/1.609)) %>% select(Distance, Distance_mi) %>% glimpse()
+#Convert time in seconds to time in hours
+fulldata %>% mutate(Time_hrs=(Elapsed.Time/3600)) %>% select(Time_hrs, Elapsed.Time) %>% glimpse()
+#add new time and distance variables to fulldata
+fulldata <- fulldata %>%mutate(Distance_mi=(Distance/1.609))%>%mutate(Elps_Time_hrs=(Elapsed.Time/3600))
+
+#sd of run distance (mi)
+fulldata%>% filter(Activity.Type=="Run") %>% summarize(sd(Distance_mi))
+#Average run distance (mi) per year
+fulldata %>% group_by(Year) %>% filter(Activity.Type=="Run") %>% summarize(mean(Distance_mi))
+
+#Longest logged bike ride
+fulldata  %>% filter(Activity.Type=="Ride") %>% select(Activity.ID, Elps_Time_hrs) %>%summarize(max(Elps_Time_hrs))
+#Total logged bike rides per day of week
+fulldata  %>% filter(Activity.Type=="Ride")%>% group_by(DoW) %>% select(DoW, Activity.ID) %>%summarize_all(n_distinct) %>% arrange(desc(Activity.ID))
+
+#Sd of max temp data (all years)
+fulldata %>% na.omit()%>%summarize(sd(TMAX))
+#Avg max temp in Austin by year
+fulldata %>% filter(Year!= "2020")%>%group_by(Year) %>% na.omit()%>%summarize(mean(TMAX))
+
+#Total number of days with precip
+fulldata2 <- fulldata%>% unite(Month, Day, Year, col="Date",sep="-")
+fulldata2%>% filter(PRCP!=0) %>%summarize(total_rain_days=n_distinct(Date))
+
+#Day of the week with the most runs logged in Strava
+fulldata  %>% filter(Activity.Type=="Run")%>% group_by(DoW) %>% select(DoW, Activity.ID) %>%summarize_all(n_distinct) %>% arrange(desc(Activity.ID))
+
+#Longest run logged (hrs)
+fulldata %>% filter(Activity.Type=="Run") %>%summarize(maxruntime=max(Elps_Time_hrs))
+
+#Average distance (mi) per day of week, in October
+fulldata %>% filter(Activity.Type=="Run", Month=="10")%>%group_by(Year,DoW) %>% summarize(avg_dist=mean(Distance_mi))%>%pivot_wider(names_from="DoW",values_from="avg_dist")
+
+#Total miles per year
+fulldata %>% na.omit() %>% group_by(Year)%>% mutate(cumulat_dist_mi=cumsum(Distance_mi)) %>% glimpse() %>% summarize(max(cumulat_dist_mi))
+
+#Longest run (mi) on hotest day
+fulldata %>% select(Activity.Type,Activity.Name, Distance_mi, TMAX) %>% arrange(desc(TMAX)) %>% glimpse()
+
+```
+
+**Key findings**:
+The standard deviation of the distance for all of Steve's runs logged is Strava was 10.0 miles. When average run distance was calculated for each year, 2014 had the highest average distance of 13.0 miles and the average distance for 2018 was the lowest at 9.79 miles. Steve's Strava data also featured other activities including a 14.6 hour long bike ride. He did not have as many logged bike rides as runs, and Fridays had the highest total number of rides. With respect to weather patterns in Austin, the standard deviation of all maximum temperatures was 13.8 degrees Farenheight and the average max temp per year fell in a range of 81 to 87 degrees. The average max temp for 2020 was omitted for this calculation, as a complete year of data is not available. In this dataset, there were 233 days with recorded precipitation.
+
+Additionally, several other relationships within `fulldata` were explored. One of the most interesting patterns was the number of total runs logged per day of the week. The data shows that the highest total number of runs were logged on a Sunday (197 runs). Steve, who has been described by friends and family as a creature of habit, has developed a pattern of replacing his lunchtime run for a soak in the jacuzzi at his gym on Mondays. The data, which shows a total of 38 runs in 7 years logged on Monday, reflects Steve's remarkable level of dedication to his running schedule and "Hot Tub Monday." A few final findings extracted from this data include a summary of average distances run, per day of the week in October, the longest elapsed run time (30.1 hours), total miles per year, and the longest run recorded on the hottest day recorded (10.267 miles on a 108 degree day)!
+
+
+## 3) Correlation Heat Map
+
+*Correlations between numeric variables: calculated and visualized!*
+
+```{r}
+#cor data here
+library(ggplot2)
+library(ggExtra)
+#correlation heat map
+full_plot1<-fulldata%>%na.omit%>%select_if(is.numeric) %>% select(-c(Elapsed.Time,Distance))
+cor(full_plot1)
+tidy_plot_1<-cor(full_plot1)%>%as.data.frame%>%  rownames_to_column%>%  pivot_longer(-1,names_to="colname",values_to="correlation")
+tidy_plot_1
+tidy_plot_1%>%ggplot(aes(rowname,colname,fill=correlation))+  geom_tile()+  scale_fill_gradient2(low="tomato4",mid="white",high="darkolivegreen3")+geom_text(aes(label=round(correlation,2)),color = "black", size = 4)+ theme(axis.text.x = element_text(angle = 90, hjust=1))+coord_fixed()+ggtitle("Correlation Heat Map") + ylab("Columns") + xlab("Rows")
+
+```
+
+As seen in the correlation heat map above, only a few of the numeric variables strongly correlate to one another. Logically, the elapsed activity time and the distance are positively correlated (0.87), maximum and minimum temperatures are positively correlated (0.89). The only notable negative correlation is the weak, but intriguing, relationships between `Year` and `TMAX` or `TMIN` (each -0.11).
+
+## 4.1) Visualization: Average Run Distance per Day of the Week
+
+*Data visualizatoin via bar chart with error bars.*
+
+```{r}
+#viz2 data here
+#Avg distance per day of the week, with error bars
+plot1_dist<-fulldata %>% filter(Activity.Type== "Run") %>% ggplot( aes(x = DoW,y=Distance_mi, fill=DoW))+  geom_bar(stat="summary", fun.y="mean") +geom_errorbar(stat="summary", width=.5, color="black")+
+        scale_x_discrete(limits=c("Sunday", "Saturday","Friday","Thursday","Wednesday","Tuesday","Monday"))+ coord_flip()+ theme(legend.position="none") +theme(panel.background = element_rect(fill="grey95")) +
+  ggtitle("Average Run Distance per Day of the Week") + ylab("Distance (miles)") + xlab("Day")+scale_fill_manual(values=c("tomato","darkolivegreen3","goldenrod1","cadetblue4","rosybrown1","thistle","lightblue2" ))
+plot1_dist
+
+
+```
+
+The most notable finding depicted in this chart is the drastically increased average distance for runs logged on Saturdays, relative to all other days of the week. This is likely a result of the fact that most of the ultra-races Steve runs begin early on Saturday mornings. The average distance for Sunday runs, about 12.5 miles, is also significantly different from all other days of the week. Throughout the work week, Tuesday-Thursay in particular, Steve's average run distances are much more similar, between 7 to 11 miles.
+
+## 4.2) Visualization: Maximum Temperature During Long Runs
+
+*Stat plot of long runs (greater than 25 miles), categorized by temperature.*
+
+```{r}
+#viz3 data here
+#Max temp of runs longer than 25 miles, size by elapsed time
+fulldata2 <- fulldata %>% mutate(Max_Temp_Cat=case_when(TMAX>90 ~ ">90", 70<=TMAX & TMAX<=90 ~ "70-90", 50<=TMAX & TMAX<=70 ~ "50-70",TMAX<50 ~ "<50"))
+fulldata2$Max_Temp_Cat <- factor(fulldata2$Max_Temp_Cat, levels = c(">90", "70-90", "50-70","<50"))
+fulldata2 %>% filter(Activity.Type=="Run", Distance_mi>25)%>%ggplot(aes(TMAX, Distance_mi, color=Max_Temp_Cat))+
+                geom_point(aes(size=Elps_Time_hrs), alpha=.45) + geom_jitter()+
+  ggtitle("Elapsed Time and Max Temperature for Long Runs") + ylab("Distance (miles)") + xlab("Maximum Temperature") + labs(color= "Maximum Temperature Range", size= "Elapsed Time (hours)")+
+  scale_y_continuous(breaks=c(25,35,45,55,65,75,85,95,105))+scale_color_manual(values=c("tomato","goldenrod","thistle","cadetblue4" ))
+
+```
+
+This plot shows a breakdown of the details for Steve's logged runs that were over 25 miles long. The data shows that all runs over 65 miles were logged on days with maximum temperatures greater than 70 degrees. We can observe that father runs tend to take longer(larger circle size), but we also see that many activities had very similar distance but noticeably different elapsed times. An additional trend depicted is the increase in number of these long runs as maximum temperature increases.
+
+## 4.3) Visualization: Seasonal Run Distance
+
+*A cool density plot of run distances, facet wrapped by year.*
+
+```{r}
+#viz4 data here
+#density plot of distances each season, facet wrap by year
+fulldata3<- fulldata%>%mutate(Season=case_when(Month=="12" | Month == "2" | Month =="1" ~ "Winter", Month=="9" | Month == "10" | Month =="11" ~ "Fall", "6"<=Month & Month<="8" ~ "Summer", "3"<=Month & Month<="5" ~ "Spring")) 
+hist_plot <- fulldata3 %>% filter(Activity.Type=="Run") %>%ggplot(aes(x=Distance_mi, fill=Season, color=Season)) + theme(legend.position=c(.9,.7)) + geom_density(alpha=.4) +ggtitle("Run Distances per Season") + ylab("density") + xlab("Distance (miles)") + scale_fill_manual(values=c("tomato", "darkolivegreen3", "goldenrod1","lightblue2")) + scale_color_manual(values=c("tomato", "darkolivegreen3", "goldenrod1","lightblue2"))
+
+hist_plot +facet_wrap(~Year)
+```
+
+Visualizing Steve's running distances with a density plot helps to compare his trends between years, and throughout the seasons of each year. Categories for each of the four seasons were created using the `Month` variable. An interesting observation is the that the shapes of the curves for each season are distinctly different in 2013, but shift to be almost entirely overlapping by 2019. Of course, the only runs logged in 2020 were during the winter months of January and February, which is shown in the graph. With the exception of 2020, we can also see that the extreme distance runs (>90 miles) were logged in the summer or fall. This makes sense with the trends seen in the previous graph comparing distance and max temperature.
+
+## 5) Dimentionality Reduction
+
+*Clustering `fulldata` via PAM*
+
+```{r}
+#clustering
+library(cluster)
+pam1<-fulldata%>%filter(Activity.Type=="Run")
+pam2<- pam1%>%select(Elps_Time_hrs, Distance_mi, PRCP, TMAX,TMIN)%>%scale()%>%pam(k=3) 
+pam2
+final<-pam1%>%mutate(cluster=as.factor(pam2$clustering))
+confmat<-final%>%group_by(DoW)%>%count(cluster)%>%arrange(desc(n))%>%
+  pivot_wider(names_from="cluster",values_from="n",values_fill = list('n'=0))
+confmat
+
+#accuracy
+round(sum(diag(as.matrix(confmat[,2:4])))/sum(confmat[,2:4]),3)
+
+ggplot(final, aes(x= TMAX,y=Distance_mi, color=cluster))+geom_point() +ggtitle("PAM Clusters: Max Temp vs. Distance") + ylab("Distance (miles)") + xlab("Maximum Temperature (degrees Farenheight)")+scale_color_manual(values=c("goldenrod1","darkolivegreen3","cadetblue4"))
+
+pam2$silinfo$avg.width
+```
+
+After selecting for five numeric variables in `fulldata` and filtering for `Activity.Type=="Run"`, PAM cluster analysis was performed using 3 clusters (k=3). The data from the PAM object (`pam2`) was then saved as a column that was added to the filtered dataset, and saved as `final`. The `final` dataset was used to create a simple plot of `TMAX` vs. `Distance_mi`, colored by cluster number. From this graph, we see that the clusters separate the distance variable well, but do not represent temperature variation well. To more concretely asses the strength of the clusters, average silhouette width was calculated and found to be 0.341 indicating that only a weak structure was found.
+
+```{r}
+library(GGally)
+ggpairs(final, columns=c(12,13,15,16), aes(color=cluster))
+```
+
+Using the original PAM cluster data (k=3), a `ggpairs` plot was created to visualize the interactions between 4 out of the 5 numeric variables originally selected. The fifth variable, `PRCP`, was lef tout for simplicity as it did not contribute any useful information to the commparisons. The resulting visualization shows that `Distance_mi` is highly correltaed to `Elps_Time_hrs`, and `TMAX` is highly correlated to `TMIN`. These relationships are clearly logical and were to be expected from this data. `Distance_mi` and `Elps_Time_hrs` are both very weakly correlated to `TMAX` and `TMIN`. The scatterplot of `Distance_mi` and `Elps_Time_hrs` most clearly shows the three distinct clusters from PAM analysis.

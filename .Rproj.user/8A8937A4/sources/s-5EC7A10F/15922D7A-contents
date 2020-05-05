@@ -1,0 +1,354 @@
+---
+title: 'Project #2'
+author: "Sierra Moore"
+date: "April 26, 2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE, fig.align = "center", warning = F, message = F,
+tidy=TRUE, tidy.opts=list(width.cutoff=60), R.options=list(max.print=100))
+```
+***
+# Food, People, and Other Counts for Texas Counties 
+
+The USDA broadly defines the term "food desert" as a "neighborhood that lacks healthy food sources." A given geographic region may be classified as a food desert based on an analysis of various demographic and accessibility factors. The County Health Rankings & Roadmaps survey of Health Data for 2016 provides each county in Texas with a Food Environment Index score, which incorporates measures of grocery store proximity, income level, and food source reliability for each county. Higher scores (with 10 being the best) indicate increased availability of healthy food options, even for low income members on the community. Other data included in this dataset (compiled using [socialexplorer.com](socialexplorer.com)) includes variables such as county population, number of health care providers per 100,000 people, infant and child mortality rates, graduation rate, violent crime rate, and percent of single parent households per county, among other data. There is a total of 254 observations (1 per county). I am particularly interested to observe any potential relationships between the county Food Environment Index scores and these additional community demographics variables. Read the official descriptions for each variable [here](https://www.socialexplorer.com/data/HD2016/documentation/f51ec044-0672-41ee-8dbe-c482e96ee7a2#f51ec044-0672-41ee-8dbe-c482e96ee7a2).
+
+```{r}
+#import dataset here
+tx_data <- read.csv("socialexploredata.csv")
+race <-read.csv("race_homeowners.csv")
+latinx <-read.csv("percentlatino.csv")
+
+#join data
+library(tidyverse)
+library(dplyr)
+tx_data<- select(tx_data, -County)%>% rename(County=Qualifying.Name) %>% separate(County, into=c("County", "other"), sep = "County")%>%select(-other)
+race<- race%>% rename(County=Qualifying.Name) %>% separate(County, into=c("County", "other"), sep = "County")%>%select(-other)
+latinx <- latinx%>% rename(County=Qualifying.Name) %>% separate(County, into=c("County", "other"), sep = "County")%>%select(-other)
+```
+
+After joining these [socialexplorer.com](socialexplorer.com) datasets, I used a handful of `dplyr` functions to simplify the variable names, and create 3 additional categorical variables. The binary variable `Bin_MajorityHispanicLatino` assigns "1" to any county where there population is greater than 50% Hispanic/Latino, and "0" to all others. `Bin_Urban` uses the U.S. Census Bureau's classification of an "Urbanized Area" as a location with at least 50,000 people. Such counties were designated with "1"= Urban, while those with a population less than 50,000 were assigned "0" for Non Urban. Finally, `Cat_PCP_rate` establishes three categories of Primary Care Physician rates: "Low" = less than 50 PCPs per 100,000 people, "Medium" = between 50 and 100 PCPs per 100,000 people, and "High" = greater than 100 PCPs per 100,000 people in a county.
+
+```{r}
+data1<-left_join(tx_data,race, by ="County")
+data1 <- data1%>%left_join(latinx, by="County")
+
+
+#clean variable names
+data1<-data1%>%select(-Percent.of.Persons.Without.Insurance..Population.Under.65.Years..2013.est..,-Low.Birthweight.Births...2.5kg..95..Confidence.Interval...Low,-Population.......18.Years.,-Population.....65.Years.and.Over.)%>%rename(PCP=Primary.Care.Physicians..PCP.)%>%rename(MHP=Mental.Health.Providers..MHP.)%>%rename(PCP_rate=Primary.Care.Physicians..PCP..Rate.per.100.000.Population)%>%rename(MHP_rate=Mental.Health.Providers..MHP..Rate.per.100.000.Population)%>%rename(PercentUninsured_18to64=Percent.of.Persons.Without.Insurance..Population.18.to.64.Years..2013.est..)%>%rename(HSGradRate=High.School.Graduation.Rate)%>%rename(PostSecEdu=Percent.of.Adults.Having.Some.Post.secondary.Education..Persons.25.44.Years.)%>%rename(PercentWhite=X..Total.Population..White.Alone, PercentBlack=X..Total.Population..Black.or.African.American.Alone, Percent_White_Homeowners=X..Owner.Occupied.Housing.Units..White.Alone..Not.Hispanic.or.Latino.Homeowners., Percent_NonWhite_Homeowners=X..Owner.Occupied.Housing.Units..Non.White.Homeowners, Percent_Hispanic_Latino=X..Total.Population..Hispanic.or.Latino)
+data1<- data1%>%rename(Dent_rate=Dentists.Rate.per.100.000.Population)
+
+#create categorical and binary
+data1<-data1%>%mutate(Bin_MajorityHispanicLatino = ifelse(Percent_Hispanic_Latino>50,"1","0"))
+data1<-data1%>%mutate(Cat_PCP_rate = case_when(PCP_rate<50 ~ "Low",50<=PCP_rate & PCP_rate<=100 ~ "Medium", PCP_rate>100 ~ "High"))
+data1<-data1%>%mutate(Bin_Urban = ifelse((Population>50000),"1","0"))
+```
+
+## 1) Perform a MANOVA Test
+
+Dependent variables: Percent Uninsured per county (age 18-64), County Food Environment Index, Total County Population
+
+Categorical variable: County Primary Care Physician rate (Low/Medium/High)
+
+H~0~ : For all three dependent variables, the means for each PCP rate category are equal.
+
+H~A~ : At least one PCP rate category mean is different for at least one of the dependent variables.
+
+```{r}
+#MANOVA code
+data_man <- data1%>%filter(PercentUninsured_18to64!="NA")%>%filter(Population!="NA")%>%filter(Cat_PCP_rate!="NA")%>%select(1,8,11,12,26)
+man1<-manova(cbind(PercentUninsured_18to64,Food.Environment.Index,Population)~Cat_PCP_rate, data=data_man)
+summary(man1)
+
+#univarite anovas
+summary.aov(man1)
+
+#post hoc t-tests
+pairwise.t.test(data_man$PercentUninsured_18to64,data_man$Cat_PCP_rate,p.adj="none")
+pairwise.t.test(data_man$Population,data_man$Cat_PCP_rate,p.adj="none")
+
+#1 MANOVA, 3 ANOVA, 6 t-test = 10 tests
+#type-1 error rate
+1-.95^10
+#alpha= 0.05/10 = 0.005
+0.05/10
+
+#multivariate norm
+library(ggplot2)
+library(mvtnorm)
+library(ggExtra)
+ggplot(data_man, aes(x = PercentUninsured_18to64, y = Population)) +geom_point() + geom_density_2d(color="thistle", alpha=.9) + facet_wrap(~Cat_PCP_rate) + coord_fixed(ratio=.00002)+labs(title = "Check Assumptions: Multivariate Normality")
+
+#homogeneity
+covmats<-data_man%>%group_by(Cat_PCP_rate)%>%do(covs=cov(.[2:4]))
+for(i in 1:3){print(as.character(covmats$Cat_PCP_rate[i])); print(covmats$covs[i])}
+```
+
+**Results:**
+*The result of the MANOVA test shows that there is a significant mean difference in either the percent of uninsured individuals, the food environment index, and/or the population of a county across at least one of the Primary Care Physician (PCP) rate categories (Pillai trace=0.11966, pseudo F (6, 464),p=6.786e-05). One-way ANOVA tests show a difference in the percent of uninsured individuals and the population across at least one of the PCP rate categories. Post hoc analysis for these two variables indicates that there is a difference in the total population and percent of uninsured individuals between counties with low and medium PCP rates. A total of 10 tests were run (1 MANOVA + 3 ANOVA + 6 pairwise t-tests) resulting in a 40.13% chance of committing a Type I error. The bonferroni correction is used to establish a new significance level of 0.005, under which the difference in `PercentUninsured_19to64` is no longer considered significant. The difference in `Population`, however, is still significant between counties with Low and Medium PCP rates (p=9.4e-06). The MANOVA assumptions are difficult to meet, however glancing at a density plot of the response variables shows that they are relatively nicely clustered for the "High" and "Low" categories, while the "Medium" category is more spread out. Additionally, the co-variances are relatively non-homogeneous.* 
+
+## 2) Randomization Test
+
+H~0~ : The average Food Environment Index score is the same between Urban and Non Urban counties in Texas.
+
+H~A~ : The average Food Environment Index score differs between Urban and Non Urban counties in Texas.
+
+```{r}
+#RANDOMIZATION code
+Urban<-data1%>%filter(Bin_Urban==1)%>%select(County,Bin_Urban,Food.Environment.Index)
+NonUrban<-data1%>%filter(Bin_Urban==0)%>%select(County,Bin_Urban,Food.Environment.Index)
+
+actual_meandiff<-mean(Urban$Food.Environment.Index, na.rm=T)-mean(NonUrban$Food.Environment.Index, na.rm=T)
+actual_meandiff
+
+
+random<-data.frame(PopDens=c(Urban$Bin_Urban,NonUrban$Bin_Urban),FoodIndex=c(Urban$Food.Environment.Index,NonUrban$Food.Environment.Index))
+head(random)
+
+#5000 permutations
+rand_dist<-vector()
+
+for(i in 1:5000){
+new<-data.frame(FoodIndex=sample(random$FoodIndex),PopDens=random$PopDens) 
+rand_dist[i]<-mean(new[new$PopDens=="1",]$FoodIndex)-
+              mean(new[new$PopDens=="0",]$FoodIndex)}
+
+
+#Create a plot visualizing the null distribution and the test statistic
+{hist(rand_dist,main="Null Distribution and Test Statistic",xlab="mean difference",ylab="frequency", col="lightblue2", border = "lightblue3"); abline(v = actual_meandiff,col="coral")}
+
+
+#t test, randomized data
+t.test(data=new, FoodIndex~PopDens)
+
+```
+
+**Results:**
+*The actual mean difference in Food Environment Index (FEI) between Urban and Non-Urban counties is +/- 0.2018449. After running a randomization test with 5,000 permutations and scrambling the association between FEI and Urban/Non Urban status, Welch's Two Sample t-test shows that there is no significant difference between mean FEI in Urban and Non Urban counties (ie. fail to reject the null hypothesis).*
+
+## 3) Linear Regression with Interaction
+
+H~0~ : Controlling for the high school graduation rate of any given county in Texas, the percent of children in poverty does not explain variation in the Food Environment Index.
+
+H~0~ : Controlling for the percent of children in poverty in any given county in Texas, the high school graduation rate does not explain variation in the Food Environment Index.
+
+H~A~ : For any given county in Texas, the high school graduation rate and/or the percent of children in poverty explains the variation in the Food Environment Index.
+
+```{r}
+#LinReg code
+
+#center Pop
+data1$ChildPov_c <- data1$Percent.of.Children.in.Poverty- mean(data1$Percent.of.Children.in.Poverty, na.rm = T)
+#center Grad Rate
+data1$HSGradRate_c <- data1$HSGradRate- mean(data1$HSGradRate, na.rm = T)
+#center PercentHisp/Lat
+data1$PerHispanic_c <- data1$Percent_Hispanic_Latino- mean(data1$Percent_Hispanic_Latino, na.rm = T)
+
+#model
+fit1 <-lm(Food.Environment.Index~ChildPov_c*HSGradRate_c, data = data1)
+summary(fit1)
+
+#plot
+new1<-data1
+new1$ChildPov_c<-mean(data1$ChildPov_c)
+new1$mean<-predict(fit1,new1)
+new1$ChildPov_c<-mean(data1$ChildPov_c)+sd(data1$ChildPov_c)
+new1$plus.sd<-predict(fit1,new1)
+new1$ChildPov_c<-mean(data1$ChildPov_c)-sd(data1$ChildPov_c)
+new1$minus.sd<-predict(fit1,new1)
+
+ggplot(data1,aes(HSGradRate_c,Food.Environment.Index),group=mycols)+geom_point(color="gray40", alpha=.7)+geom_line(data=new1,aes(y=mean,color="mean"))+geom_line(data=new1,aes(y=plus.sd,color="+1 sd"))+geom_line(data=new1,aes(y=minus.sd,color="-1 sd"))+scale_color_manual(values=c("#DAA520","thistle3","#FF7F50"))+theme(legend.position=c(.9,.2))+labs(color="Child Poverty %", x= "HSGradRate_c", title="Interaction Plot")
+
+#check assumptions
+resids<-fit1$residuals
+fitvals<-fit1$fitted.values 
+ggplot()+geom_point(aes(fitvals,resids), color="goldenrod3", alpha=.75)+geom_hline(yintercept=0, color='coral')+labs(title= "Check Assumptions: Linearity and Homoskedasticity")
+#norm
+ggplot()+geom_histogram(aes(resids),bins=10, fill="goldenrod3", color="goldenrod")+labs(title="Check Assumptions: Normality")
+
+
+#robust se
+library(sandwich)
+library(lmtest)
+coeftest(fit1, vcov = vcovHC(fit1))
+```
+
+**Results:**
+*A linear regression was performed to predict Food Environment Index (FEI) from the Percentage of Children in Poverty in each county's population and the county-specific High School Graduation Rate. The result indicates that the predicted FEI for counties with an average graduation rate is 6.441 when controlling for the percent of children in poverty, FEI decreases by 0.0481 points for every 1 percent increase in child poverty, when controlling for graduation rate. Controlling for child poverty, FEI increases by 0.0054 points for every 1 percent increase in graduation rate. The effect of Percentage of Children in Poverty on FEI is 0.0055 lower than the effect of HS Graduation Rate on FEI. A plot of the fitted values vs. the model residuals shows that the data is relatively linear and homoskedastic, and a histogram of the residuals shows that the data is relatively normal. Rerunning under heteroskedastic robust SE’s shows a decreased (more significant) p-value for the effect of Child Poverty (p=2.45e-07 to p=1.788e-06) and a slightly increased p-value for the effect of the interaction (p=0.0034 to p=0.01232), along with an increase in standard errors for all values. The `Intercept`, `ChildPov_c`, and the interaction `ChildPov_c:HSGradRate_c` all remain significant in their effects on FEI. The model predicts 15.48% of variability in county FEI scores.*
+
+## 4) Linear Regression: continued 
+
+Bootstrapped Standard Errors
+
+```{r}
+#Boot code
+samp_distn<-replicate(5000, {
+boot_dat <- sample_frac(data1, replace=T) #bootstrap your data 
+fit_boot <- lm(Food.Environment.Index~ChildPov_c*HSGradRate_c, data=boot_dat) #fit model 
+coef(fit_boot) #save coefs
+})
+samp_distn %>% t %>% as.data.frame %>% summarize_all(sd)
+
+#95
+samp_distn %>% t %>% as.data.frame %>% gather %>% group_by(key) %>% summarize(lower=quantile(value,.025), upper=quantile(value,.975))
+```
+
+**Results:**
+*The bootstrapped standard errors for the previous model fall between the values of the original and robust standard errors for each value. The 95% CI for the `Intercept`, `ChildPov_c`, and the interaction `ChildPov_c:HSGradRate_c` do not contain zero under the bootstrapped SEs; thus, these values are still considered significant. The null hypothesis can be rejected as the percent of children in poverty and high school graduation rates of each county can predict significant variations in the Food Environment Index.*
+
+## 5) Logistic Regression
+
+H~0~ : The percent of adults with at least some post secondary education within a county does not predict the probability of it being an urban area (>50,000 people).
+
+H~0~ : A county's Food Environment Index does not predict the probability of it being an urban area (>50,000 people).
+
+H~A~ : The probability that a county is urban (>50,000 people) can be predicted by either the percent of adults with at least some post secondary education or the Food Environment Index.
+
+```{r}
+#LogReg code
+library(dplyr)
+data_logistic<-data1%>%mutate(Bin_Urban = (as.numeric(Bin_Urban)))%>%na.omit()
+fit2<-glm(Bin_Urban~PostSecEdu+Food.Environment.Index, data=data_logistic, family="binomial")
+summary(fit2)
+exp(coef(fit2))
+
+#confusion
+probs<-predict(fit2,type="response")
+table(truth=data_logistic$Bin_Urban,predict=as.numeric(probs>.5))%>%addmargins
+#accuracy
+(4+56)/81
+#sensitivity (tpr)
+56/62
+#specificity (tnr)
+4/19
+#ppv
+56/71
+
+#log odds
+data_logistic$logit<-predict(fit2)
+data_logistic<-data_logistic%>%mutate(Bin_Urban = as.factor(Bin_Urban))%>%mutate(Bin_Urban=recode(Bin_Urban, '1' = "Urban", '0' = "Non Urban"))
+ggplot(data_logistic,aes(logit, fill=Bin_Urban))+geom_density(alpha=.5)+
+  geom_vline(xintercept=0,lty=2)+scale_fill_manual(values=c("lightblue2","thistle"))+labs(title="Density of Log Odds")
+
+#ROC plot
+library(plotROC)
+ROCplot <-ggplot(data_logistic)+ geom_roc(aes(d = Bin_Urban, m = PostSecEdu),n.cuts = 0, color="goldenrod3")+labs(title="ROC Plot")
+ROCplot
+
+#AUC
+class_diag<-function(probs,truth){
+  
+  tab<-table(factor(probs>.5,levels=c("FALSE","TRUE")),truth)
+  acc=sum(diag(tab))/sum(tab)
+  sens=tab[2,2]/colSums(tab)[2]
+  spec=tab[1,1]/colSums(tab)[1]
+  ppv=tab[2,2]/rowSums(tab)[2]
+
+  if(is.numeric(truth)==FALSE & is.logical(truth)==FALSE) truth<-as.numeric(truth)-1
+  
+  #CALCULATE EXACT AUC
+  ord<-order(probs, decreasing=TRUE)
+  probs <- probs[ord]; truth <- truth[ord]
+  
+  TPR=cumsum(truth)/max(1,sum(truth)) 
+  FPR=cumsum(!truth)/max(1,sum(!truth))
+  
+  dup<-c(probs[-1]>=probs[-length(probs)], FALSE)
+  TPR<-c(0,TPR[!dup],1); FPR<-c(0,FPR[!dup],1)
+  
+  n <- length(TPR)
+  auc<- sum( ((TPR[-1]+TPR[-n])/2) * (FPR[-1]-FPR[-n]) )
+
+  data.frame(acc,sens,spec,ppv,auc)
+}
+class_diag(probs, data_logistic$Bin_Urban)
+
+#10 fold CV
+set.seed(1234)
+k=10
+
+data_glm<-data_logistic[sample(nrow(data_logistic)),] #put dataset in random order
+folds<-cut(seq(1:nrow(data_logistic)),breaks=k,labels=F) #create folds
+
+diags<-NULL
+for(i in 1:k){          # FOR EACH OF 10 FOLDS
+  train<-data_glm[folds!=i,] # CREATE TRAINING SET
+  test<-data_glm[folds==i,]  # CREATE TESTING SET
+  
+  truth<-test$Bin_Urban
+  
+  fit_glm<- glm(Bin_Urban~PostSecEdu+Food.Environment.Index,family="binomial", data=train)
+  probs_glm<- predict(fit_glm, type="response", newdata=test)
+  
+  diags<-rbind(diags,class_diag(probs_glm,truth)) #CV DIAGNOSTICS FOR EACH FOLD
+}
+summarize_all(diags,mean)
+
+```
+
+**Results:**
+*Overall, the odds that a county is Urban are 0.01336 times less than the odds that it is Non-Urban. Controlling for FEI, a 1 percent increase in adults with post-secondary education multiplies the odds of a county being urban by 1.173, a 17.3% increase (significant, p=0.000624). Controlling for adults with post-secondary education, FEI has a negative effect on the odds that a county is urban (1 point increase in FEI decreases odds that a county is urban by a factor of 0.640. The AUC for the model is fair (AUC=0.796). The model is highly sensitive (TPR = 0.903), indicating that there is a high probability of classifying a truly urban county as urban, but the model suffers from low specificity (TNR=0.211). This means that the model does not often classify non-urban areas correctly. The AUC represents this trade-off.*
+
+*After performing a 10-fold cross-validation, the AUC is decreased to 0.703 (still considered "fair"). Sensitivity and specificity have both decreased to 0.876 and 0.125, respectively. Overall this model only a fair predictor of the Urban status of Texas counties.*
+
+## 6) LASSO Regression
+
+LASSO + 10-fold Cross-Validation
+
+```{r}
+#LASSOReg code
+
+library(glmnet)
+set.seed(123)
+data_lasso<-data1%>%select(2:24)%>%na.omit
+y<-as.matrix(data_lasso$Food.Environment.Index) 
+x<-data_lasso%>%select(-Food.Environment.Index,)%>%mutate_all(scale)%>%as.matrix
+cv<-cv.glmnet(x,y)
+lasso1<-glmnet(x,y,lambda=cv$lambda.1se) 
+coef(lasso1)
+
+#10 fold CV
+set.seed(123)
+k=10
+data_lasso2<-data_lasso[sample(nrow(data_lasso)),]
+folds<-cut(seq(1:nrow(data_lasso)),breaks=k,labels=F)
+
+diags<-NULL 
+for (i in 1:k){
+  train<-data_lasso2[folds!=i,] 
+  test<-data_lasso2[folds==i,]
+  fit<-lm(Food.Environment.Index~Dentists+MHP_rate+Percent.of.Unemployed..Persons.16.Years.and.Over.+Percent.of.Children.in.Poverty +Percent.of.Single.Parent.Households+PercentWhite+PercentBlack+Percent_White_Homeowners +Percent_Hispanic_Latino,data=train) 
+  yhat<-predict(fit,newdata=test)
+
+  diags<-mean((test$Food.Environment.Index-yhat)^2) 
+}
+mean(diags)
+
+#compare to
+fit_comp<-lm(Food.Environment.Index~.,data=data_lasso) 
+yhat<-predict(fit_comp)
+mean((data_lasso$Food.Environment.Index-yhat)^2)
+
+set.seed(123)
+k=10
+data_comp<-data_lasso[sample(nrow(data_lasso)),] 
+folds<-cut(seq(1:nrow(data_lasso)),breaks=k,labels=F) 
+
+diags<-NULL 
+for (i in 1:k){
+train<-data_comp[folds!=i,] 
+test<-data_comp[folds==i,]
+
+fit_comp2<-lm(Food.Environment.Index~.,data=train) 
+yhat<-predict(fit_comp2,newdata=test)
+
+diags<-mean((test$Food.Environment.Index-yhat)^2) 
+}
+mean(diags)
+```
+
+**Results:**
+*A LASSO regression on all numeric variables indicates that `Dentists`, `MHP_rate`, `Percent.of.Unemployed..Persons.16.Years.and.Over.`, `Percent.of.Children.in.Poverty`, `Percent.of.Single.Parent.Households`,`PercentWhite`, `PercentBlack`, `Percent_White_Homeowners`, `Percent_NonWhite_Homeowners`, and `Percent_Hispanic_Latino` are the best predictors of a county's Food Environment Index. After 10-fold CV, the linear regression model using the LASSO selected variables shows a mean squared error (MSE) of 0.16525, while the linear regression model using all numeric variables indicates a higher MSE of 0.2222. This suggests that the LASSO selected variable predict the Food Environment Index of a county with less error than when all variables are included.*

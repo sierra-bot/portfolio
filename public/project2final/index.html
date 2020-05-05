@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sierra Moore" />
+    <meta name="description" content="Describe your website">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>Project #2</title>
+    <meta name="generator" content="Hugo 0.69.2" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><i class="fa fa-home"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/resume/">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="/project2final/">Project #2</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          January 1, 0001
+            &nbsp;&nbsp;
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+
+<hr />
+<div id="food-people-and-other-counts-for-texas-counties" class="section level1">
+<h1>Food, People, and Other Counts for Texas Counties</h1>
+<p>The USDA broadly defines the term “food desert” as a “neighborhood that lacks healthy food sources.” A given geographic region may be classified as a food desert based on an analysis of various demographic and accessibility factors. The County Health Rankings &amp; Roadmaps survey of Health Data for 2016 provides each county in Texas with a Food Environment Index score, which incorporates measures of grocery store proximity, income level, and food source reliability for each county. Higher scores (with 10 being the best) indicate increased availability of healthy food options, even for low income members on the community. Other data included in this dataset (compiled using <a href="socialexplorer.com">socialexplorer.com</a>) includes variables such as county population, number of health care providers per 100,000 people, infant and child mortality rates, graduation rate, violent crime rate, and percent of single parent households per county, among other data. There is a total of 254 observations (1 per county). I am particularly interested to observe any potential relationships between the county Food Environment Index scores and these additional community demographics variables. Read the official descriptions for each variable <a href="https://www.socialexplorer.com/data/HD2016/documentation/f51ec044-0672-41ee-8dbe-c482e96ee7a2#f51ec044-0672-41ee-8dbe-c482e96ee7a2">here</a>.</p>
+<pre class="r"><code>#import dataset here
+tx_data &lt;- read.csv(&quot;socialexploredata.csv&quot;)
+race &lt;-read.csv(&quot;race_homeowners.csv&quot;)
+latinx &lt;-read.csv(&quot;percentlatino.csv&quot;)
+
+#join data
+library(tidyverse)
+library(dplyr)
+tx_data&lt;- select(tx_data, -County)%&gt;% rename(County=Qualifying.Name) %&gt;% separate(County, into=c(&quot;County&quot;, &quot;other&quot;), sep = &quot;County&quot;)%&gt;%select(-other)
+race&lt;- race%&gt;% rename(County=Qualifying.Name) %&gt;% separate(County, into=c(&quot;County&quot;, &quot;other&quot;), sep = &quot;County&quot;)%&gt;%select(-other)
+latinx &lt;- latinx%&gt;% rename(County=Qualifying.Name) %&gt;% separate(County, into=c(&quot;County&quot;, &quot;other&quot;), sep = &quot;County&quot;)%&gt;%select(-other)</code></pre>
+<p>After joining these <a href="socialexplorer.com">socialexplorer.com</a> datasets, I used a handful of <code>dplyr</code> functions to simplify the variable names, and create 3 additional categorical variables. The binary variable <code>Bin_MajorityHispanicLatino</code> assigns “1” to any county where there population is greater than 50% Hispanic/Latino, and “0” to all others. <code>Bin_Urban</code> uses the U.S. Census Bureau’s classification of an “Urbanized Area” as a location with at least 50,000 people. Such counties were designated with “1”= Urban, while those with a population less than 50,000 were assigned “0” for Non Urban. Finally, <code>Cat_PCP_rate</code> establishes three categories of Primary Care Physician rates: “Low” = less than 50 PCPs per 100,000 people, “Medium” = between 50 and 100 PCPs per 100,000 people, and “High” = greater than 100 PCPs per 100,000 people in a county.</p>
+<pre class="r"><code>data1&lt;-left_join(tx_data,race, by =&quot;County&quot;)
+data1 &lt;- data1%&gt;%left_join(latinx, by=&quot;County&quot;)
+
+
+#clean variable names
+data1&lt;-data1%&gt;%select(-Percent.of.Persons.Without.Insurance..Population.Under.65.Years..2013.est..,-Low.Birthweight.Births...2.5kg..95..Confidence.Interval...Low,-Population.......18.Years.,-Population.....65.Years.and.Over.)%&gt;%rename(PCP=Primary.Care.Physicians..PCP.)%&gt;%rename(MHP=Mental.Health.Providers..MHP.)%&gt;%rename(PCP_rate=Primary.Care.Physicians..PCP..Rate.per.100.000.Population)%&gt;%rename(MHP_rate=Mental.Health.Providers..MHP..Rate.per.100.000.Population)%&gt;%rename(PercentUninsured_18to64=Percent.of.Persons.Without.Insurance..Population.18.to.64.Years..2013.est..)%&gt;%rename(HSGradRate=High.School.Graduation.Rate)%&gt;%rename(PostSecEdu=Percent.of.Adults.Having.Some.Post.secondary.Education..Persons.25.44.Years.)%&gt;%rename(PercentWhite=X..Total.Population..White.Alone, PercentBlack=X..Total.Population..Black.or.African.American.Alone, Percent_White_Homeowners=X..Owner.Occupied.Housing.Units..White.Alone..Not.Hispanic.or.Latino.Homeowners., Percent_NonWhite_Homeowners=X..Owner.Occupied.Housing.Units..Non.White.Homeowners, Percent_Hispanic_Latino=X..Total.Population..Hispanic.or.Latino)
+data1&lt;- data1%&gt;%rename(Dent_rate=Dentists.Rate.per.100.000.Population)
+
+#create categorical and binary
+data1&lt;-data1%&gt;%mutate(Bin_MajorityHispanicLatino = ifelse(Percent_Hispanic_Latino&gt;50,&quot;1&quot;,&quot;0&quot;))
+data1&lt;-data1%&gt;%mutate(Cat_PCP_rate = case_when(PCP_rate&lt;50 ~ &quot;Low&quot;,50&lt;=PCP_rate &amp; PCP_rate&lt;=100 ~ &quot;Medium&quot;, PCP_rate&gt;100 ~ &quot;High&quot;))
+data1&lt;-data1%&gt;%mutate(Bin_Urban = ifelse((Population&gt;50000),&quot;1&quot;,&quot;0&quot;))</code></pre>
+<div id="perform-a-manova-test" class="section level2">
+<h2>1) Perform a MANOVA Test</h2>
+<p>Dependent variables: Percent Uninsured per county (age 18-64), County Food Environment Index, Total County Population</p>
+<p>Categorical variable: County Primary Care Physician rate (Low/Medium/High)</p>
+<p>H<sub>0</sub> : For all three dependent variables, the means for each PCP rate category are equal.</p>
+<p>H<sub>A</sub> : At least one PCP rate category mean is different for at least one of the dependent variables.</p>
+<pre class="r"><code>#MANOVA code
+data_man &lt;- data1%&gt;%filter(PercentUninsured_18to64!=&quot;NA&quot;)%&gt;%filter(Population!=&quot;NA&quot;)%&gt;%filter(Cat_PCP_rate!=&quot;NA&quot;)%&gt;%select(1,8,11,12,26)
+man1&lt;-manova(cbind(PercentUninsured_18to64,Food.Environment.Index,Population)~Cat_PCP_rate, data=data_man)
+summary(man1)</code></pre>
+<pre><code>##               Df  Pillai approx F num Df den Df    Pr(&gt;F)    
+## Cat_PCP_rate   2 0.11966   4.9214      6    464 6.786e-05 ***
+## Residuals    233                                             
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>#univarite anovas
+summary.aov(man1)</code></pre>
+<pre><code>##  Response PercentUninsured_18to64 :
+##               Df Sum Sq Mean Sq F value  Pr(&gt;F)  
+## Cat_PCP_rate   2  218.1 109.041  3.4084 0.03475 *
+## Residuals    233 7454.2  31.992                  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##  Response Food.Environment.Index :
+##               Df Sum Sq Mean Sq F value Pr(&gt;F)
+## Cat_PCP_rate   2   3.04  1.5199   1.262  0.285
+## Residuals    233 280.62  1.2044               
+## 
+##  Response Population :
+##               Df     Sum Sq    Mean Sq F value    Pr(&gt;F)    
+## Cat_PCP_rate   2 3.0170e+12 1.5085e+12  10.409 4.678e-05 ***
+## Residuals    233 3.3767e+13 1.4492e+11                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>#post hoc t-tests
+pairwise.t.test(data_man$PercentUninsured_18to64,data_man$Cat_PCP_rate,p.adj=&quot;none&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  data_man$PercentUninsured_18to64 and data_man$Cat_PCP_rate 
+## 
+##        High   Low   
+## Low    0.8543 -     
+## Medium 0.4431 0.0097
+## 
+## P value adjustment method: none</code></pre>
+<pre class="r"><code>pairwise.t.test(data_man$Population,data_man$Cat_PCP_rate,p.adj=&quot;none&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  data_man$Population and data_man$Cat_PCP_rate 
+## 
+##        High  Low    
+## Low    0.984 -      
+## Medium 0.097 9.4e-06
+## 
+## P value adjustment method: none</code></pre>
+<pre class="r"><code>#1 MANOVA, 3 ANOVA, 6 t-test = 10 tests
+#type-1 error rate
+1-.95^10</code></pre>
+<pre><code>## [1] 0.4012631</code></pre>
+<pre class="r"><code>#alpha= 0.05/10 = 0.005
+0.05/10</code></pre>
+<pre><code>## [1] 0.005</code></pre>
+<pre class="r"><code>#multivariate norm
+library(ggplot2)
+library(mvtnorm)
+library(ggExtra)
+ggplot(data_man, aes(x = PercentUninsured_18to64, y = Population)) +geom_point() + geom_density_2d(color=&quot;thistle&quot;, alpha=.9) + facet_wrap(~Cat_PCP_rate) + coord_fixed(ratio=.00002)+labs(title = &quot;Check Assumptions: Multivariate Normality&quot;)</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#homogeneity
+covmats&lt;-data_man%&gt;%group_by(Cat_PCP_rate)%&gt;%do(covs=cov(.[2:4]))
+for(i in 1:3){print(as.character(covmats$Cat_PCP_rate[i])); print(covmats$covs[i])}</code></pre>
+<pre><code>## [1] &quot;High&quot;
+## [[1]]
+##                         PercentUninsured_18to64 Food.Environment.Index
+## PercentUninsured_18to64            9.043634e+00             -0.5977048
+## Food.Environment.Index            -5.977048e-01              1.4747619
+## Population                        -3.253858e+04          13316.7357143
+##                            Population
+## PercentUninsured_18to64     -32538.58
+## Food.Environment.Index       13316.74
+## Population              6395209288.14
+## 
+## [1] &quot;Low&quot;
+## [[1]]
+##                         PercentUninsured_18to64 Food.Environment.Index
+## PercentUninsured_18to64            3.483787e+01              0.3873534
+## Food.Environment.Index             3.873534e-01              1.3121191
+## Population                         1.729561e+05            440.9053459
+##                           Population
+## PercentUninsured_18to64 1.729561e+05
+## Food.Environment.Index  4.409053e+02
+## Population              1.031437e+10
+## 
+## [1] &quot;Medium&quot;
+## [[1]]
+##                         PercentUninsured_18to64 Food.Environment.Index
+## PercentUninsured_18to64            2.736300e+01          -5.123689e-01
+## Food.Environment.Index            -5.123689e-01           9.285209e-01
+## Population                        -1.499055e+05          -1.916171e+04
+##                            Population
+## PercentUninsured_18to64 -1.499055e+05
+## Food.Environment.Index  -1.916171e+04
+## Population               4.718881e+11</code></pre>
+<p><strong>Results:</strong>
+<em>The result of the MANOVA test shows that there is a significant mean difference in either the percent of uninsured individuals, the food environment index, and/or the population of a county across at least one of the Primary Care Physician (PCP) rate categories (Pillai trace=0.11966, pseudo F (6, 464),p=6.786e-05). One-way ANOVA tests show a difference in the percent of uninsured individuals and the population across at least one of the PCP rate categories. Post hoc analysis for these two variables indicates that there is a difference in the total population and percent of uninsured individuals between counties with low and medium PCP rates. A total of 10 tests were run (1 MANOVA + 3 ANOVA + 6 pairwise t-tests) resulting in a 40.13% chance of committing a Type I error. The bonferroni correction is used to establish a new significance level of 0.005, under which the difference in <code>PercentUninsured_19to64</code> is no longer considered significant. The difference in <code>Population</code>, however, is still significant between counties with Low and Medium PCP rates (p=9.4e-06). The MANOVA assumptions are difficult to meet, however glancing at a density plot of the response variables shows that they are relatively nicely clustered for the “High” and “Low” categories, while the “Medium” category is more spread out. Additionally, the co-variances are relatively non-homogeneous.</em></p>
+</div>
+<div id="randomization-test" class="section level2">
+<h2>2) Randomization Test</h2>
+<p>H<sub>0</sub> : The average Food Environment Index score is the same between Urban and Non Urban counties in Texas.</p>
+<p>H<sub>A</sub> : The average Food Environment Index score differs between Urban and Non Urban counties in Texas.</p>
+<pre class="r"><code>#RANDOMIZATION code
+Urban&lt;-data1%&gt;%filter(Bin_Urban==1)%&gt;%select(County,Bin_Urban,Food.Environment.Index)
+NonUrban&lt;-data1%&gt;%filter(Bin_Urban==0)%&gt;%select(County,Bin_Urban,Food.Environment.Index)
+
+actual_meandiff&lt;-mean(Urban$Food.Environment.Index, na.rm=T)-mean(NonUrban$Food.Environment.Index, na.rm=T)
+actual_meandiff</code></pre>
+<pre><code>## [1] -0.2018449</code></pre>
+<pre class="r"><code>random&lt;-data.frame(PopDens=c(Urban$Bin_Urban,NonUrban$Bin_Urban),FoodIndex=c(Urban$Food.Environment.Index,NonUrban$Food.Environment.Index))
+head(random)</code></pre>
+<pre><code>##   PopDens FoodIndex
+## 1       1       5.3
+## 2       1       5.3
+## 3       1       5.8
+## 4       1       5.2
+## 5       1       6.9
+## 6       1       5.0</code></pre>
+<pre class="r"><code>#5000 permutations
+rand_dist&lt;-vector()
+
+for(i in 1:5000){
+new&lt;-data.frame(FoodIndex=sample(random$FoodIndex),PopDens=random$PopDens) 
+rand_dist[i]&lt;-mean(new[new$PopDens==&quot;1&quot;,]$FoodIndex)-
+              mean(new[new$PopDens==&quot;0&quot;,]$FoodIndex)}
+
+
+#Create a plot visualizing the null distribution and the test statistic
+{hist(rand_dist,main=&quot;Null Distribution and Test Statistic&quot;,xlab=&quot;mean difference&quot;,ylab=&quot;frequency&quot;, col=&quot;lightblue2&quot;, border = &quot;lightblue3&quot;); abline(v = actual_meandiff,col=&quot;coral&quot;)}</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#t test, randomized data
+t.test(data=new, FoodIndex~PopDens)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  FoodIndex by PopDens
+## t = -0.93064, df = 104.18, p-value = 0.3542
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.5245824  0.1894706
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        6.334031        6.501587</code></pre>
+<p><strong>Results:</strong>
+<em>The actual mean difference in Food Environment Index (FEI) between Urban and Non-Urban counties is +/- 0.2018449. After running a randomization test with 5,000 permutations and scrambling the association between FEI and Urban/Non Urban status, Welch’s Two Sample t-test shows that there is no significant difference between mean FEI in Urban and Non Urban counties (ie. fail to reject the null hypothesis).</em></p>
+</div>
+<div id="linear-regression-with-interaction" class="section level2">
+<h2>3) Linear Regression with Interaction</h2>
+<p>H<sub>0</sub> : Controlling for the high school graduation rate of any given county in Texas, the percent of children in poverty does not explain variation in the Food Environment Index.</p>
+<p>H<sub>0</sub> : Controlling for the percent of children in poverty in any given county in Texas, the high school graduation rate does not explain variation in the Food Environment Index.</p>
+<p>H<sub>A</sub> : For any given county in Texas, the high school graduation rate and/or the percent of children in poverty explains the variation in the Food Environment Index.</p>
+<pre class="r"><code>#LinReg code
+
+#center Pop
+data1$ChildPov_c &lt;- data1$Percent.of.Children.in.Poverty- mean(data1$Percent.of.Children.in.Poverty, na.rm = T)
+#center Grad Rate
+data1$HSGradRate_c &lt;- data1$HSGradRate- mean(data1$HSGradRate, na.rm = T)
+#center PercentHisp/Lat
+data1$PerHispanic_c &lt;- data1$Percent_Hispanic_Latino- mean(data1$Percent_Hispanic_Latino, na.rm = T)
+
+#model
+fit1 &lt;-lm(Food.Environment.Index~ChildPov_c*HSGradRate_c, data = data1)
+summary(fit1)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = Food.Environment.Index ~ ChildPov_c * HSGradRate_c, 
+##     data = data1)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.3806 -0.4795 -0.0616  0.5028  3.6817 
+## 
+## Coefficients:
+##                          Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)              6.432368   0.065147  98.736  &lt; 2e-16 ***
+## ChildPov_c              -0.048094   0.008962  -5.366 2.45e-07 ***
+## HSGradRate_c             0.005445   0.014564   0.374   0.7089    
+## ChildPov_c:HSGradRate_c -0.005500   0.001853  -2.968   0.0034 ** 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.8625 on 180 degrees of freedom
+##   (70 observations deleted due to missingness)
+## Multiple R-squared:  0.1686, Adjusted R-squared:  0.1548 
+## F-statistic: 12.17 on 3 and 180 DF,  p-value: 2.744e-07</code></pre>
+<pre class="r"><code>#plot
+new1&lt;-data1
+new1$ChildPov_c&lt;-mean(data1$ChildPov_c)
+new1$mean&lt;-predict(fit1,new1)
+new1$ChildPov_c&lt;-mean(data1$ChildPov_c)+sd(data1$ChildPov_c)
+new1$plus.sd&lt;-predict(fit1,new1)
+new1$ChildPov_c&lt;-mean(data1$ChildPov_c)-sd(data1$ChildPov_c)
+new1$minus.sd&lt;-predict(fit1,new1)
+
+ggplot(data1,aes(HSGradRate_c,Food.Environment.Index),group=mycols)+geom_point(color=&quot;gray40&quot;, alpha=.7)+geom_line(data=new1,aes(y=mean,color=&quot;mean&quot;))+geom_line(data=new1,aes(y=plus.sd,color=&quot;+1 sd&quot;))+geom_line(data=new1,aes(y=minus.sd,color=&quot;-1 sd&quot;))+scale_color_manual(values=c(&quot;#DAA520&quot;,&quot;thistle3&quot;,&quot;#FF7F50&quot;))+theme(legend.position=c(.9,.2))+labs(color=&quot;Child Poverty %&quot;, x= &quot;HSGradRate_c&quot;, title=&quot;Interaction Plot&quot;)</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#check assumptions
+resids&lt;-fit1$residuals
+fitvals&lt;-fit1$fitted.values 
+ggplot()+geom_point(aes(fitvals,resids), color=&quot;goldenrod3&quot;, alpha=.75)+geom_hline(yintercept=0, color=&#39;coral&#39;)+labs(title= &quot;Check Assumptions: Linearity and Homoskedasticity&quot;)</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-5-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#norm
+ggplot()+geom_histogram(aes(resids),bins=10, fill=&quot;goldenrod3&quot;, color=&quot;goldenrod&quot;)+labs(title=&quot;Check Assumptions: Normality&quot;)</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-5-3.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#robust se
+library(sandwich)
+library(lmtest)
+coeftest(fit1, vcov = vcovHC(fit1))</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##                           Estimate Std. Error t value  Pr(&gt;|t|)    
+## (Intercept)              6.4323676  0.0688351 93.4460 &lt; 2.2e-16 ***
+## ChildPov_c              -0.0480942  0.0097385 -4.9386 1.788e-06 ***
+## HSGradRate_c             0.0054451  0.0196667  0.2769   0.78220    
+## ChildPov_c:HSGradRate_c -0.0055001  0.0021753 -2.5284   0.01232 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p><strong>Results:</strong>
+<em>A linear regression was performed to predict Food Environment Index (FEI) from the Percentage of Children in Poverty in each county’s population and the county-specific High School Graduation Rate. The result indicates that the predicted FEI for counties with an average graduation rate is 6.441 when controlling for the percent of children in poverty, FEI decreases by 0.0481 points for every 1 percent increase in child poverty, when controlling for graduation rate. Controlling for child poverty, FEI increases by 0.0054 points for every 1 percent increase in graduation rate. The effect of Percentage of Children in Poverty on FEI is 0.0055 lower than the effect of HS Graduation Rate on FEI. A plot of the fitted values vs. the model residuals shows that the data is relatively linear and homoskedastic, and a histogram of the residuals shows that the data is relatively normal. Rerunning under heteroskedastic robust SE’s shows a decreased (more significant) p-value for the effect of Child Poverty (p=2.45e-07 to p=1.788e-06) and a slightly increased p-value for the effect of the interaction (p=0.0034 to p=0.01232), along with an increase in standard errors for all values. The <code>Intercept</code>, <code>ChildPov_c</code>, and the interaction <code>ChildPov_c:HSGradRate_c</code> all remain significant in their effects on FEI. The model predicts 15.48% of variability in county FEI scores.</em></p>
+</div>
+<div id="linear-regression-continued" class="section level2">
+<h2>4) Linear Regression: continued</h2>
+<p>Bootstrapped Standard Errors</p>
+<pre class="r"><code>#Boot code
+samp_distn&lt;-replicate(5000, {
+boot_dat &lt;- sample_frac(data1, replace=T) #bootstrap your data 
+fit_boot &lt;- lm(Food.Environment.Index~ChildPov_c*HSGradRate_c, data=boot_dat) #fit model 
+coef(fit_boot) #save coefs
+})
+samp_distn %&gt;% t %&gt;% as.data.frame %&gt;% summarize_all(sd)</code></pre>
+<pre><code>##   (Intercept)  ChildPov_c HSGradRate_c ChildPov_c:HSGradRate_c
+## 1  0.06919387 0.009453394   0.01802524             0.002017414</code></pre>
+<pre class="r"><code>#95
+samp_distn %&gt;% t %&gt;% as.data.frame %&gt;% gather %&gt;% group_by(key) %&gt;% summarize(lower=quantile(value,.025), upper=quantile(value,.975))</code></pre>
+<pre><code>## # A tibble: 4 x 3
+##   key                        lower    upper
+##   &lt;chr&gt;                      &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)              6.29     6.56   
+## 2 ChildPov_c              -0.0663  -0.0289 
+## 3 ChildPov_c:HSGradRate_c -0.00973 -0.00180
+## 4 HSGradRate_c            -0.0244   0.0451</code></pre>
+<p><strong>Results:</strong>
+<em>The bootstrapped standard errors for the previous model fall between the values of the original and robust standard errors for each value. The 95% CI for the <code>Intercept</code>, <code>ChildPov_c</code>, and the interaction <code>ChildPov_c:HSGradRate_c</code> do not contain zero under the bootstrapped SEs; thus, these values are still considered significant. The null hypothesis can be rejected as the percent of children in poverty and high school graduation rates of each county can predict significant variations in the Food Environment Index.</em></p>
+</div>
+<div id="logistic-regression" class="section level2">
+<h2>5) Logistic Regression</h2>
+<p>H<sub>0</sub> : The percent of adults with at least some post secondary education within a county does not predict the probability of it being an urban area (&gt;50,000 people).</p>
+<p>H<sub>0</sub> : A county’s Food Environment Index does not predict the probability of it being an urban area (&gt;50,000 people).</p>
+<p>H<sub>A</sub> : The probability that a county is urban (&gt;50,000 people) can be predicted by either the percent of adults with at least some post secondary education or the Food Environment Index.</p>
+<pre class="r"><code>#LogReg code
+library(dplyr)
+data_logistic&lt;-data1%&gt;%mutate(Bin_Urban = (as.numeric(Bin_Urban)))%&gt;%na.omit()
+fit2&lt;-glm(Bin_Urban~PostSecEdu+Food.Environment.Index, data=data_logistic, family=&quot;binomial&quot;)
+summary(fit2)</code></pre>
+<pre><code>## 
+## Call:
+## glm(formula = Bin_Urban ~ PostSecEdu + Food.Environment.Index, 
+##     family = &quot;binomial&quot;, data = data_logistic)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -2.2433   0.1359   0.3792   0.6442   1.6506  
+## 
+## Coefficients:
+##                        Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)            -4.31531    2.69927  -1.599 0.109888    
+## PostSecEdu              0.15977    0.04671   3.421 0.000624 ***
+## Food.Environment.Index -0.44629    0.35699  -1.250 0.211247    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 88.247  on 80  degrees of freedom
+## Residual deviance: 70.508  on 78  degrees of freedom
+## AIC: 76.508
+## 
+## Number of Fisher Scoring iterations: 5</code></pre>
+<pre class="r"><code>exp(coef(fit2))</code></pre>
+<pre><code>##            (Intercept)             PostSecEdu Food.Environment.Index 
+##             0.01336235             1.17324425             0.63999535</code></pre>
+<pre class="r"><code>#confusion
+probs&lt;-predict(fit2,type=&quot;response&quot;)
+table(truth=data_logistic$Bin_Urban,predict=as.numeric(probs&gt;.5))%&gt;%addmargins</code></pre>
+<pre><code>##      predict
+## truth  0  1 Sum
+##   0    4 15  19
+##   1    6 56  62
+##   Sum 10 71  81</code></pre>
+<pre class="r"><code>#accuracy
+(4+56)/81</code></pre>
+<pre><code>## [1] 0.7407407</code></pre>
+<pre class="r"><code>#sensitivity (tpr)
+56/62</code></pre>
+<pre><code>## [1] 0.9032258</code></pre>
+<pre class="r"><code>#specificity (tnr)
+4/19</code></pre>
+<pre><code>## [1] 0.2105263</code></pre>
+<pre class="r"><code>#ppv
+56/71</code></pre>
+<pre><code>## [1] 0.7887324</code></pre>
+<pre class="r"><code>#log odds
+data_logistic$logit&lt;-predict(fit2)
+data_logistic&lt;-data_logistic%&gt;%mutate(Bin_Urban = as.factor(Bin_Urban))%&gt;%mutate(Bin_Urban=recode(Bin_Urban, &#39;1&#39; = &quot;Urban&quot;, &#39;0&#39; = &quot;Non Urban&quot;))
+ggplot(data_logistic,aes(logit, fill=Bin_Urban))+geom_density(alpha=.5)+
+  geom_vline(xintercept=0,lty=2)+scale_fill_manual(values=c(&quot;lightblue2&quot;,&quot;thistle&quot;))+labs(title=&quot;Density of Log Odds&quot;)</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#ROC plot
+library(plotROC)
+ROCplot &lt;-ggplot(data_logistic)+ geom_roc(aes(d = Bin_Urban, m = PostSecEdu),n.cuts = 0, color=&quot;goldenrod3&quot;)+labs(title=&quot;ROC Plot&quot;)
+ROCplot</code></pre>
+<p><img src="/project2final_files/figure-html/unnamed-chunk-7-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#AUC
+class_diag&lt;-function(probs,truth){
+  
+  tab&lt;-table(factor(probs&gt;.5,levels=c(&quot;FALSE&quot;,&quot;TRUE&quot;)),truth)
+  acc=sum(diag(tab))/sum(tab)
+  sens=tab[2,2]/colSums(tab)[2]
+  spec=tab[1,1]/colSums(tab)[1]
+  ppv=tab[2,2]/rowSums(tab)[2]
+
+  if(is.numeric(truth)==FALSE &amp; is.logical(truth)==FALSE) truth&lt;-as.numeric(truth)-1
+  
+  #CALCULATE EXACT AUC
+  ord&lt;-order(probs, decreasing=TRUE)
+  probs &lt;- probs[ord]; truth &lt;- truth[ord]
+  
+  TPR=cumsum(truth)/max(1,sum(truth)) 
+  FPR=cumsum(!truth)/max(1,sum(!truth))
+  
+  dup&lt;-c(probs[-1]&gt;=probs[-length(probs)], FALSE)
+  TPR&lt;-c(0,TPR[!dup],1); FPR&lt;-c(0,FPR[!dup],1)
+  
+  n &lt;- length(TPR)
+  auc&lt;- sum( ((TPR[-1]+TPR[-n])/2) * (FPR[-1]-FPR[-n]) )
+
+  data.frame(acc,sens,spec,ppv,auc)
+}
+class_diag(probs, data_logistic$Bin_Urban)</code></pre>
+<pre><code>##             acc      sens      spec       ppv       auc
+## Urban 0.7407407 0.9032258 0.2105263 0.7887324 0.7962649</code></pre>
+<pre class="r"><code>#10 fold CV
+set.seed(1234)
+k=10
+
+data_glm&lt;-data_logistic[sample(nrow(data_logistic)),] #put dataset in random order
+folds&lt;-cut(seq(1:nrow(data_logistic)),breaks=k,labels=F) #create folds
+
+diags&lt;-NULL
+for(i in 1:k){          # FOR EACH OF 10 FOLDS
+  train&lt;-data_glm[folds!=i,] # CREATE TRAINING SET
+  test&lt;-data_glm[folds==i,]  # CREATE TESTING SET
+  
+  truth&lt;-test$Bin_Urban
+  
+  fit_glm&lt;- glm(Bin_Urban~PostSecEdu+Food.Environment.Index,family=&quot;binomial&quot;, data=train)
+  probs_glm&lt;- predict(fit_glm, type=&quot;response&quot;, newdata=test)
+  
+  diags&lt;-rbind(diags,class_diag(probs_glm,truth)) #CV DIAGNOSTICS FOR EACH FOLD
+}
+summarize_all(diags,mean)</code></pre>
+<pre><code>##         acc      sens  spec       ppv       auc
+## 1 0.7152778 0.8761905 0.125 0.7659921 0.7029167</code></pre>
+<p><strong>Results:</strong>
+<em>Overall, the odds that a county is Urban are 0.01336 times less than the odds that it is Non-Urban. Controlling for FEI, a 1 percent increase in adults with post-secondary education multiplies the odds of a county being urban by 1.173, a 17.3% increase (significant, p=0.000624). Controlling for adults with post-secondary education, FEI has a negative effect on the odds that a county is urban (1 point increase in FEI decreases odds that a county is urban by a factor of 0.640. The AUC for the model is fair (AUC=0.796). The model is highly sensitive (TPR = 0.903), indicating that there is a high probability of classifying a truly urban county as urban, but the model suffers from low specificity (TNR=0.211). This means that the model does not often classify non-urban areas correctly. The AUC represents this trade-off.</em></p>
+<p><em>After performing a 10-fold cross-validation, the AUC is decreased to 0.703 (still considered “fair”). Sensitivity and specificity have both decreased to 0.876 and 0.125, respectively. Overall this model only a fair predictor of the Urban status of Texas counties.</em></p>
+</div>
+<div id="lasso-regression" class="section level2">
+<h2>6) LASSO Regression</h2>
+<p>LASSO + 10-fold Cross-Validation</p>
+<pre class="r"><code>#LASSOReg code
+
+library(glmnet)
+set.seed(123)
+data_lasso&lt;-data1%&gt;%select(2:24)%&gt;%na.omit
+y&lt;-as.matrix(data_lasso$Food.Environment.Index) 
+x&lt;-data_lasso%&gt;%select(-Food.Environment.Index,)%&gt;%mutate_all(scale)%&gt;%as.matrix
+cv&lt;-cv.glmnet(x,y)
+lasso1&lt;-glmnet(x,y,lambda=cv$lambda.1se) 
+coef(lasso1)</code></pre>
+<pre><code>## 23 x 1 sparse Matrix of class &quot;dgCMatrix&quot;
+##                                                              s0
+## (Intercept)                                        6.222222e+00
+## PCP                                                .           
+## MHP                                                .           
+## Dentists                                           3.152121e-02
+## PCP_rate                                           .           
+## MHP_rate                                          -6.833656e-02
+## Dent_rate                                          .           
+## PercentUninsured_18to64                            .           
+## Infant.Mortality.Rate.per.1.000.Live.Births        .           
+## Child.Mortality.Rate.per.1.000.Population          .           
+## Population                                         .           
+## HSGradRate                                         .           
+## PostSecEdu                                         .           
+## Percent.of.Unemployed..Persons.16.Years.and.Over. -2.984683e-01
+## Percent.of.Children.in.Poverty                    -2.399340e-01
+## Percent.of.Single.Parent.Households               -1.600388e-01
+## Violent.Crime.Rate                                 .           
+## Percent.of.Low.Birthweight.Births...2.5kg.         .           
+## PercentWhite                                       9.153994e-02
+## PercentBlack                                      -1.579245e-01
+## Percent_White_Homeowners                          -2.256512e-01
+## Percent_NonWhite_Homeowners                        9.425325e-15
+## Percent_Hispanic_Latino                            1.047887e-01</code></pre>
+<pre class="r"><code>#10 fold CV
+set.seed(123)
+k=10
+data_lasso2&lt;-data_lasso[sample(nrow(data_lasso)),]
+folds&lt;-cut(seq(1:nrow(data_lasso)),breaks=k,labels=F)
+
+diags&lt;-NULL 
+for (i in 1:k){
+  train&lt;-data_lasso2[folds!=i,] 
+  test&lt;-data_lasso2[folds==i,]
+  fit&lt;-lm(Food.Environment.Index~Dentists+MHP_rate+Percent.of.Unemployed..Persons.16.Years.and.Over.+Percent.of.Children.in.Poverty +Percent.of.Single.Parent.Households+PercentWhite+PercentBlack+Percent_White_Homeowners +Percent_Hispanic_Latino,data=train) 
+  yhat&lt;-predict(fit,newdata=test)
+
+  diags&lt;-mean((test$Food.Environment.Index-yhat)^2) 
+}
+mean(diags)</code></pre>
+<pre><code>## [1] 0.1652502</code></pre>
+<pre class="r"><code>#compare to
+fit_comp&lt;-lm(Food.Environment.Index~.,data=data_lasso) 
+yhat&lt;-predict(fit_comp)
+mean((data_lasso$Food.Environment.Index-yhat)^2)</code></pre>
+<pre><code>## [1] 0.1415967</code></pre>
+<pre class="r"><code>set.seed(123)
+k=10
+data_comp&lt;-data_lasso[sample(nrow(data_lasso)),] 
+folds&lt;-cut(seq(1:nrow(data_lasso)),breaks=k,labels=F) 
+
+diags&lt;-NULL 
+for (i in 1:k){
+train&lt;-data_comp[folds!=i,] 
+test&lt;-data_comp[folds==i,]
+
+fit_comp2&lt;-lm(Food.Environment.Index~.,data=train) 
+yhat&lt;-predict(fit_comp2,newdata=test)
+
+diags&lt;-mean((test$Food.Environment.Index-yhat)^2) 
+}
+mean(diags)</code></pre>
+<pre><code>## [1] 0.2222099</code></pre>
+<p><strong>Results:</strong>
+<em>A LASSO regression on all numeric variables indicates that <code>Dentists</code>, <code>MHP_rate</code>, <code>Percent.of.Unemployed..Persons.16.Years.and.Over.</code>, <code>Percent.of.Children.in.Poverty</code>, <code>Percent.of.Single.Parent.Households</code>,<code>PercentWhite</code>, <code>PercentBlack</code>, <code>Percent_White_Homeowners</code>, <code>Percent_NonWhite_Homeowners</code>, and <code>Percent_Hispanic_Latino</code> are the best predictors of a county’s Food Environment Index. After 10-fold CV, the linear regression model using the LASSO selected variables shows a mean squared error (MSE) of 0.16525, while the linear regression model using all numeric variables indicates a higher MSE of 0.2222. This suggests that the LASSO selected variable predict the Food Environment Index of a county with less error than when all variables are included.</em></p>
+</div>
+</div>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/docs.min.js"></script>
+<script src="/js/main.js"></script>
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>
