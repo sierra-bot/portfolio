@@ -1,5 +1,5 @@
 ---
-title: My Favorite Python Functions
+title: Python- Lists vs. Dictionaries
 author: Sierra Moore
 date: '2020-05-12'
 slug: my-favorite-python-functions
