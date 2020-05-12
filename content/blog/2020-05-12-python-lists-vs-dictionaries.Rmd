@@ -1,8 +1,8 @@
 ---
-title: Python- Lists vs. Dictionaries
+title: Python Lists vs. Dictionaries
 author: Sierra Moore
 date: '2020-05-12'
-slug: my-favorite-python-functions
+slug: python-lists-vs-dictionaries
 categories: []
 tags: []
 description: ''
