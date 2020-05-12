@@ -72,19 +72,61 @@
               
 
 
-<pre class="r"><code>library(reticulate)</code></pre>
-<p>#The Difference Between a List and Dictionary in Python</p>
+<div id="the-difference-between-a-list-and-dictionary-in-python" class="section level1">
+<h1>The Difference Between a List and Dictionary in Python</h1>
 <p>When learning to code with Python, there are several ways to work with sets of data. Lists and dictionaries are both common methods of storing information, but they have several key differences.</p>
-<p>##Lists:
-A list is simply a set of values, organized and stored in a certain order.
+<div id="lists" class="section level2">
+<h2><strong>Lists</strong>:</h2>
+<p>A list is simply a set of values, organized and stored in a certain order.
 You can create a list and assign it a name like this:</p>
 <pre class="python"><code>list1=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]
 list1</code></pre>
 <pre><code>## [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;]</code></pre>
-<pre class="python"><code>list2=[2, 4, 6, 8, 10]
+<pre class="python"><code>list2=[2, 4, 8, 6, 10]
+list2</code></pre>
+<pre><code>## [2, 4, 8, 6, 10]</code></pre>
+<p>The elements in a list are like papers in a filing cabinet. The position of each paper is called an index (think file number) <strong>starting with 0</strong>. In <code>list1</code> (the file cabinet), the element <code>c</code> is in the <em>second index</em> (a.k.a. file #2, to continue the analogy).</p>
+<p>In a filing cabinet, you could take one paper out of a given file and replace it with a different one. You can do the same thing with lists in Python like this:</p>
+<pre class="python"><code>#replace `c` with `cat`
+list1[2]=&quot;cat&quot;
+list1</code></pre>
+<pre><code>## [&#39;a&#39;, &#39;b&#39;, &#39;cat&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;]</code></pre>
+<p>There are many other list functions, which are coded using the format listname.function. Here are a few examples:</p>
+<pre class="python"><code>list2.sort() #order from least to greatest
 list2</code></pre>
 <pre><code>## [2, 4, 6, 8, 10]</code></pre>
-<p>The elements in a list are like papers in a filing cabinet. The position of each paper is called an index, think file number, <strong>starting with 0</strong>. In <code>list1</code> (the file cabinet), the element <code>c</code> is in the <em>second index</em> (a.k.a. file #2, to continue the analogy).</p>
+<pre class="python"><code>list2.reverse() #reverse order
+list2</code></pre>
+<pre><code>## [10, 8, 6, 4, 2]</code></pre>
+<pre class="python"><code>list2.append(0) #add zero as a new element
+list2</code></pre>
+<pre><code>## [10, 8, 6, 4, 2, 0]</code></pre>
+</div>
+<div id="dictionaries" class="section level2">
+<h2><strong>Dictionaries</strong></h2>
+<p>A dictionary is a set of data values that are tied to “keys.” It can be helpful to think of a real dictionary where the key is the word you want to define, and the value is the definition. Unlike the way a real dictionary is written in alphabetical order, dictionaries are unordered meaning that the key:value pairs are stored not stored in a designated order.</p>
+<pre class="python"><code>dog = {
+  &#39;name&#39;:&#39;Leia&#39;,
+  &#39;age&#39; : 3,
+  &#39;color&#39; : &#39;black&#39;,
+  &#39;favorite things&#39; : [&#39;tennis balls&#39;, &#39;swimming&#39;, &#39;the couch&#39;],
+}
+print(dog)</code></pre>
+<pre><code>## {&#39;name&#39;: &#39;Leia&#39;, &#39;age&#39;: 3, &#39;color&#39;: &#39;black&#39;, &#39;favorite things&#39;: [&#39;tennis balls&#39;, &#39;swimming&#39;, &#39;the couch&#39;]}</code></pre>
+<p>You can edit dictionaries by changing, adding, and removing key:value pairs:</p>
+<pre class="python"><code>dog[&#39;age&#39;]=3.5 #edit the value for age
+dog[&#39;barks at&#39;]= [&#39;the mail man&#39;, &#39;squirrels&#39;] #add a new key with several values
+dog.pop(&#39;color&#39;) #remove the &#39;age&#39; key</code></pre>
+<pre><code>## &#39;black&#39;</code></pre>
+<pre class="python"><code>print(dog)</code></pre>
+<pre><code>## {&#39;name&#39;: &#39;Leia&#39;, &#39;age&#39;: 3.5, &#39;favorite things&#39;: [&#39;tennis balls&#39;, &#39;swimming&#39;, &#39;the couch&#39;], &#39;barks at&#39;: [&#39;the mail man&#39;, &#39;squirrels&#39;]}</code></pre>
+<p>While they each have unique aspects, you can use both lists and dictionaries to write for loops and define new fuctions in your Python code, among other things!</p>
+<div class="figure">
+<embed src="/blog/2020-05-12-python-lists-vs-dictionaries_files/8BBEBD6E-637C-4D61-92D8-9F0367CA4F02.heic" style="width:50.0%;height:50.0%" />
+<p class="caption">Princess Leia</p>
+</div>
+</div>
+</div>
 
               <hr>
               <div class="related-posts">

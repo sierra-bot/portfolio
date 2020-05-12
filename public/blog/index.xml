@@ -17,9 +17,8 @@
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/python-lists-vs-dictionaries/</guid>
-      <description>library(reticulate) #The Difference Between a List and Dictionary in Python
-When learning to code with Python, there are several ways to work with sets of data. Lists and dictionaries are both common methods of storing information, but they have several key differences.
-##Lists: A list is simply a set of values, organized and stored in a certain order. You can create a list and assign it a name like this:</description>
+      <description>The Difference Between a List and Dictionary in Python When learning to code with Python, there are several ways to work with sets of data. Lists and dictionaries are both common methods of storing information, but they have several key differences.
+Lists: A list is simply a set of values, organized and stored in a certain order. You can create a list and assign it a name like this:</description>
     </item>
     
   </channel>
