@@ -11,8 +11,6 @@ title: Projects
 
 Here are some projects I have recently completed:
 
-- Exploratory Data Analysis with Tidyverse Tools: [Running Man, Weather Man](/project1/)
+- Exploratory Data Analysis with Tidyverse Tools (2020): [Running Man, Weather Man](/project1/)
 
-- Modeling, Testing, and Classification: [Food, People, and Other Counts for Texas Counties](/project2final/)
-
-- That Little Box Thing: [An At-Home STI Testing Kit for UT Students](/sti_test.pdf/)
+- Modeling, Testing, and Classification (2020): [Food, People, and Other Counts for Texas Counties](/project2final/)
