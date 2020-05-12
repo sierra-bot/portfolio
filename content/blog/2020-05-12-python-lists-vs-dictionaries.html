@@ -1,0 +1,25 @@
+---
+title: Python Lists vs. Dictionaries
+author: Sierra Moore
+date: '2020-05-12'
+slug: python-lists-vs-dictionaries
+categories: []
+tags: []
+description: ''
+---
+
+
+
+<pre class="r"><code>library(reticulate)</code></pre>
+<p>#The Difference Between a List and Dictionary in Python</p>
+<p>When learning to code with Python, there are several ways to work with sets of data. Lists and dictionaries are both common methods of storing information, but they have several key differences.</p>
+<p>##Lists:
+A list is simply a set of values, organized and stored in a certain order.
+You can create a list and assign it a name like this:</p>
+<pre class="python"><code>list1=[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]
+list1</code></pre>
+<pre><code>## [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;]</code></pre>
+<pre class="python"><code>list2=[2, 4, 6, 8, 10]
+list2</code></pre>
+<pre><code>## [2, 4, 6, 8, 10]</code></pre>
+<p>The elements in a list are like papers in a filing cabinet. The position of each paper is called an index, think file number, <strong>starting with 0</strong>. In <code>list1</code> (the file cabinet), the element <code>c</code> is in the <em>second index</em> (a.k.a. file #2, to continue the analogy).</p>
