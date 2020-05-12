@@ -67,4 +67,5 @@ print(dog)
 
 While they each have unique aspects, you can use both lists and dictionaries to write for loops and define new fuctions in your Python code, among other things! 
 
-![Princess Leia](/blog/2020-05-12-python-lists-vs-dictionaries_files/8BBEBD6E-637C-4D61-92D8-9F0367CA4F02.heic){width=50% height=50%}
+![Princess Leia](/blog/2020-05-12-python-lists-vs-dictionaries_files/IMG_6756.jpeg){width=50% height=50%}
+![Leia in Motion](/blog/2020-05-12-python-lists-vs-dictionaries_files/IMG_6817.jpeg){width=%50 height=%50}
