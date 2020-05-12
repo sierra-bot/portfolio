@@ -1,0 +1,29 @@
+---
+title: My Favorite Python Functions
+author: Sierra Moore
+date: '2020-05-12'
+slug: my-favorite-python-functions
+categories: []
+tags: []
+description: ''
+---
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE, fig.align = "center", warning = F, message = F, R.options=list(max.print=100))
+```
+```{r}
+library(reticulate)
+```
+#The Difference Between a List and Dictionary in Python
+
+When learning to code with Python, there are several ways to work with sets of data. Lists and dictionaries are both common methods of storing information, but they have several key differences. 
+
+##Lists:
+A list is simply a set of values, organized and stored in a certain order.
+You can create a list and assign it a name like this:
+```{python}
+list1=["a", "b", "c", "d", "e", "f"]
+list1
+list2=[2, 4, 6, 8, 10]
+list2
+```
+The elements in a list are like papers in a filing cabinet. The position of each paper is called an index, think file number, __starting with 0__. In `list1` (the file cabinet), the element `c` is in the *second index* (a.k.a. file #2, to continue the analogy). 
